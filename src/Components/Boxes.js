@@ -6,7 +6,7 @@ export default function Boxes () {
       <div>
         <h1 className='display-4 text-center text-dark mt-2'>Notes.SIT- B.Tech</h1>
         {/* <!-- Boxes Btech 1sty --> */}
-        <section className='p-5' id='btech1'>
+        <section className='p-2' id='btech1'>
           <div className='container'>
             <div className='row text-center g-4'>
               <h2 className='text-center text-secondary '>B.TECH 1st year</h2>
@@ -89,7 +89,7 @@ export default function Boxes () {
           </div>
         </section>
         {/* <!-- Boxes Btech 2ndy --> */}
-        <section className=' p-5 ' id='btech2'>
+        <section className=' p-2 ' id='btech2'>
           <div className='container'>
             <div className='row text-center g-4'>
               <h2 className='text-center text-secondary  '>B.TECH 2nd year</h2>
@@ -323,7 +323,7 @@ export default function Boxes () {
         </section>
 
         {/* <!-- Boxes Btech 3rdy --> */}
-        <section className='p-5' id='btech3'>
+        <section className='p-2' id='btech3'>
           <div className='container'>
             <div className='row text-center g-4'>
               <h2 className='text-center text-secondary '>B.TECH 3rd year</h2>
@@ -408,7 +408,7 @@ export default function Boxes () {
         </section>
 
         {/* <!-- Boxes Btech 4th y --> */}
-        <section className=' p-5' id='btech4'>
+        <section className=' p-2' id='btech4'>
           <div className='container'>
             <div className='row text-center g-4'>
               <h2 className='text-center text-secondary '>B.TECH 4th year</h2>

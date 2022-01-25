@@ -30,13 +30,13 @@ export default function Header (props) {
               </Nav.Link>
             </Nav>
             <Form className='d-flex'>
-              <FormControl
-                type='search'
+              {/* <FormControl
+                type='login'
                 placeholder='Search'
                 className='me-2'
                 aria-label='Search'
-              />
-              <Button variant='outline-secondary'>Search</Button>
+              /> */}
+              <Button variant='outline-secondary'>Login</Button>
             </Form>
           </Navbar.Collapse>
         </Container>

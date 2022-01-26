@@ -19,17 +19,17 @@ def bookmark_list(request):
 	if request.method=='GET':
 		bookmarks = Bookmark.objects.all()
 		serializer = BookmarkSerializer(bookmarks, many=True)
-		return JsonResponse(serializer.data, safe=False)
+		return Response(serializer.data,)
 
 	elif request.method=='POST':
-		data = JSONParser().parse(request)
-		serializer = BookmarkSerializer(data=data)
+		# data = JSONParser().parse(request)
+		serializer = BookmarkSerializer(data=request.data)
 		if serializer.is_valid():
 			serializer.save()
-			return JsonResponse(serializer.data, status=201)
-		return JsonResponse(serializer.errors, status=400)
+			return Response(serializer.data, status=201)
+		return Response(serializer.errors, status=400)
 
-@csrf_exempt
+@api_view(['GET', 'PUT', 'DELETE'])
 def bookmark_detail(request, pk):
 	try:
 		bookmark = Bookmark.objects.get(pk=pk)

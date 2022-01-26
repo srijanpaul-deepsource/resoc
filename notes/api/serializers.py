@@ -20,7 +20,7 @@ class UserSerializer(serializers.ModelSerializer):
             'write_only':True,
             'required':True
         }}
-
+ 
     def create(self, validated_data):
         user = User.objects.create_user(**validated_data)
         Token.objects.create(user=user)

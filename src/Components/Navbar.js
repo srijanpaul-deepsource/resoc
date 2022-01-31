@@ -1,6 +1,6 @@
-import { Nav, NavDropdown, Navbar, Container, Form, FormControl, Button } from 'react-bootstrap'
+import { Nav, NavDropdown, Navbar, Container, Form, Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import PropTypes from 'prop-types'
+// import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import React from 'react'
 
@@ -17,7 +17,7 @@ export default function Header (props) {
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href='#home'>Home</Nav.Link>
+              <Nav.Link href='/'>Home</Nav.Link>
               <NavDropdown title='Semester' id='navbarScrollingDropdown'>
                 <NavDropdown.Item href='#btech1'>B.Tech 1st Year</NavDropdown.Item>
                 <NavDropdown.Item href='#btech2'>B.Tech 2nd Year</NavDropdown.Item>
@@ -36,7 +36,7 @@ export default function Header (props) {
                 className='me-2'
                 aria-label='Search'
               /> */}
-              <Button variant='outline-secondary'>Login</Button>
+              <Button variant='outline-secondary' className='text-decoration: none'> <Link to='/login' style={{ textDecoration: 'none', color: 'white'}}> Login</Link></Button>
             </Form>
           </Navbar.Collapse>
         </Container>
@@ -45,12 +45,12 @@ export default function Header (props) {
   )
 }
 
-Header.defaultProps = {
-  title: 'Your title here'
-  // searchbar: true
-}
+// Header.defaultProps = {
+//   title: 'Your title here'
+//   // searchbar: true
+// }
 
-Header.propTypes = {
-  title: PropTypes.string,
-  searchbar: PropTypes.bool.isRequired
-}
+// Header.propTypes = {
+//   title: PropTypes.string,
+//   searchbar: PropTypes.bool.isRequired
+// }

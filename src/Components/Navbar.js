@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 // import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import React from 'react'
+import { useAuth } from '../contexts/AuthContext'
 
 export default function Header (props) {
   return (
@@ -36,7 +37,9 @@ export default function Header (props) {
                 className='me-2'
                 aria-label='Search'
               /> */}
-              <Button variant='outline-secondary' className='text-decoration: none'> <Link to='/login' style={{ textDecoration: 'none', color: 'white'}}> Login</Link></Button>
+              <Nav.Link href='/chat-room' className='text-decoration: none' style={{ textDecoration: 'none', color: 'white'}}>Chat</Nav.Link>
+              <Button variant='outline-secondary' > <Link to='/login' style={{ textDecoration: 'none', color: 'white'}}> Login</Link></Button>
+              
             </Form>
           </Navbar.Collapse>
         </Container>

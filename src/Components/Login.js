@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import Header from './Navbar'
 
 
-export default function Login () {
+export default function Login() {
   const emailRef = useRef()
   const passwordRef = useRef()
   const { login } = useAuth()
@@ -13,7 +13,7 @@ export default function Login () {
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
 
-  async function handleSubmit (e) {
+  async function handleSubmit(e) {
     e.preventDefault()
     try {
       setError('')
@@ -28,7 +28,7 @@ export default function Login () {
 
   return (
     <>
-    <Header />
+      <Header />
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '100vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card>
@@ -48,6 +48,7 @@ export default function Login () {
                 </FormGroup>
                 <Button disabled={loading} className='w-100 mt-2' type='submit'>Log In</Button>
               </Form>
+              {/* <Button disabled={loading} className='w-100 mt-2' type='submit'>Sign In With Google</Button> */}
               <div className='w-100 text-center mt-3'>
                 <Link to='/forgot-password'>Forgot Password</Link>
               </div>
@@ -61,3 +62,7 @@ export default function Login () {
     </>
   )
 }
+// function RequireAuth () {
+//   const { currentUser } = useAuth()
+//   return currentUser ? 1 : 0 
+// }

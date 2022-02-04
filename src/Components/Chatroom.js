@@ -11,6 +11,10 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import * as Icon from 'react-bootstrap-icons'
 
+
+
+
+
 // const auth = firebase.auth();
 const firestore = firebase.firestore();
 // const analytics = firebase.analytics();
@@ -33,7 +37,7 @@ function Chat() {
   // }
 
   return (
-    <div className="App">
+    <div style={{textAlign: 'center'}}className="App">
       <header>
         <h1>⚛️🔥💬</h1>
         <SignOut />
@@ -66,7 +70,7 @@ function SignIn() {
 function SignOut() {
   const navigate =useNavigate()
   return auth.currentUser && (
-    <Button variant='outline-secondary' className="sign-out" onClick={() => auth.signOut() && navigate('/')}>Sign Out</Button>)
+    <Button variant='outline-secondary' className="sign-out text-center" onClick={() => auth.signOut() && navigate('/')}>Sign Out</Button>)
 }
 
 
@@ -105,7 +109,7 @@ function ChatRoom() {
 
     </main>
 
-    <Form onSubmit={sendMessage}>
+    <Form className='text-center' onSubmit={sendMessage}>
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
 
@@ -122,7 +126,7 @@ function ChatMessage(props) {
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
 
   return (<>
-    <div className={`message ${messageClass}`}>
+    <div style={{textAlign: 'center'}} className={`message ${messageClass}`}>
       <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} alt=''/>
       <p>{text}</p>
     </div>

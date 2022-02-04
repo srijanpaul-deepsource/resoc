@@ -11,10 +11,15 @@ export default function Header (props) {
   const  { currentUser }= useAuth()
   var username ='Login'
   if(currentUser){
-    username = currentUser.email
-    for(var i = 0; i < username.length; i++){
-      if(username[i] === '@'){
-        username = username.substring(0,i)
+    if(currentUser.displayName!=null){
+      username = currentUser.displayName
+    }
+    else{
+      username = currentUser.email
+      for(var i = 0; i < username.length; i++){
+              if(username[i] === '@'){
+                username = username.substring(0,i)
+              }
       }
     }
   }

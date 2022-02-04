@@ -3,7 +3,8 @@ import { Card, Button, Form, FormGroup, Alert, Container } from 'react-bootstrap
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
 import Header from './Navbar'
-
+import firebase from 'firebase/compat/app'
+import { auth } from '../firebase'
 
 export default function Login() {
   const emailRef = useRef()
@@ -25,6 +26,11 @@ export default function Login() {
     }
     setLoading(false)
   }
+  const signInWithGoogle = () => {
+    const provider = new firebase.auth.GoogleAuthProvider();
+    auth.signInWithPopup(provider);
+  }
+
 
   return (
     <>
@@ -48,7 +54,7 @@ export default function Login() {
                 </FormGroup>
                 <Button disabled={loading} className='w-100 mt-2' type='submit'>Log In</Button>
               </Form>
-              {/* <Button disabled={loading} className='w-100 mt-2' type='submit'>Sign In With Google</Button> */}
+              <Button disabled={loading} className='w-100 mt-2' type='submit' onClick={signInWithGoogle}>Sign In With Google</Button>
               <div className='w-100 text-center mt-3'>
                 <Link to='/forgot-password'>Forgot Password</Link>
               </div>

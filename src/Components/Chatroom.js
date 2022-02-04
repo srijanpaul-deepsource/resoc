@@ -2,23 +2,35 @@ import React, { useRef, useState } from 'react';
 // import './chatApp.css';
 import firebase from 'firebase/compat/app'
 // import { useAuth } from '../contexts/AuthContext'
+import { Container, Form, Button } from 'react-bootstrap'
 import 'firebase/compat/firestore'
-// import 'firebase/analytics';
+import 'firebase/analytics';
+import { Link, useNavigate } from 'react-router-dom'
 import { auth } from '../firebase'
-
-
-
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
+import * as Icon from 'react-bootstrap-icons'
 
 // const auth = firebase.auth();
 const firestore = firebase.firestore();
 // const analytics = firebase.analytics();
 
-
 function Chat() {
-
   const [user] = useAuthState(auth);
+  // const [error, setError] = useState('')
+
+  const navigate = useNavigate()
+
+  // async function handleLogout () {
+  //   setError('')
+
+  //   try {
+  //     await logout()
+  //     navigate('/')
+  //   } catch {
+  //     setError('Failed to log out')
+  //   }
+  // }
 
   return (
     <div className="App">
@@ -52,9 +64,9 @@ function SignIn() {
 }
 
 function SignOut() {
+  const navigate =useNavigate()
   return auth.currentUser && (
-    <button className="sign-out" onClick={() => auth.signOut()}>Sign Out</button>
-  )
+    <Button variant='outline-secondary' className="sign-out" onClick={() => auth.signOut() && navigate('/')}>Sign Out</Button>)
 }
 
 
@@ -84,7 +96,7 @@ function ChatRoom() {
     dummy.current.scrollIntoView({ behavior: 'smooth' });
   }
 
-  return (<>
+  return ( <>
     <main>
 
       {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
@@ -93,13 +105,13 @@ function ChatRoom() {
 
     </main>
 
-    <form onSubmit={sendMessage}>
+    <Form onSubmit={sendMessage}>
 
       <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
 
-      <button type="submit" disabled={!formValue}>🕊️</button>
+      <Button className= 'mx-2' type="submit" disabled={!formValue} > <Icon.Send /></Button>
 
-    </form>
+    </Form>
   </>)
 }
 

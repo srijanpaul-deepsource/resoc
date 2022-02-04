@@ -2,10 +2,23 @@ import { Nav, NavDropdown, Navbar, Container, Form, Button } from 'react-bootstr
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import React from 'react'
+import React, { useState } from 'react'
 import { useAuth } from '../contexts/AuthContext'
 
 export default function Header (props) {
+  var [buttonText, setButtonText] = useState("Login")
+  const changeText = (text) => setButtonText(text)
+  const  { currentUser }= useAuth()
+  var username ='Login'
+  if(currentUser){
+    username = currentUser.email
+    for(var i = 0; i < username.length; i++){
+      if(username[i] === '@'){
+        username = username.substring(0,i)
+      }
+    }
+  }
+  currentUser ? buttonText = username : buttonText = 'Login'
   return (
     <>
       <Navbar className='navbar-dark' bg='dark' expand='lg'>
@@ -38,7 +51,7 @@ export default function Header (props) {
                 aria-label='Search'
               /> */}
               <Nav.Link href='/chat-room' className='text-decoration: none' style={{ textDecoration: 'none', color: 'white'}}>Chat</Nav.Link>
-              <Button variant='outline-secondary' > <Link to='/login' style={{ textDecoration: 'none', color: 'white'}}> Login</Link></Button>
+              <Button variant='outline-secondary' > <Link to='/login' style={{ textDecoration: 'none', color: 'white'}}> {buttonText} </Link></Button>
               
             </Form>
           </Navbar.Collapse>

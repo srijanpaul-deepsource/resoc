@@ -9,7 +9,7 @@ import { AuthProvider, useAuth } from '../contexts/AuthContext'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import ForgotPassword from './ForgotPassword'
 import UpdateProfile from './UpdateProfile'
-import Logout from './Logout'
+import Profile from './Profile'
 import Chat from './Chatroom'
 import 'firebase/firestore'
 import Header from './Navbar'
@@ -42,7 +42,7 @@ function App() {
             <Route
               path='/login'
               element={
-                <IsLoggedIn redirectTo='/logout'>
+                <IsLoggedIn redirectTo='/profile'>
                   <Login />
                 </IsLoggedIn>
               }
@@ -55,7 +55,7 @@ function App() {
             <Route path='/login' caseSensitive={false} element=
             {<Login />} />
 
-            <Route path='/logout' caseSensitive={false} element={<Logout />} />
+            <Route path='/profile' caseSensitive={false} element={<Profile />} />
 
             <Route path='/forgot-password' element={<ForgotPassword />} />
           </Routes>

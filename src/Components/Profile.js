@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { Card, Button, Alert, Container } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
-import Header from '../Components/Navbar'
+import Header from './Navbar'
 
-export default function Logout () {
+export default function Profile () {
   const [error, setError] = useState('')
   const { currentUser, logout } = useAuth()
   const navigate = useNavigate()

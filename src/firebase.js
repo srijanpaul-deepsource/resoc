@@ -1,8 +1,11 @@
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/auth'
 require('firebase/auth')
-const { initializeApp } = require("firebase/app");
+const { initializeApp } = require("firebase/compat/app");
 const { initializeAppCheck, ReCaptchaV3Provider } = require("firebase/app-check")
+
+
+// window.self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
 const app = firebase.initializeApp({
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
     authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
@@ -13,12 +16,12 @@ const app = firebase.initializeApp({
     measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 })
 
-const appCheck = initializeAppCheck(app, {
-    provider: new ReCaptchaV3Provider('6LezKFceAAAAAFIK376mvc1bYHxvn8coUG78R9lM'),
-    isTokenAutoRefreshEnabled: true
-})
+// const appCheck = initializeAppCheck(app, {
+//     provider: new ReCaptchaV3Provider('6LezKFceAAAAAFIK376mvc1bYHxvn8coUG78R9lM'),
+//     isTokenAutoRefreshEnabled: true
+// })
 
-// self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
+
 
 
 

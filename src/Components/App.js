@@ -12,6 +12,7 @@ import UpdateProfile from './UpdateProfile'
 import Profile from './Profile'
 import Chat from './Chatroom'
 import 'firebase/firestore'
+import Todo from './Todo'
 import Header from './Navbar'
 import { auth } from '../firebase'
 
@@ -40,6 +41,14 @@ function App() {
               }
             />
             <Route
+              path='/todos'
+              element={
+                <RequireAuth redirectTo='/login'>
+                  <Todo />
+                </RequireAuth>
+              }
+            />
+            <Route
               path='/login'
               element={
                 <IsLoggedIn redirectTo='/profile'>
@@ -53,7 +62,7 @@ function App() {
             <Route path='/signup' caseSensitive={false} element={<Signup />} />
 
             <Route path='/login' caseSensitive={false} element=
-            {<Login />} />
+              {<Login />} />
 
             <Route path='/profile' caseSensitive={false} element={<Profile />} />
 

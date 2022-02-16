@@ -13,8 +13,8 @@ import Profile from './Profile'
 import Chat from './Chatroom'
 import 'firebase/firestore'
 import Todo from './Todo'
-import Header from './Navbar'
-import { auth } from '../firebase'
+// import Header from './Navbar'
+// import { auth } from '../firebase'
 
 function App() {
   return (

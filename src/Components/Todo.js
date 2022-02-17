@@ -41,7 +41,7 @@ export default function Todo() {
 
 								<p className="h1 text-center mt-3 mb-4 pb-3 text-primary">
 									<i className="fas fa-check-square me-1"></i>
-									My Todos
+									My Todos ✔️
 								</p>
 								<p style={{ textAlign: 'center', marginTop: -1 + 'rem' }}>{todos.length} tasks pending!</p>
 								<form>
@@ -77,7 +77,8 @@ export default function Todo() {
 										<li className="list-group-item px-3 py-1 d-flex align-items-center flex-grow-1 border-0 bg-transparent">
 											<p className="lead fw-normal mb-0">{todo.todo}</p>
 										</li>
-										<button type="button" className="btn" style={{ background: "none", outline: "none", }} onClick={e => firestore.collection('Todos').doc(currentUser.uid).collection('Todos').doc(todo.todo.id).delete() }><TrashFill /></button>
+										<button type="button" className="btn" style={{ background: "none", outline: "none", }} onClick={e => firestore.collection('Todos').doc(currentUser.uid).collection('Todos').doc(todo.id).delete() }><TrashFill /></button>
+										
 									</ul>
 								</>)))}
 

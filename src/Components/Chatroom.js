@@ -1,74 +1,51 @@
 import React, { useRef, useState } from 'react';
-// import './chatApp.css';
+import './chatApp.css';
 import firebase from 'firebase/compat/app'
 // import { useAuth } from '../contexts/AuthContext'
 import { Container, Form, Button } from 'react-bootstrap'
 import 'firebase/compat/firestore'
 import 'firebase/analytics';
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { auth } from '../firebase'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import * as Icon from 'react-bootstrap-icons'
-
-
-
-
+import Header from './Navbar'
 
 // const auth = firebase.auth();
 const firestore = firebase.firestore();
 // const analytics = firebase.analytics();
 
 function Chat() {
-  const [user] = useAuthState(auth);
-  // const [error, setError] = useState('')
+  return (<>
+    <Header />
+    <div className="App">
 
-  const navigate = useNavigate()
+      <section className="vh-100">
+        <div className="container py-5 h-100">
+          <div className="row d-flex justify-content-center align-items-center h-100">
+            <div className="col">
+              <div className="card" id="list1" style={{ borderRadius: .75 + "rem", backgroundColor: "#f8f9fa" }}>
+                <div className="card-body py-4 px-4 px-md-5">
 
-  // async function handleLogout () {
-  //   setError('')
-
-  //   try {
-  //     await logout()
-  //     navigate('/')
-  //   } catch {
-  //     setError('Failed to log out')
-  //   }
-  // }
-
-  return (
-    <div style={{textAlign: 'center'}}className="App">
-      <header>
-        <h1>⚛️🔥💬</h1>
-        <SignOut />
-      </header>
-
-      <section>
-        {user ? <ChatRoom /> : <SignIn />}
+                  <p className="h1 text-center mt-3 mb-4 pb-3 text-primary">
+                    <i className="fas fa-check-square me-1"></i>
+                    Live Chat 🔥💬
+                  </p>
+                  <SignOut />
+                  <ChatRoom />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-
     </div>
-  );
-}
-
-function SignIn() {
-
-  const signInWithGoogle = () => {
-    const provider = new firebase.auth.GoogleAuthProvider();
-    auth.signInWithPopup(provider);
-  }
-
-  return (
-    <>
-      <button className="sign-in" onClick={signInWithGoogle}>Sign in with Google</button>
-      <p>Do not violate the community guidelines or you will be banned for life!</p>
-    </>
-  )
-
+  </>);
 }
 
 function SignOut() {
-  const navigate =useNavigate()
+  const navigate = useNavigate()
   return auth.currentUser && (
     <Button variant='outline-secondary' className="sign-out text-center" onClick={() => auth.signOut() && navigate('/')}>Sign Out</Button>)
 }
@@ -100,8 +77,8 @@ function ChatRoom() {
     dummy.current.scrollIntoView({ behavior: 'smooth' });
   }
 
-  return ( <>
-    <main>
+  return (<>
+    <main className='main' >
 
       {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
 
@@ -109,11 +86,10 @@ function ChatRoom() {
 
     </main>
 
-    <Form className='text-center' onSubmit={sendMessage}>
+    <Form className='form' onSubmit={sendMessage}>
 
-      <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
-
-      <Button className= 'mx-2' type="submit" disabled={!formValue} > <Icon.Send /></Button>
+      <input className='inp' value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Start typing " />
+      <Button className='ButtonSend mx-2' type="submit" disabled={!formValue} > <Icon.Send /></Button>
 
     </Form>
   </>)
@@ -126,12 +102,11 @@ function ChatMessage(props) {
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
 
   return (<>
-    <div style={{textAlign: 'center'}} className={`message ${messageClass}`}>
-      <img src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} alt=''/>
-      <p>{text}</p>
+    <div style={{ textAlign: 'center' }} className={`message ${messageClass}`}>
+      <img className='profphoto' src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} alt='' />
+      <p className='para'>{text}</p>
     </div>
   </>)
 }
-
 
 export default Chat;

@@ -2,12 +2,12 @@ import React, { useRef, useState } from 'react';
 import './chatApp.css';
 import firebase from 'firebase/compat/app'
 // import { useAuth } from '../contexts/AuthContext'
-import { Container, Form, Button } from 'react-bootstrap'
+import { Form, Button } from 'react-bootstrap'
 import 'firebase/compat/firestore'
 import 'firebase/analytics';
 import { useNavigate } from 'react-router-dom'
 import { auth } from '../firebase'
-import { useAuthState } from 'react-firebase-hooks/auth';
+// import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import * as Icon from 'react-bootstrap-icons'
 import Header from './Navbar'
@@ -54,7 +54,7 @@ function SignOut() {
 function ChatRoom() {
   const dummy = useRef();
   const messagesRef = firestore.collection('messages');
-  const query = messagesRef.orderBy('createdAt').limit(25);
+  const query = messagesRef.orderBy('createdAt').limit(15);
 
   const [messages] = useCollectionData(query, { idField: 'id' });
 
@@ -63,7 +63,6 @@ function ChatRoom() {
 
   const sendMessage = async (e) => {
     e.preventDefault();
-
     const { uid, photoURL } = auth.currentUser;
 
     await messagesRef.add({
@@ -103,7 +102,7 @@ function ChatMessage(props) {
 
   return (<>
     <div style={{ textAlign: 'center' }} className={`message ${messageClass}`}>
-      <img className='profphoto' src={photoURL || 'https://api.adorable.io/avatars/23/abott@adorable.png'} alt='' />
+      <img className='profphoto' src={photoURL || 'https://adorable-avatars.broken.services/120/myseed'} alt='' />
       <p className='para'>{text}</p>
     </div>
   </>)

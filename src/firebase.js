@@ -16,10 +16,10 @@ const app = firebase.initializeApp({
     measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
 })
 
-const appCheck = initializeAppCheck(app, {
-    provider: new ReCaptchaV3Provider('6LezKFceAAAAAFIK376mvc1bYHxvn8coUG78R9lM'),
-    isTokenAutoRefreshEnabled: true
-})
+// const appCheck = initializeAppCheck(app, {
+//     provider: new ReCaptchaV3Provider('6LezKFceAAAAAFIK376mvc1bYHxvn8coUG78R9lM'),
+//     isTokenAutoRefreshEnabled: true
+// })
 
 
 export const auth = app.auth()

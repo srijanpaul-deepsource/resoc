@@ -1,20 +1,16 @@
 import React, { useRef, useState } from 'react';
 import './chatApp.css';
 import firebase from 'firebase/compat/app'
-// import { useAuth } from '../contexts/AuthContext'
 import { Form, Button } from 'react-bootstrap'
 import 'firebase/compat/firestore'
 import 'firebase/analytics';
-// import { useNavigate } from 'react-router-dom'
-import { auth } from '../firebase'
-// import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom'
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import * as Icon from 'react-bootstrap-icons'
 import Header from './Navbar'
 
-// const auth = firebase.auth();
+const auth = firebase.auth();
 const firestore = firebase.firestore();
-// const analytics = firebase.analytics();
 
 function Chat() {
   return (<>
@@ -45,9 +41,9 @@ function Chat() {
 }
 
 function SignOut() {
-  // const navigate = useNavigate()
+  const navigate = useNavigate()
   return auth.currentUser && (
-    <Button variant='outline-secondary' className="sign-out text-center" onClick={() => auth.signOut()}>Sign Out</Button>)
+    <Button variant='outline-secondary' className="sign-out text-center" onClick={() => auth.signOut() && navigate('/')}>Sign Out</Button>)
 }
 
 
@@ -63,6 +59,7 @@ function ChatRoom() {
 
   const sendMessage = async (e) => {
     e.preventDefault();
+
     const { uid, photoURL } = auth.currentUser;
 
     await messagesRef.add({

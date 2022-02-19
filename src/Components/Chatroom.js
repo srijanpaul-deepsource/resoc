@@ -5,7 +5,7 @@ import firebase from 'firebase/compat/app'
 import { Form, Button } from 'react-bootstrap'
 import 'firebase/compat/firestore'
 import 'firebase/analytics';
-import { useNavigate } from 'react-router-dom'
+// import { useNavigate } from 'react-router-dom'
 import { auth } from '../firebase'
 // import { useAuthState } from 'react-firebase-hooks/auth';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
@@ -45,16 +45,16 @@ function Chat() {
 }
 
 function SignOut() {
-  const navigate = useNavigate()
+  // const navigate = useNavigate()
   return auth.currentUser && (
-    <Button variant='outline-secondary' className="sign-out text-center" onClick={() => auth.signOut() && navigate('/')}>Sign Out</Button>)
+    <Button variant='outline-secondary' className="sign-out text-center" onClick={() => auth.signOut()}>Sign Out</Button>)
 }
 
 
 function ChatRoom() {
   const dummy = useRef();
   const messagesRef = firestore.collection('messages');
-  const query = messagesRef.orderBy('createdAt').limit(15);
+  const query = messagesRef.orderBy('createdAt').limit(25);
 
   const [messages] = useCollectionData(query, { idField: 'id' });
 

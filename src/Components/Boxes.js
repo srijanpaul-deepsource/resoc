@@ -154,22 +154,22 @@ export default function Boxes () {
                     <h6 className='card-subtitle mb-2 text-bold text-muted'>• Theory</h6>
                     <div className='grid'>
                       <div className='row'>
-                        <div className='col-xl-12'> Engineering Mathematics- I </div>
-                        <div className='col-xl-12'> Engineering Chemistry </div>
-                        <div className='col-xl-12'> Basic Electronics Engineering </div>
-                        <div className='col-xl-12'> Computer Programming </div>
-                        <div className='col-xl-12'> Communicative & Technical English </div>
-                        <div className='col-xl-12'> Constitution of India </div>
+                        <div className='col-xl-12'> Object Oriented Programming using JAVA </div>
+                        <div className='col-xl-12'> Circuit Theory </div>
+                        <div className='col-xl-12'> Measurment of Instruments </div>
+                        <div className='col-xl-12'> Maths-III </div>
+                        <div className='col-xl-12'> Engineering Economics </div>
+                        <div className='col-xl-12'> Analog Electronic Circuits </div>
                       </div>
                       <div className='col-xl-12' />
                       <h6 className='card-subtitle mb-2 text-bold text-muted'>• Practical</h6>
                       <div className='grid'>
                         <div className='row'>
                           {/* <!-- <div className="col-xl-12"> Engineering Mathematics - I </div> --> */}
-                          <div className='col-xl-12'> Engineering Chemistry Practical</div>
-                          <div className='col-xl-12'> Basic Electronics Engineering Practical</div>
-                          <div className='col-xl-12'> Computer Programming Practical</div>
-                          <div className='col-xl-12'> Communicative & Technical English </div>
+                          <div className='col-xl-12'> Analog Electronic Circuits Lab </div>
+                          <div className='col-xl-12'> Object Oriented Programming using JAVA Lab</div>
+                          <div className='col-xl-12'> Measurment of Instruments Lab</div>
+                          <div className='col-xl-12'> Circuit Theory Lab </div>
                           {/* <!-- <div className="col-xl-12"> Constitution of India </div> --> */}
                         </div>
                       </div>
@@ -266,22 +266,22 @@ export default function Boxes () {
                     <h6 className='card-subtitle mb-2 text-bold text-muted'>• Theory</h6>
                     <div className='grid'>
                       <div className='row'>
-                        <div className='col-xl-12'> Engineering Mathematics - I </div>
-                        <div className='col-xl-12'> Engineering Chemistry </div>
-                        <div className='col-xl-12'> Basic Electronics Engineering </div>
-                        <div className='col-xl-12'> Computer Programming </div>
-                        <div className='col-xl-12'> Communicative & Technical English </div>
-                        <div className='col-xl-12'> Constitution of India </div>
+                        <div className='col-xl-12'> Digital Electronic Circuits </div>
+                        <div className='col-xl-12'> Math-IV </div>
+                        <div className='col-xl-12'> Controlled Systems Engineering </div>
+                        <div className='col-xl-12'> Electrical Machine- I </div>
+                        <div className='col-xl-12'> Engineering Economics </div>
+                        <div className='col-xl-12'> Personal Ethics and Values </div>
                       </div>
                       <div className='col-xl-12' />
                       <h6 className='card-subtitle mb-2 text-bold text-muted'>• Practical</h6>
                       <div className='grid'>
                         <div className='row'>
                           {/* <!-- <div className="col-xl-12"> Engineering Mathematics - I </div> --> */}
-                          <div className='col-xl-12'> Engineering Chemistry Practical</div>
-                          <div className='col-xl-12'> Basic Electronics Engineering Practical</div>
-                          <div className='col-xl-12'> Computer Programming Practical</div>
-                          <div className='col-xl-12'> Communicative & Technical English </div>
+                          <div className='col-xl-12'> DEC Lab</div>
+                          <div className='col-xl-12'> CSE Lab</div>
+                          <div className='col-xl-12'> Machine- I</div>
+                          <div className='col-xl-12'> Yoga  </div>
                           {/* <!-- <div className="col-xl-12"> Constitution of India </div> --> */}
                         </div>
                       </div>

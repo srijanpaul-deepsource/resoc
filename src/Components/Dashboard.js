@@ -1,24 +1,33 @@
 import React from 'react'
-// import { useState } from 'react'
-// import { useAuth } from '../contexts/AuthContext'
-// import { useNavigate } from 'react-router-dom'
-// import Header from './Header'
 import Footer from './Footer'
 import Landingsegment from './Landingsegment'
 import Boxes from './Boxes'
 import Header from './Navbar'
-import { useAuth } from '../contexts/AuthContext'
-import Alertnoti from './Alert'
+import Message from './Alert'
+import firebase from 'firebase/compat/app'
+var counter = false
+
 
 export default function Dashboard() {
-  const  { currentUser }= useAuth()
+
+
+  firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+      counter = true
+      }
+      else{
+      counter = false
+      }
+    }
+  )
   return (
     <>
-    {/* {currentUser ? <Alertnoti/> : null} */}
+      {counter ? <Message /> : null}
       <Header />
       <Landingsegment />
       <Boxes />
       <Footer />
     </>
   )
+  
 }

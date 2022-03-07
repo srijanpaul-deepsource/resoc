@@ -23,6 +23,7 @@ export default function Profile () {
   return (
     <>
     <Header />
+     <Alert variant='light' className='text-center'>You're in! Welcome to the club.🔥</Alert>
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '100vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card>

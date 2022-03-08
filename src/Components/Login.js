@@ -54,7 +54,7 @@ export default function Login() {
                 </FormGroup>
                 <Button disabled={loading} className='w-100 mt-2' type='submit'>Log In</Button>
               </Form>
-              <Button disabled={loading} className='w-100 mt-2' type='submit' onClick={signInWithGoogle}>Sign In With Google</Button>
+              <Button disabled={loading} className='w-100 mt-2' type='submit' onClick={signInWithGoogle}> <i className="bi bi-google mx-2"></i>  Sign In With Google </Button>
               <div className='w-100 text-center mt-3'>
                 <Link to='/forgot-password'>Forgot Password</Link>
               </div>

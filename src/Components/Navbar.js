@@ -45,7 +45,7 @@ export default function Header (props) {
               </NavDropdown>
 
 
-              <Nav.Link> <HLink to="/#aboutus" style={{ textDecoration: 'none', color: 'darkgray' }}>
+              <Nav.Link> <HLink to="/#learnaboutus" style={{ textDecoration: 'none', color: 'darkgray' }}>
                 About us
               </HLink></Nav.Link>
               <Nav.Link href='/todos'>Tasks</Nav.Link>

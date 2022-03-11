@@ -5,6 +5,7 @@ import Boxes from './Boxes'
 import Header from './Navbar'
 import Message from './Alert'
 import firebase from 'firebase/compat/app'
+import About from './About'
 var counter = false
 
 
@@ -26,6 +27,7 @@ export default function Dashboard() {
       <Header />
       <Landingsegment />
       <Boxes />
+      {/* <About /> */}
       <Footer />
     </>
   )

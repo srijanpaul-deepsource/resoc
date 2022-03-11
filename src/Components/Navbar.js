@@ -1,9 +1,10 @@
-import { Nav, NavDropdown, Navbar, Container, Form, Button } from 'react-bootstrap'
+import { Nav, NavDropdown, Navbar, Container, Form, Button, FormControl } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 import React, { useState } from 'react'
 import { useAuth } from '../contexts/AuthContext'
+import { HashLink as HLink } from 'react-router-hash-link';
 
 export default function Header (props) {
   var [buttonText, setButtonText] = useState("Login")
@@ -37,28 +38,28 @@ export default function Header (props) {
               navbarScroll
             >
               <NavDropdown title='Semester' id='navbarScrollingDropdown'>
-                <NavDropdown.Item href='#btech1'>B.Tech 1st Year</NavDropdown.Item>
-                <NavDropdown.Item href='#btech2'>B.Tech 2nd Year</NavDropdown.Item>
-                <NavDropdown.Item href='#btech3'>B.Tech 3rd Year</NavDropdown.Item>
-                <NavDropdown.Item href='#btech4'>B.Tech 4th Year</NavDropdown.Item>
+                <NavDropdown.Item > <HLink to="/#btech1" style={{ textDecoration: 'none', color: 'black' }}>B.Tech 1st Year </HLink></NavDropdown.Item>
+                <NavDropdown.Item > <HLink to="/#btech2" style={{ textDecoration: 'none', color: 'black' }}>B.Tech 2nd Year </HLink></NavDropdown.Item>
+                <NavDropdown.Item > <HLink to="/#btech3" style={{ textDecoration: 'none', color: 'black' }}>B.Tech 3rd Year </HLink></NavDropdown.Item>
+                <NavDropdown.Item > <HLink to="/#btech4" style={{ textDecoration: 'none', color: 'black' }}>B.Tech 4th Year </HLink></NavDropdown.Item>
               </NavDropdown>
 
-              <Nav.Link href='#aboutus'>
+
+              <Nav.Link> <HLink to="/#aboutus" style={{ textDecoration: 'none', color: 'darkgray' }}>
                 About us
-              </Nav.Link>
+              </HLink></Nav.Link>
               <Nav.Link href='/todos'>Tasks</Nav.Link>
+              <Nav.Link href='/chat-room' >Chat</Nav.Link>
             </Nav>
-            <Form className='d-flex'>
-              {/* <FormControl
+            {/* <Form className='d-flex'>
+              <FormControl
                 type='login'
                 placeholder='Search'
                 className='me-2'
                 aria-label='Search'
-              /> */}
-              <Nav.Link href='/chat-room' className='text-decoration: none' style={{ textDecoration: 'none', color: 'white'}}>Chat</Nav.Link>
+              />            
+            </Form> */}
               <Button variant='outline-secondary' > <Link to='/login' style={{ textDecoration: 'none', color: 'white'}}> {buttonText} </Link></Button>
-              
-            </Form>
           </Navbar.Collapse>
         </Container>
       </Navbar>

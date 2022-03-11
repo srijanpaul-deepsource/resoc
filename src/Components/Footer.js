@@ -7,7 +7,7 @@ export default function Footer () {
         <div className=' container '>
           <p>This website is created by CodeBotx.</p>
         </div>
-        <p className='lead '>Copyright &copy; 2021 Anubhab Patnaik</p>
+        <p className='lead '>&copy; Copyrights <a href='http://anubhavp.me' style={{ textDecoration: 'none', color: 'white' }}> Anubhav Patnaik</a> </p>
 
         <a href='# ' className='position-absolute bottom-0 end-0 p-5 '>
           <i className='bi bi-arrow-up-circle h1 ' />

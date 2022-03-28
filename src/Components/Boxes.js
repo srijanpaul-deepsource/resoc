@@ -1,6 +1,11 @@
 import React from 'react'
+import 'firebase/compat/firestore'
+import firebase from 'firebase/compat/app';
 
 export default function Boxes () {
+  const firestore = firebase.firestore();
+  const subjectref = firestore.collection('semesters');
+  console.log(subjectref);
   return (
     <>
       <div>

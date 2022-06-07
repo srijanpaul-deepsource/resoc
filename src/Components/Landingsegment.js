@@ -1,6 +1,7 @@
 import React from 'react'
 import notes from '../assets/img/notes.svg'
-import undraw_programming_2svr from '../assets/img/undraw_programming_2svr.svg'
+import list from '../assets/img/list.svg'
+import notebook from '../assets/img/notebook.svg'
 export default function Landingsegment () {
   return (
     <>

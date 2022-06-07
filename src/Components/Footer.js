@@ -5,9 +5,8 @@ export default function Footer () {
     <>
       <footer className='p-5 bg-dark text-white text-center position-relative' id='learnaboutus'>
         <div className=' container '>
-          <p>This website is created by CodeBotx.</p>
+          <p>This website is created by CodeBotx. &copy; Copyrights <a href='http://anubhavp.me' style={{ textDecoration: 'none', color: 'white' }}> Anubhav Patnaik</a> </p>
         </div>
-        <p className='lead '>&copy; Copyrights <a href='http://anubhavp.me' style={{ textDecoration: 'none', color: 'white' }}> Anubhav Patnaik</a> </p>
 
         <a href='# ' className='position-absolute bottom-0 end-0 p-5 '>
           <i className='bi bi-arrow-up-circle h1 ' />

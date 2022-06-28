@@ -5,7 +5,7 @@ export default function Footer () {
     <>
       <footer className='p-5 bg-dark text-white text-center position-relative' id='learnaboutus'>
         <div className=' container '>
-          <p>This website is created by CodeBotx. &copy; Copyrights <a href='http://anubhavp.me' style={{ textDecoration: 'none', color: 'white' }}> Anubhav Patnaik</a> </p>
+          <p>This website is crafted by CodeBotx. &copy; Copyrights <a href='http://anubhavp.me' style={{ textDecoration: 'none', color: 'white' }}> Anubhab Patnaik</a> </p>
         </div>
 
         <a href='# ' className='position-absolute bottom-0 end-0 p-5 '>

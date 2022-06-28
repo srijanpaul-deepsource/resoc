@@ -9,7 +9,7 @@ export default function Boxes () {
   return (
     <>
       <div>
-        <h1 className='display-4 text-center text-dark mt-2'>Notes.SIT- B.Tech</h1>
+        <h1 className='display-4 text-center text-dark mt-2'>Notes- B.Tech</h1>
         {/* <!-- Boxes Btech 1sty --> */}
         <section className='p-2' id='btech1'>
           <div className='container'>

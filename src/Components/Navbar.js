@@ -11,6 +11,7 @@ export default function Header (props) {
   const changeText = (text) => setButtonText(text)
   const  { currentUser }= useAuth()
   var username ='Login'
+
   if(currentUser){
     if(currentUser.displayName!=null){
       username = currentUser.displayName
@@ -29,7 +30,7 @@ export default function Header (props) {
     <>
       <Navbar className='navbar-dark' bg='dark' expand='lg'>
         <Container fluid>
-          <Navbar.Brand href='/'>NOTES.SIT</Navbar.Brand>
+          <Navbar.Brand href='/'>RESOC</Navbar.Brand>
           <Navbar.Toggle aria-controls='navbarScroll' />
           <Navbar.Collapse id='navbarScroll'>
             <Nav
@@ -51,28 +52,10 @@ export default function Header (props) {
               <Nav.Link href='/todos'>Tasks</Nav.Link>
               <Nav.Link href='/chat-room' >Chat</Nav.Link>
             </Nav>
-            {/* <Form className='d-flex'>
-              <FormControl
-                type='login'
-                placeholder='Search'
-                className='me-2'
-                aria-label='Search'
-              />            
-            </Form> */}
-              <Button variant='outline-secondary' > <Link to='/login' style={{ textDecoration: 'none', color: 'white'}}> {buttonText} </Link></Button>
+              <Button variant='outline-secondary' > <a href='/login' style={{ textDecoration: 'none', color: 'white'}}> {buttonText} </a></Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>
     </>
   )
 }
-
-// Header.defaultProps = {
-//   title: 'Your title here'
-//   // searchbar: true
-// }
-
-// Header.propTypes = {
-//   title: PropTypes.string,
-//   searchbar: PropTypes.bool.isRequired
-// }

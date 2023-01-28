@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import Header from './Navbar'
 import firebase from 'firebase/compat/app'
 import { auth } from '../firebase'
+import Footer from './Footer'
 
 export default function Login() {
   const emailRef = useRef()
@@ -65,6 +66,7 @@ export default function Login() {
           </div>
         </div>
       </Container>
+      <Footer/>
     </>
   )
 }

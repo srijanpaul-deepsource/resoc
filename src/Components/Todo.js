@@ -8,6 +8,7 @@ import 'firebase/compat/firestore'
 import firebase from 'firebase/compat/app';
 import { useAuth } from '../contexts/AuthContext'
 import { TrashFill } from 'react-bootstrap-icons';
+import Footer from './Footer'
 
 export default function Todo() {
     const firestore = firebase.firestore();
@@ -88,7 +89,7 @@ export default function Todo() {
                 </div>
             </div>
         </section>
-
+        <Footer/>
     </>)
 
 }

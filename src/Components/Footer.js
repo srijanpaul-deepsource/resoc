@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer () {
   return (
     <>
-      <footer className='p-5 bg-dark text-white text-center position-relative' id='learnaboutus'>
+      <footer className='p-5 bg-dark text-white text-center sticky-bottom position-relative' id='learnaboutus'>
         <div className=' container '>
           <p>This website is crafted by CodeBotx. &copy; Copyrights <a href='http://anubhavp.me' style={{ textDecoration: 'none', color: 'white' }}> Anubhab Patnaik</a> </p>
         </div>

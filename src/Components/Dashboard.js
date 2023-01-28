@@ -5,7 +5,7 @@ import Boxes from './Boxes'
 import Header from './Navbar'
 import Message from './Alert'
 import firebase from 'firebase/compat/app'
-import About from './About'
+// import About from './About'
 var counter = false
 
 

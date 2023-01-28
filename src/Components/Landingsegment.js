@@ -5,11 +5,11 @@ export default function Landingsegment () {
     <>
       <section className='text-light p-5 text-sm bg-dark'>
         <div className='container'>
-          <div class='d-sm-flex align-items-center justify-content-between'>
-            <div class='img-home'>
-              <h1 className='mx-1' >RE<span class='text-secondary'>Soc</span> </h1>
+          <div className='d-sm-flex align-items-center justify-content-between'>
+            <div className='img-home'>
+              <h1 className='mx-1' >RE<span className='text-secondary'>Soc</span> </h1>
               <h5 className='mx-1' >Get your College Resources  </h5>
-              <p class='lead my-4 mx-2'>Hi. Welcome to RESOC. This website has been created by students of Silicon Institute of Technology, Bhubaneswar for the student community to help with notes and academics resources for free! Feel free to sign in, browse through, download, share and have fun!</p>
+              <p className='lead my-4 mx-2'>Hi. Welcome to RESOC. This website has been created by students of Silicon Institute of Technology, Bhubaneswar for the student community to help with notes and academics resources for free! Feel free to sign in, browse through, download, share and have fun!</p>
             </div>
             <img className='img-fluid w-50 d-none d-sm-block' src={pc} alt='' />
           </div>

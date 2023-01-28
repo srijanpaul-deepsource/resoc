@@ -47,45 +47,44 @@ export default function Header(props) {
             >
               <NavDropdown title="Semester" id="navbarScrollingDropdown">
                 <NavDropdown.Item>
-                  {" "}
+
                   <HLink
                     to="/#btech1"
                     style={{ textDecoration: "none", color: "black" }}
                   >
-                    B.Tech 1st Year{" "}
+                    B.Tech 1st Year
                   </HLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  {" "}
+
                   <HLink
                     to="/#btech2"
                     style={{ textDecoration: "none", color: "black" }}
                   >
-                    B.Tech 2nd Year{" "}
+                    B.Tech 2nd Year
                   </HLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  {" "}
+
                   <HLink
                     to="/#btech3"
                     style={{ textDecoration: "none", color: "black" }}
                   >
-                    B.Tech 3rd Year{" "}
+                    B.Tech 3rd Year
                   </HLink>
                 </NavDropdown.Item>
                 <NavDropdown.Item>
-                  {" "}
+
                   <HLink
                     to="/#btech4"
                     style={{ textDecoration: "none", color: "black" }}
                   >
-                    B.Tech 4th Year{" "}
+                    B.Tech 4th Year
                   </HLink>
                 </NavDropdown.Item>
               </NavDropdown>
 
               <Nav.Link>
-                {" "}
                 <HLink
                   to="/#learnaboutus"
                   style={{ textDecoration: "none", color: "darkgray" }}
@@ -97,10 +96,10 @@ export default function Header(props) {
               <Nav.Link href="/chat-room">Chat</Nav.Link>
             </Nav>
             <Button variant="outline-secondary" href="/login">
-              {" "}
+
               <span style={{ textDecoration: "none", color: "white" }}>
-                {" "}
-                {buttonText}{" "}
+
+                {buttonText}
               </span>
             </Button>
           </Navbar.Collapse>

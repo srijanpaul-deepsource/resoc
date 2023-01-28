@@ -8,6 +8,7 @@ import { useNavigate } from 'react-router-dom'
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import * as Icon from 'react-bootstrap-icons'
 import Header from './Navbar'
+import Footer from './Footer';
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
@@ -17,7 +18,7 @@ function Chat() {
     <Header />
     <div className="App">
 
-      <section className="vh-100">
+      <section className="">
         <div className="container py-5 h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col">
@@ -37,6 +38,7 @@ function Chat() {
         </div>
       </section>
     </div>
+    <Footer/>
   </>);
 }
 

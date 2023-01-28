@@ -52,7 +52,7 @@ export default function Header (props) {
               <Nav.Link href='/todos'>Tasks</Nav.Link>
               <Nav.Link href='/chat-room' >Chat</Nav.Link>
             </Nav>
-              <Button variant='outline-secondary' > <a href='/login' style={{ textDecoration: 'none', color: 'white'}}> {buttonText} </a></Button>
+              <Button variant='outline-secondary'href='/login' > <span  style={{ textDecoration: 'none', color: 'white'}}> {buttonText} </span></Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>

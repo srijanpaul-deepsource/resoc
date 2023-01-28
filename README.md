@@ -14,7 +14,7 @@ The tech stack used in this project is:
 - [ReactJs](https://reactjs.org) for the frontend	design and development.
 - [Firebase](https://firebase.google.com/) for the backend, hosting and the database.
 - [CloudFirestore](https://firebase.google.com/docs/firestore) for the database management.
-- [React-Bootstrap](https://react-bootstrap.github.io/) for the UI develepment.
+- [React-Bootstrap](https://react-bootstrap.github.io/) for the UI development.
 
 <!-- ## Workflow
 

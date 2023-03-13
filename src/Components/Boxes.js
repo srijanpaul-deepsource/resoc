@@ -5,7 +5,6 @@ import firebase from 'firebase/compat/app';
 export default function Boxes () {
   const firestore = firebase.firestore();
   const subjectref = firestore.collection('semesters');
-  console.log(subjectref);
   return (
     
       <></>

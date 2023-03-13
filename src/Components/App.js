@@ -15,6 +15,7 @@ import 'firebase/firestore'
 import Todo from './Todo'
 import AboutUs from './AboutUs'
 import '../assets/css/style.css'
+import Notes from '../notes/Notes'
 
 // import Header from './Navbar'
 // import { auth } from '../firebase'
@@ -27,6 +28,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Dashboard />} />
             <Route path='/aboutus' element={<AboutUs />} />
+            <Route path='/notes' element={<Notes />} />
             <Route
               path='/update-profile'
               element={

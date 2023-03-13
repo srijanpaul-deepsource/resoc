@@ -12,6 +12,7 @@
         --foot-text-color: black;
         --scroll-bar-color: hsl(var(--hue-color), 12%, 100%);
         --scroll-thumb-color: hsl(var(--hue-color), 12%, 90%);
+        --text-var: #0d1117;
     }
 
     .prbt {
@@ -24,6 +25,10 @@
         background-color: #6c63ff;
         border-color: #6c63ff;
         color: white;
+    }
+
+    .text-var {
+        color: var(--text-var);
     }
 }
 
@@ -44,6 +49,7 @@
         --foot-text-color: #ffffff;
         --scroll-bar-color: #0d1117;
         --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+        --text-var: #FFFFFF;
     }
 
     .cdin {
@@ -69,6 +75,10 @@
     srch {
         background-color: #1a1a1a;
         color: white;
+    }
+
+    .text-var {
+        color: var(--text-var);
     }
 }
 

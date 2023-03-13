@@ -5,6 +5,7 @@ import Boxes from './Boxes'
 import Header from './Navbar'
 import Message from './Alert'
 import firebase from 'firebase/compat/app'
+import '../assets/css/dashboard.css'
 // import About from './About'
 var counter = false
 

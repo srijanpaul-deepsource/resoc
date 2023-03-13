@@ -13,6 +13,7 @@ import Profile from './Profile'
 import Chat from './Chatroom'
 import 'firebase/firestore'
 import Todo from './Todo'
+import '../assets/css/style.css'
 // import Header from './Navbar'
 // import { auth } from '../firebase'
 

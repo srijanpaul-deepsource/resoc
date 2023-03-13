@@ -37,7 +37,7 @@ export default function Signup () {
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card>
-            <Card.Body>
+            <Card.Body className='text-dark'>
               <h2 className='text-center mb-4'>Sign Up</h2>
               {error && <Alert variant='danger' className='text-center'>{error}</Alert>}
 
@@ -61,7 +61,7 @@ export default function Signup () {
             </Card.Body>
           </Card>
           <div className='w-100 text-center mt-2'>
-            Already have an account? <Link to='/login' className='text-dark'>Log In</Link>
+            Already have an account? <Link to='/login' className='text-var'>Log In</Link>
           </div>
         </div>
       </Container>

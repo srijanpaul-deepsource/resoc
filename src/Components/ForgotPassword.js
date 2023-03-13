@@ -34,7 +34,7 @@ export default function ForgotPassword () {
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card>
-            <Card.Body>
+            <Card.Body className='text-dark'>
               <h2 className='text-center mb-4'>Password Reset</h2>
               {error && <Alert variant='danger'>{error}</Alert>}
               {message && <Alert variant='success'>{message}</Alert>}
@@ -53,7 +53,7 @@ export default function ForgotPassword () {
             </Card.Body>
           </Card>
           <div className='w-100 text-center mt-3'>
-            Need an account? <Link to='/signup' className='text-dark'>Sign Up</Link>
+            Need an account? <Link to='/signup' className='text-var'>Sign Up</Link>
           </div>
         </div>
       </Container>

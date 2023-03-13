@@ -28,17 +28,17 @@ export default function Profile() {
       >
         <div className="w-100" style={{ maxWidth: "400px" }}>
           <Card>
-            <Card.Body>
+            <Card.Body className="text-dark">
               <h2 className="text-center mb-4">Profile</h2>
               {error && <Alert variant="danger">{error}</Alert>}
-              <strong>Email:</strong> {currentUser.email}
+              <strong >Email:</strong> {currentUser.email}
               <Link to="/update-profile" className="btn btn-dark w-100 mt-3">
                 Update Profile
               </Link>
             </Card.Body>
           </Card>
           <div className="w-100 text-center mt-2">
-            <Button variant="link" onClick={handleLogout}>
+            <Button variant="link" className="text-var" onClick={handleLogout}>
               Log Out
             </Button>
           </div>

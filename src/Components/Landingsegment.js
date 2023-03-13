@@ -3,7 +3,7 @@ import pc from '../assets/img/undraw_programming_2svr.svg'
 export default function Landingsegment () {
   return (
     <>
-      <section className='text-light p-5 text-sm bg-dark'>
+      {/* <section className='text-light p-5 text-sm bg-dark'>
         <div className='container'>
           <div className='d-sm-flex align-items-center justify-content-between'>
             <div className='img-home'>
@@ -14,7 +14,7 @@ export default function Landingsegment () {
             <img className='img-fluid w-50 d-none d-sm-block' src={pc} alt='' />
           </div>
         </div>
-      </section>
+      </section> */}
 
     </>
   )

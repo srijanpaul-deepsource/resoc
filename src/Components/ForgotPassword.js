@@ -3,6 +3,7 @@ import { Form, Button, Card, Alert, Container } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
 import { Link } from 'react-router-dom'
 import Header from './Navbar'
+import Footer from './Footer'
 
 export default function ForgotPassword () {
   const emailRef = useRef()
@@ -30,7 +31,7 @@ export default function ForgotPassword () {
   return (
     <>
       <Header />
-      <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '100vh' }}>
+      <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card>
             <Card.Body>
@@ -42,20 +43,21 @@ export default function ForgotPassword () {
                   <Form.Label>Email</Form.Label>
                   <Form.Control type='email' ref={emailRef} required />
                 </Form.Group>
-                <Button disabled={loading} className='w-100 mt-2' type='submit'>
+                <Button disabled={loading} className='w-100 mt-2 btn btn-dark' type='submit'>
                   Reset Password
                 </Button>
               </Form>
               <div className='w-100 text-center mt-3'>
-                <Link to='/login'>Login</Link>
+                <Link to='/login' className='text-dark'>Login</Link>
               </div>
             </Card.Body>
           </Card>
           <div className='w-100 text-center mt-3'>
-            Need an account? <Link to='/signup'>Sign Up</Link>
+            Need an account? <Link to='/signup' className='text-dark'>Sign Up</Link>
           </div>
         </div>
       </Container>
+      <Footer/>
     </>
   )
 }

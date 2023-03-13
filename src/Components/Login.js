@@ -36,7 +36,7 @@ export default function Login() {
   return (
     <>
       <Header />
-      <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '100vh' }}>
+      <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card>
             <Card.Body>
@@ -53,16 +53,16 @@ export default function Login() {
                   <Form.Label>Password</Form.Label>
                   <Form.Control type='password' ref={passwordRef} required />
                 </FormGroup>
-                <Button disabled={loading} className='w-100 mt-2' type='submit'>Log In</Button>
+                <Button disabled={loading} className='w-100 mt-2 btn btn-dark' type='submit'>Log In</Button>
               </Form>
-              <Button disabled={loading} className='w-100 mt-2' type='submit' onClick={signInWithGoogle}> <i className="bi bi-google mx-2"></i>  Sign In With Google </Button>
+              <Button disabled={loading} className='w-100 mt-2 btn btn-dark' type='submit' onClick={signInWithGoogle}> <i className="bi bi-google mx-2"></i>  Sign In With Google </Button>
               <div className='w-100 text-center mt-3'>
-                <Link to='/forgot-password'>Forgot Password</Link>
+                <Link to='/forgot-password' className='text-dark'>Forgot Password</Link>
               </div>
             </Card.Body>
           </Card>
           <div className='w-100 text-center mt-2'>
-            Need an account? <Link to='/signup'>Sign up </Link>
+            Need an account? <Link to='/signup' className='text-dark'>Sign up </Link>
           </div>
         </div>
       </Container>

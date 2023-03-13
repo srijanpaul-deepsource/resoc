@@ -13,6 +13,9 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import { HashLink as HLink } from "react-router-hash-link";
+import logo1 from '../assets/img/moon.png'
+import logo2 from '../assets/img/moon.png'
+
 
 export default function Header(props) {
   var [buttonText, setButtonText] = useState("Login");
@@ -32,79 +35,76 @@ export default function Header(props) {
       }
     }
   }
+  var dark = false;
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  dark = true;
+}
+
   currentUser ? (buttonText = username) : (buttonText = "Login");
-  return (
-    <>
-      <Navbar className="navbar-dark" sticky="top" bg="dark" expand="lg">
-        <Container fluid>
-          <Navbar.Brand href="/">RESOC</Navbar.Brand>
+  const [isDark, setIsDark] = React.useState(dark);
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    event.matches ? setIsDark(true) : setIsDark(false);
+  });
+
+
+  if (isDark) {
+    return (<>
+      <Navbar className='navbar navbar-expand-lg navbar-dark py-4 cdin' expand="lg">
+        <Container >
+          <Nav >
+            <Navbar.Brand href="/">
+              <img src={logo1} alt="logo" width="30" height="30" className="d-inline-block align-top" />
+            </Navbar.Brand>
+          </Nav>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: "100px" }}
+              style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <NavDropdown title="Semester" id="navbarScrollingDropdown">
-                <NavDropdown.Item>
-
-                  <HLink
-                    to="/#btech1"
-                    style={{ textDecoration: "none", color: "black" }}
-                  >
-                    B.Tech 1st Year
-                  </HLink>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-
-                  <HLink
-                    to="/#btech2"
-                    style={{ textDecoration: "none", color: "black" }}
-                  >
-                    B.Tech 2nd Year
-                  </HLink>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-
-                  <HLink
-                    to="/#btech3"
-                    style={{ textDecoration: "none", color: "black" }}
-                  >
-                    B.Tech 3rd Year
-                  </HLink>
-                </NavDropdown.Item>
-                <NavDropdown.Item>
-
-                  <HLink
-                    to="/#btech4"
-                    style={{ textDecoration: "none", color: "black" }}
-                  >
-                    B.Tech 4th Year
-                  </HLink>
-                </NavDropdown.Item>
-              </NavDropdown>
-
-              <Nav.Link>
-                <HLink
-                  to="/#learnaboutus"
-                  style={{ textDecoration: "none", color: "darkgray" }}
-                >
-                  About us
-                </HLink>
-              </Nav.Link>
-              <Nav.Link href="/todos">Tasks</Nav.Link>
-              <Nav.Link href="/chat-room">Chat</Nav.Link>
+              <Nav.Link href="/tech">Notes</Nav.Link>
+              <Nav.Link href="/team">Tasks</Nav.Link>
+              <Nav.Link href="/team">Community</Nav.Link>
             </Nav>
-            <Button variant="outline-secondary" href="/login">
-
-              <span style={{ textDecoration: "none", color: "white" }}>
-
-                {buttonText}
-              </span>
-            </Button>
+            <Nav>
+              <Nav.Link href="/contact">About Us</Nav.Link>
+              <Nav.Link className='text-light' href="/login"> {buttonText}</Nav.Link> 
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>
-  );
+    </>)
+  }
+  else {
+    return (<>
+      <Navbar className='navbar navbar-expand-lg py-4 px-4 cdin' expand="lg">
+        <Container >
+          <Nav >
+            <Navbar.Brand href="#">
+            
+            <img src={logo1} alt="logo" width="30" height="30" className="d-inline-block align-top" /> 
+            </Navbar.Brand>
+          </Nav>
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav
+              className="me-auto my-2 my-lg-0"
+              style={{ maxHeight: '100px' }}
+              navbarScroll
+            > <Nav.Link href="/tech">Notes</Nav.Link>
+            <Nav.Link href="/team">Tasks</Nav.Link>
+            <Nav.Link href="/team">Community</Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link href="/contact">About Us</Nav.Link>
+            <Nav.Link className='text-dark' href="/login">{buttonText}</Nav.Link>
+          </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>)
+  }
 }

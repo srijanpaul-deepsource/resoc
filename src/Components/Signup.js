@@ -3,6 +3,7 @@ import { Card, Button, Form, FormGroup, Alert, Container } from 'react-bootstrap
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
 import Header from './Navbar'
+import Footer from './Footer'
 
 
 export default function Signup () {
@@ -33,7 +34,7 @@ export default function Signup () {
   return (
     <>
     <Header />
-      <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '100vh' }}>
+      <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card>
             <Card.Body>
@@ -55,15 +56,16 @@ export default function Signup () {
                   <Form.Label>Password Confirmation</Form.Label>
                   <Form.Control type='password' ref={confirmPasswordRef} required />
                 </FormGroup>
-                <Button disabled={loading} className='w-100 mt-2' type='submit'>Sign Up</Button>
+                <Button disabled={loading} className='w-100 mt-2 btn btn-dark' type='submit'>Sign Up</Button>
               </Form>
             </Card.Body>
           </Card>
           <div className='w-100 text-center mt-2'>
-            Already have an account? <Link to='/login'>Log In</Link>
+            Already have an account? <Link to='/login' className='text-dark'>Log In</Link>
           </div>
         </div>
       </Container>
+      <Footer/>
     </>
   )
 }

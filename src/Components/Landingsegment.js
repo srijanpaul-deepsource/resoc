@@ -4,7 +4,7 @@ import '../assets/css/dashboard.css'
 export default function Landingsegment () {
   return (
     <>
-      	<section className=" py-5 cdin  ">
+      	<section className=" py-5 px-5 cdin">
 				<div className="container ">
 					<div className="d-sm-flex align-items-center justify-content-between mainc">
 						<div className="img-home">

@@ -10,7 +10,7 @@ export default function Landingsegment () {
 						<div className="img-home">
 							<h1 className="heading">RE<span></span><span className="text-secondary">SOC</span></h1>
 							<p className="lead my-4">
-								RESOC provides you with academic resources, notes for free!
+								RESOC: The coolest academic notes-sharing platform around!
 							</p>
 						</div>
 						<img className="img-fluid w-50 d-none d-sm-block" src={moon} alt="in office" />
@@ -21,7 +21,7 @@ export default function Landingsegment () {
 					<div className="container">
 						<p>
 						RESOC is the coolest academic notes-sharing platform around, built by a bunch of tech-savvy students at Silicon Institute.It's totally free ❤️. You don't have to sell your soul to afford good quality notes anymore. <br></br>
-Get started <b><a href="/notes" className=' fw text-var'> here</a></b>.
+						Get started <b><a href="/notes" className=' fw text-var'> here</a></b>.
 							</p>
 							<p>
 						We have a nifty <a className='text-var' href='/chat-room'>task section</a> for you to manage your work.  No more forgetting deadlines and drowning in assignments. Phew!

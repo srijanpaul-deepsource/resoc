@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
 import {Alert} from 'react-bootstrap'
-    
+var dark = false;
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  dark = true;
+}
+
 const Message = ({ variant, children }) => {
   const [show, setShow] = useState(true)
 
@@ -22,9 +26,16 @@ const Message = ({ variant, children }) => {
   }
 
   // If show is true this will be returned
+  if(dark){
   return (
-    <Alert variant='light' className='text-center'>You're in! Welcome to the club.🔥</Alert>
+    <Alert variant='dark' className='text-center'>You're in! Welcome to the club.🔥</Alert>
   )
+  }
+  else{
+    return (
+      <Alert variant='light' className='text-center'>You're in! Welcome to the club.🔥</Alert>
+    )
+  }
 }
 
 Message.defaultPros = {

@@ -94,9 +94,9 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
               className="me-auto my-2 my-lg-0"
               style={{ maxHeight: '100px' }}
               navbarScroll
-            > <Nav.Link href="/tech">Notes</Nav.Link>
-            <Nav.Link href="/team">Tasks</Nav.Link>
-            <Nav.Link href="/team">Community</Nav.Link>
+            > <Nav.Link href="/notes">Notes</Nav.Link>
+            <Nav.Link href="/todos">Tasks</Nav.Link>
+            <Nav.Link href="/chat-room">Community</Nav.Link>
           </Nav>
           <Nav>
             <Nav.Link href="/aboutus">About Us</Nav.Link>

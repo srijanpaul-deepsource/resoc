@@ -13,18 +13,20 @@ import Profile from './Profile'
 import Chat from './Chatroom'
 import 'firebase/firestore'
 import Todo from './Todo'
+import AboutUs from './AboutUs'
 import '../assets/css/style.css'
+
 // import Header from './Navbar'
 // import { auth } from '../firebase'
 
 function App() {
   return (
     <>
-
       <Router>
         <AuthProvider>
           <Routes>
             <Route path='/' element={<Dashboard />} />
+            <Route path='/aboutus' element={<AboutUs />} />
             <Route
               path='/update-profile'
               element={

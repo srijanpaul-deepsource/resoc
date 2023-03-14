@@ -2,10 +2,8 @@ import React, { useRef, useState } from 'react'
 import { Card, Button, Form, FormGroup, Alert, Container } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
-import Header from './Navbar'
 import firebase from 'firebase/compat/app'
 import { auth } from '../firebase'
-import Footer from './Footer'
 
 export default function Login() {
   const emailRef = useRef()
@@ -35,7 +33,6 @@ export default function Login() {
 
   return (
     <>
-      <Header />
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card>
@@ -66,7 +63,6 @@ export default function Login() {
           </div>
         </div>
       </Container>
-      <Footer/>
     </>
   )
 }

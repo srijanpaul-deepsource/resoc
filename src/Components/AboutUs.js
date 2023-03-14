@@ -1,12 +1,14 @@
 import React from 'react'
-import Header from './Navbar'
-import Footer from './Footer'
 
 export default function AboutUs() {
 	return (
 <>
-<Header/>
-<Footer/>
+<div className='container p-3'>
+
+Founder: Anubhab Patnaik
+<hr />
+Co- Founder: Smruti Dash
+</div>
 </>
 	)
 }

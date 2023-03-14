@@ -2,8 +2,6 @@ import React, { useState} from "react";
 import { Card, Button, Alert, Container } from "react-bootstrap";
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
-import Header from "./Navbar";
-import Footer from "./Footer";
 export default function Profile() {
   const [error, setError] = useState("");
   const { currentUser, logout } = useAuth();
@@ -21,7 +19,6 @@ export default function Profile() {
 
   return (
     <>
-      <Header />
       <Container
         className="d-flex align-items-center justify-content-center h-100"
         style={{ minHeight: "80vh" }}
@@ -44,7 +41,6 @@ export default function Profile() {
           </div>
         </div>
       </Container>
-      <Footer/>
     </>
   );
 }

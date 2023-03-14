@@ -1,12 +1,10 @@
 import React from 'react'
 import '../assets/css/Todoapp.css'
-import Header from './Navbar'
 import { useState, useEffect } from 'react'
 import 'firebase/compat/firestore'
 import firebase from 'firebase/compat/app';
 import { useAuth } from '../contexts/AuthContext'
 import { TrashFill } from 'react-bootstrap-icons';
-import Footer from './Footer'
 
 export default function Todo() {
     const firestore = firebase.firestore();
@@ -30,7 +28,7 @@ export default function Todo() {
     }
 
     return (<>
-        <Header />
+        {/* <Header /> */}
         <section className="vh-100">
             <div className="container py-5 h-100">
                 <div className="row d-flex justify-content-center align-items-center h-100">
@@ -87,7 +85,7 @@ export default function Todo() {
                 </div>
             </div>
         </section>
-        <Footer/>
+        {/* <Footer/> */}
     </>)
 
 }

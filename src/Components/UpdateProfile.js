@@ -2,8 +2,6 @@ import React, { useRef, useState } from 'react'
 import { Form, Button, Card, Alert, Container } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
-import Header from './Navbar'
-import Footer from './Footer'
 
 export default function UpdateProfile () {
   const emailRef = useRef()
@@ -45,7 +43,6 @@ export default function UpdateProfile () {
 
   return (
     <>
-      <Header />
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card>
@@ -89,7 +86,6 @@ export default function UpdateProfile () {
           </div>
         </div>
       </Container>
-      <Footer />
     </>
   )
 }

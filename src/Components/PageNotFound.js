@@ -1,8 +1,5 @@
 import React from 'react'
 import moon from '../assets/img/earth.png'
-import '../assets/css/dashboard.css'
-import Header from './Navbar'
-import Footer from './Footer'
 export default function PageNotFound () {
   return (
     <>

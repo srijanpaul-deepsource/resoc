@@ -3,7 +3,6 @@ import 'react-bootstrap'
 import React from 'react'
 import Signup from './Components/Signup'
 import Login from './Components/Login'
-import Dashboard from './Components/Dashboard'
 import { AuthProvider, useAuth } from './contexts/AuthContext'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import ForgotPassword from './Components/ForgotPassword'
@@ -15,14 +14,18 @@ import AboutUs from './Components/AboutUs'
 import './assets/css/style.css'
 import Notes from './notes/Notes'
 import PageNotFound from './Components/PageNotFound'
+import Header from './Components/Navbar'
+import Footer from './Components/Footer'
+import Landingsegment from './Components/Landingsegment'
 
 function App() {
   return (
     <>
       <Router>
         <AuthProvider>
+          <Header />
           <Routes>
-            <Route path='/' element={<Dashboard />} />
+            <Route path='/' element={<Landingsegment />} />
             <Route path='/aboutus' element={<AboutUs />} />
             <Route path='/notes' element={<Notes />} />
             <Route
@@ -70,6 +73,7 @@ function App() {
             <Route path='/forgot-password' element={<ForgotPassword />} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
+          <Footer />
         </AuthProvider>
       </Router>
 

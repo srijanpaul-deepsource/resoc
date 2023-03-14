@@ -7,15 +7,12 @@ import 'firebase/analytics';
 import { useNavigate } from 'react-router-dom'
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import * as Icon from 'react-bootstrap-icons'
-import Header from './Navbar'
-import Footer from './Footer';
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
 function Chat() {
   return (<>
-    <Header />
     <div className="App">
 
       <section className="text-dark">
@@ -37,7 +34,6 @@ function Chat() {
         </div>
       </section>
     </div>
-    <Footer/>
   </>);
 }
 

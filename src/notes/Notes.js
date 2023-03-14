@@ -8,7 +8,7 @@ export default function Notes() {
 		<>
 		<Header />
 			<div className=''>
-      <section className=" pt-5 px-3 cdin">
+      <section className=" pt-5 px-sm-3 px-5 cdin">
 				<div className="container ">
 					<div className="d-sm-flex align-items-center justify-content-between mainc">
 						<div className="img-home">

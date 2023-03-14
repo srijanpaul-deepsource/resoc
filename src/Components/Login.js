@@ -70,7 +70,3 @@ export default function Login() {
     </>
   )
 }
-// function RequireAuth () {
-//   const { currentUser } = useAuth()
-//   return currentUser ? 1 : 0 
-// }

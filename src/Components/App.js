@@ -1,6 +1,5 @@
-import './App.css'
+import '../assets/css/App.css'
 import 'react-bootstrap'
-// import 'bootstrap/dist/css/bootstrap.min.css'
 import React from 'react'
 import Signup from './Signup'
 import Login from './Login'
@@ -11,14 +10,10 @@ import ForgotPassword from './ForgotPassword'
 import UpdateProfile from './UpdateProfile'
 import Profile from './Profile'
 import Chat from './Chatroom'
-// import 'firebase/firestore'
 import Todo from './Todo'
 import AboutUs from './AboutUs'
 import '../assets/css/style.css'
 import Notes from '../notes/Notes'
-
-// import Header from './Navbar'
-// import { auth } from '../firebase'
 
 function App() {
   return (

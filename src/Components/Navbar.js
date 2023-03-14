@@ -1,21 +1,11 @@
 import {
   Nav,
-  NavDropdown,
   Navbar,
   Container,
-  Form,
-  Button,
-  FormControl,
 } from "react-bootstrap";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import PropTypes from 'prop-types'
-import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import logo1 from '../assets/img/moon.png'
-import logo2 from '../assets/img/moon.png'
-
-
 export default function Header(props) {
   var [buttonText, setButtonText] = useState("Login");
   const changeText = (text) => setButtonText(text);

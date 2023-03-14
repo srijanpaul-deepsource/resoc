@@ -14,6 +14,7 @@ import Todo from './Components/Todo'
 import AboutUs from './Components/AboutUs'
 import './assets/css/style.css'
 import Notes from './notes/Notes'
+import PageNotFound from './Components/PageNotFound'
 
 function App() {
   return (
@@ -67,6 +68,7 @@ function App() {
             <Route path='/profile' caseSensitive={false} element={<Profile />} />
 
             <Route path='/forgot-password' element={<ForgotPassword />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </AuthProvider>
       </Router>

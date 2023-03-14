@@ -1,7 +1,5 @@
 import React from 'react'
-import './Todoapp.css'
-// import 'bootstrap/dist/css/bootstrap.css'
-// import 'bootstrap/dist/css/bootstrap.min.css'
+import '../assets/css/Todoapp.css'
 import Header from './Navbar'
 import { useState, useEffect } from 'react'
 import 'firebase/compat/firestore'

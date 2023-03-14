@@ -6,6 +6,8 @@ import {
 import React, { useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import logo1 from '../assets/img/moon.png'
+import logo2 from '../assets/img/sun.png'
+
 export default function Header(props) {
   var [buttonText, setButtonText] = useState("Login");
   const changeText = (text) => setButtonText(text);

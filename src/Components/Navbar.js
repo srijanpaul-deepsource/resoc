@@ -62,7 +62,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
             </Nav>
             <Nav>
               <Nav.Link href="/aboutus">About Us</Nav.Link>
-              <Nav.Link className='text-light' href="/login"> {buttonText}</Nav.Link> 
+              <Nav.Link className='text-var' href="/login"> {buttonText}</Nav.Link> 
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -71,12 +71,11 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
   }
   else {
     return (<>
-      <Navbar className='navbar navbar-expand-lg py-4 px-4 cdin' expand="lg">
+      <Navbar className='navbar navbar-expand-lg py-4 cdin' expand="lg">
         <Container >
           <Nav >
             <Navbar.Brand href="/">
-            
-            <img src={logo1} alt="logo" width="30" height="30" className="d-inline-block align-top" /> 
+              <img src={logo2} alt="logo" width="30" height="30" className="d-inline-block align-top" />
             </Navbar.Brand>
           </Nav>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -85,14 +84,15 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
               className="me-auto my-2 my-lg-0"
               style={{ maxHeight: '100px' }}
               navbarScroll
-            > <Nav.Link href="/notes">Notes</Nav.Link>
-            <Nav.Link href="/todos">Tasks</Nav.Link>
-            <Nav.Link href="/chat-room">Community</Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link href="/aboutus">About Us</Nav.Link>
-            <Nav.Link className='text-dark' href="/login">{buttonText}</Nav.Link>
-          </Nav>
+            >
+              <Nav.Link href="/notes">Notes</Nav.Link>
+              <Nav.Link href="/todos">Tasks</Nav.Link>
+              <Nav.Link href="/chat-room">Community</Nav.Link>
+            </Nav>
+            <Nav>
+              <Nav.Link href="/aboutus">About Us</Nav.Link>
+              <Nav.Link className='text-var' href="/login"> {buttonText}</Nav.Link> 
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

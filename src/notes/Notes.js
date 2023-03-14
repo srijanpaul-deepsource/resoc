@@ -22,34 +22,36 @@ export default function Notes() {
 				</div>
 			</section>
 				<div className='p-5'>
-					<div className="container">
+					<div className="container" style={{
+						
+					}}>
 						<p>
 							<ul style={{
 								listStyleType: 'none',
 							}}>
-								<li><a href='engmath1' className='text-var'>Engineering Maths I</a></li>
-								<li><a href='engmath2' className='text-var'>Engineering Maths II</a></li>
-								<li><a href='engphy' className='text-var'>Engineering Physics</a></li>
-								<li><a href='engchem' className='text-var'>Engineering Chemistry</a></li>
-								<li><a href='engi' className='text-var'>English I</a></li>
-								<li><a href='engii' className='text-var'>English II</a></li>
+								<li><a href='engmath1' className='text-var notes-link'>Engineering Maths I</a></li>
+								<li><a href='engmath2' className='text-var notes-link'>Engineering Maths II</a></li>
+								<li><a href='engphy' className='text-var notes-link'>Engineering Physics</a></li>
+								<li><a href='engchem' className='text-var notes-link'>Engineering Chemistry</a></li>
+								<li><a href='engi' className='text-var notes-link notes-link'>English I</a></li>
+								<li><a href='engii' className='text-var notes-link notes-link'>English II</a></li>
 								<li>
-									<a href='basic-electronics' className='text-var'>Basic Electronics</a>
+									<a href='basic-electronics' className='text-var notes-link notes-link'>Basic Electronics</a>
 								</li>
 								<li>
-									<a href='basic-electrical' className='text-var'>Basic Electrical</a>
+									<a href='basic-electrical' className='text-var notes-link notes-link'>Basic Electrical</a>
 								</li>
 								<li>
-									<a href='cprog' className='text-var'>C Programming</a>
+									<a href='cprog' className='text-var notes-link'>C Programming</a>
 								</li>
 								<li>
-									<a href='dsa' className='text-var'>Data Structures & ALgorithms</a>
+									<a href='dsa' className='text-var notes-link'>Data Structures & ALgorithms</a>
 								</li>
 								<li>
-									<a href='ci' className='text-var'>Constitution of India</a>
+									<a href='ci' className='text-var notes-link'>Constitution of India</a>
 								</li>
 								<li>
-									<a href='envs' className='text-var'>Environmental Science</a>
+									<a href='envs' className='text-var notes-link'>Environmental Science</a>
 								</li>
 							</ul>
 						</p>
@@ -62,32 +64,35 @@ export default function Notes() {
 							<ul style={{
 								listStyleType: 'none',
 							}}>
-								<li><a href='engmath1' className='text-var'>Engineering Maths I</a></li>
-								<li><a href='engmath2' className='text-var'>Engineering Maths II</a></li>
-								<li><a href='engphy' className='text-var'>Engineering Physics</a></li>
-								<li><a href='engchem' className='text-var'>Engineering Chemistry</a></li>
-								<li><a href='engi' className='text-var'>English I</a></li>
-								<li><a href='engii' className='text-var'>English II</a></li>
+								<li><a href='engmath1' className='text-var notes-link'>Engineering Maths I</a></li>
+								<li><a href='engmath2' className='text-var notes-link'>Engineering Maths II</a></li>
+								<li><a href='engphy' className='text-var notes-link'>Engineering Physics</a></li>
+								<li><a href='engchem' className='text-var notes-link'>Engineering Chemistry</a></li>
+								<li><a href='engi' className='text-var notes-link'>English I</a></li>
+								<li><a href='engii' className='text-var notes-link'>English II</a></li>
 								<li>
-									<a href='basic-electronics' className='text-var'>Basic Electronics</a>
+									<a href='basic-electronics' className='text-var notes-link'>Basic Electronics</a>
 								</li>
 								<li>
-									<a href='basic-electrical' className='text-var'>Basic Electrical</a>
+									<a href='basic-electrical' className='text-var notes-link'>Basic Electrical</a>
 								</li>
 								<li>
-									<a href='cprog' className='text-var'>C Programming</a>
+									<a href='cprog' className='text-var notes-link'>C Programming</a>
 								</li>
 								<li>
-									<a href='dsa' className='text-var'>Data Structures & ALgorithms</a>
+									<a href='dsa' className='text-var notes-link'>Data Structures & ALgorithms</a>
 								</li>
 								<li>
-									<a href='ci' className='text-var'>Constitution of India</a>
+									<a href='ci' className='text-var notes-link'>Constitution of India</a>
 								</li>
 								<li>
-									<a href='envs' className='text-var'>Environmental Science</a>
+									<a href='envs' className='text-var notes-link'>Environmental Science</a>
 								</li>
 							</ul>
 						</p>
+						<hr style={{
+							borderStyle: 'dotted',
+						}} />
 					</div>
 					</div>
 			</div>

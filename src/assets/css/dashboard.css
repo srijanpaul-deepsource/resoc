@@ -52,3 +52,7 @@
 .heading {
     font-size: 5.5rem;
 }
+
+.notes-link {
+    text-decoration: none;
+}

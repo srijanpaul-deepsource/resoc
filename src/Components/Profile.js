@@ -35,7 +35,7 @@ export default function Profile() {
             </Card.Body>
           </Card>
           <div className="w-100 text-center mt-2">
-            <Button variant="link" className="text-var" onClick={handleLogout}>
+            <Button variant="link" className="text-dark btn btn-light w-100 mt-3" onClick={handleLogout}>
               Log Out
             </Button>
           </div>

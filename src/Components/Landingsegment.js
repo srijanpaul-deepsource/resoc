@@ -21,7 +21,7 @@ export default function Landingsegment () {
 					<div className="container">
 						<p>
 						RESOC is the coolest academic notes-sharing platform around, built by a bunch of tech-savvy students at Silicon Institute, and it's totally free ❤️. You don't have to sell your soul to afford good quality notes anymore. <br></br>
-						Get started <b><a href="/notes" className=' fw text-var'> here</a></b>.
+						 <b><a href="/notes" className=' fw text-var'> Checkout the notes</a></b>.
 							</p>
 							<p>
 						We have a nifty <a className='text-var' href='/chat-room'>task section</a> for you to manage your work.  No more forgetting deadlines and drowning in assignments.

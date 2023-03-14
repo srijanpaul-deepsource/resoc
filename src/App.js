@@ -1,38 +1,44 @@
 import './assets/css/App.css'
 import 'react-bootstrap'
-import React from 'react'
-import Signup from './Components/Signup'
-import Login from './Components/Login'
+import React, { lazy, Suspense } from 'react'
 import { AuthProvider, useAuth } from './contexts/AuthContext'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
-import ForgotPassword from './Components/ForgotPassword'
-import UpdateProfile from './Components/UpdateProfile'
-import Profile from './Components/Profile'
-import Chat from './Components/Chatroom'
-import Todo from './Components/Todo'
-import AboutUs from './Components/AboutUs'
 import './assets/css/style.css'
-import Notes from './notes/Notes'
 import PageNotFound from './Components/PageNotFound'
 import Header from './Components/Navbar'
 import Footer from './Components/Footer'
 import Landingsegment from './Components/Landingsegment'
+import Loader from './Components/Loader'
+
+const Signup = lazy(() => import('./Components/Signup'))
+const Login = lazy(() => import('./Components/Login'))
+const ForgotPassword = lazy(() => import('./Components/ForgotPassword'))
+const UpdateProfile = lazy(() => import('./Components/UpdateProfile'))
+const Profile = lazy(() => import('./Components/Profile'))
+const Chat = lazy(() => import('./Components/Chatroom'))
+const Todo = lazy(() => import('./Components/Todo'))
+const AboutUs = lazy(() => import('./Components/AboutUs'))
+const Notes = lazy(() => import('./notes/Notes'))
 
 function App() {
   return (
     <>
       <Router>
+        <Routes>
+        </Routes>
         <AuthProvider>
           <Header />
           <Routes>
             <Route path='/' element={<Landingsegment />} />
-            <Route path='/aboutus' element={<AboutUs />} />
-            <Route path='/notes' element={<Notes />} />
+            <Route path='/aboutus' element={<Suspense fallback={<Loader />}><AboutUs /></Suspense>} />
+            <Route path='/notes' element={<Suspense fallback={<Loader />}><Notes /></Suspense>} />
             <Route
               path='/update-profile'
               element={
                 <RequireAuth redirectTo='/login'>
-                  <UpdateProfile />
+                  <Suspense fallback={<Loader />}>
+                    <UpdateProfile />
+                  </Suspense>
                 </RequireAuth>
               }
             />
@@ -40,7 +46,9 @@ function App() {
               path='/chat-room'
               element={
                 <RequireAuth redirectTo='/login'>
-                  <Chat />
+                  <Suspense fallback={<Loader />}>
+                    <Chat />
+                  </Suspense>
                 </RequireAuth>
               }
             />
@@ -48,7 +56,9 @@ function App() {
               path='/todos'
               element={
                 <RequireAuth redirectTo='/login'>
-                  <Todo />
+                  <Suspense fallback={<Loader />}>
+                    <Todo />
+                  </Suspense>
                 </RequireAuth>
               }
             />
@@ -56,27 +66,20 @@ function App() {
               path='/login'
               element={
                 <IsLoggedIn redirectTo='/profile'>
-                  <Login />
+                  <Suspense fallback={<Loader />}>
+                    <Login />
+                  </Suspense>
                 </IsLoggedIn>
               }
             />
-
-
-
-            <Route path='/signup' caseSensitive={false} element={<Signup />} />
-
-            <Route path='/login' caseSensitive={false} element=
-              {<Login />} />
-
-            <Route path='/profile' caseSensitive={false} element={<Profile />} />
-
-            <Route path='/forgot-password' element={<ForgotPassword />} />
+            <Route path='/signup' caseSensitive={false} element={<Suspense fallback={<Loader />}><Signup /></Suspense>} />
+            <Route path='/profile' caseSensitive={false} element={<Suspense fallback={<Loader />}><Profile /></Suspense>} />
+            <Route path='/forgot-password' element={<Suspense fallback={<Loader />}><ForgotPassword /></Suspense>} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>
           <Footer />
         </AuthProvider>
       </Router>
-
     </>
   )
 }
@@ -85,6 +88,7 @@ function RequireAuth({ children, redirectTo }) {
   const { currentUser } = useAuth()
   return currentUser ? children : <Navigate to={redirectTo} />
 }
+
 function IsLoggedIn({ children, redirectTo }) {
   const { currentUser } = useAuth()
   return currentUser ? <Navigate to={redirectTo} /> : children

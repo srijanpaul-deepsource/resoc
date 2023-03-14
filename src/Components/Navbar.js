@@ -7,7 +7,7 @@ import {
   Button,
   FormControl,
 } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 // import PropTypes from 'prop-types'
 import { Link } from "react-router-dom";
 import React, { useState } from "react";

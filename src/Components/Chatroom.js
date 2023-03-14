@@ -6,7 +6,7 @@ import 'firebase/compat/firestore'
 import 'firebase/analytics';
 import { useNavigate } from 'react-router-dom'
 import { useCollectionData } from 'react-firebase-hooks/firestore';
-import * as Icon from 'react-bootstrap-icons'
+// import * as Icon from 'react-bootstrap-icons'
 import Header from './Navbar'
 import Footer from './Footer';
 
@@ -87,7 +87,8 @@ function ChatRoom() {
     <Form className='form' onSubmit={sendMessage}>
 
       <input className='inp' value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Start typing " />
-      <Button className='ButtonSend mx-2' type="submit" disabled={!formValue} > <Icon.Send /></Button>
+      <Button className='ButtonSend mx-2' type="submit" disabled={!formValue} > 
+      </Button>
 
     </Form>
   </>)

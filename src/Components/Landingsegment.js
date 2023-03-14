@@ -31,12 +31,12 @@ export default function Landingsegment () {
 							
 							Oh, and if you really dig what we're doing here at RESOC, we'd be over the moon if you'd consider sponsoring us. Just head over to the <a href='/aboutus' className='text-var'>about section</a> and donate to our talented content creators. Trust us, it really helps keep the site running and lets us add all sorts of fun new features. Plus, you get to be a part of making education accessible for everyone. Win-win, right? ❤️
 							
+						</p>
 							<div className='sponsor py-2'>
 								<a href='https://www.buymeacoffee.com/anubhabr500' className='	' target='_blank' rel='noreferrer'>
 									<img src='https://cdn.buymeacoffee.com/buttons/v2/default-white.png' alt='Buy Me A Coffee' style={{height: '30px', width: '108px'}} />
 								</a>
 							</div>
-						</p>
 					</div>	
 				</div>
     </>

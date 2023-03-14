@@ -8,7 +8,7 @@ export default function Notes() {
 		<>
 		<Header />
 			<div className=''>
-      <section className=" pt-5 px-5 cdin">
+      <section className=" pt-5 px-3 cdin">
 				<div className="container ">
 					<div className="d-sm-flex align-items-center justify-content-between mainc">
 						<div className="img-home">
@@ -22,9 +22,7 @@ export default function Notes() {
 				</div>
 			</section>
 				<div className='p-5'>
-					<div className="container" style={{
-						
-					}}>
+					<div className="container">
 						<p>
 							<ul style={{
 								listStyleType: 'none',

@@ -19,13 +19,12 @@ function Chat() {
     <div className="App">
 
       <section className="text-dark">
-        <div className="container py-5 h-100">
+        <div className="container pt-5 h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
             <div className="col">
               <div className="card" id="list1" style={{ borderRadius: .75 + "rem", backgroundColor: "#f8f9fa" }}>
-                <div className="card-body py-4 px-4 px-md-5">
-
-                  <p className="h1 text-center mt-3 mb-4 pb-3 text-dark">
+                <div className="card-body px-md-5">
+                  <p className="h1 text-center m-2 text-dark">
                     <i className="fas fa-check-square me-1"></i>
                     Community Chat 🔥💬
                   </p>
@@ -45,7 +44,7 @@ function Chat() {
 function SignOut() {
   const navigate = useNavigate()
   return auth.currentUser && (
-    <Button variant='outline-secondary' className="sign-out text-center" onClick={() => auth.signOut() && navigate('/')}>Sign Out</Button>)
+    <Button variant='outline-secondary' className="sign-out m-2 text-center" onClick={() => auth.signOut() && navigate('/')}>Sign Out</Button>)
 }
 
 

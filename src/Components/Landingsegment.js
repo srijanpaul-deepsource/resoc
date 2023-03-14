@@ -4,7 +4,7 @@ import '../assets/css/dashboard.css'
 export default function Landingsegment () {
   return (
     <>
-      <section className=" py-5 px-5 cdin">
+      <section className=" py-5 cdin px-4 px-sm-3">
 				<div className="container ">
 					<div className="d-sm-flex align-items-center justify-content-between mainc">
 						<div className="img-home">
@@ -29,8 +29,7 @@ export default function Landingsegment () {
 							</p>
 							<p>
 							
-							Oh, and if you really dig what we're doing here at RESOC, we'd be over the moon if you'd consider sponsoring us. Just head over to the <a href='/aboutus' className='text-var'>about section</a> and donate to our talented content creators. Trust us, it really helps keep the site running and lets us add all sorts of fun new features. Plus, you get to be a part of making education accessible for everyone. Win-win, right? ❤️
-							
+							Oh, and if you really dig what we're doing here at RESOC, we'd be over the moon if you'd consider sponsoring us. Just head over to the <a href='/aboutus' className='text-var'>about section</a> and donate to our talented content creators. Trust us, it really helps keep the site running and lets us add all sorts of fun new features!
 						</p>
 							<div className='sponsor py-2'>
 								<a href='https://www.buymeacoffee.com/anubhabr500' className='	' target='_blank' rel='noreferrer'>

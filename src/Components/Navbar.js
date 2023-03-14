@@ -12,7 +12,6 @@ import {
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
-import { HashLink as HLink } from "react-router-hash-link";
 import logo1 from '../assets/img/moon.png'
 import logo2 from '../assets/img/moon.png'
 

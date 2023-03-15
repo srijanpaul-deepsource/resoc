@@ -57,8 +57,8 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
               navbarScroll
             >
               <Nav.Link href="/notes">Notes</Nav.Link>
-              <Nav.Link href="/todos">Tasks</Nav.Link>
-              <Nav.Link href="/chat-room">Community</Nav.Link>
+              <Nav.Link href="/taskboard">Tasks</Nav.Link>
+              <Nav.Link href="/community">Community</Nav.Link>
             </Nav>
             <Nav>
               <Nav.Link href="/aboutus">About Us</Nav.Link>
@@ -86,8 +86,8 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
               navbarScroll
             >
               <Nav.Link href="/notes">Notes</Nav.Link>
-              <Nav.Link href="/todos">Tasks</Nav.Link>
-              <Nav.Link href="/chat-room">Community</Nav.Link>
+              <Nav.Link href="/taskboard">Tasks</Nav.Link>
+              <Nav.Link href="/community">Community</Nav.Link>
             </Nav>
             <Nav>
               <Nav.Link href="/aboutus">About Us</Nav.Link>

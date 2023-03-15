@@ -43,7 +43,7 @@ function App() {
               }
             />
             <Route
-              path='/chat-room'
+              path='/community'
               element={
                 <RequireAuth redirectTo='/login'>
                   <Suspense fallback={<Loader />}>
@@ -53,7 +53,7 @@ function App() {
               }
             />
             <Route
-              path='/todos'
+              path='/taskboard'
               element={
                 <RequireAuth redirectTo='/login'>
                   <Suspense fallback={<Loader />}>

@@ -1,10 +1,9 @@
 import React, { useRef, useState } from 'react';
 import '../assets/css/chatApp.css';
 import firebase from 'firebase/compat/app'
-import { Form, Button } from 'react-bootstrap'
+import { Form} from 'react-bootstrap'
 import 'firebase/compat/firestore'
 import 'firebase/analytics';
-import { useNavigate } from 'react-router-dom'
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import office from '../assets/img/community.svg'
 import {Send} from 'react-bootstrap-icons'

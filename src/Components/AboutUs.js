@@ -1,5 +1,6 @@
 import React from 'react'
 import astronaut from '../assets/img/Astronaut helmet.svg'
+import anubhab from '../assets/img/anubhab.jpeg'
 import '../assets/css/dashboard.css'
 export default function Landingsegment() {
 	return (
@@ -17,31 +18,57 @@ export default function Landingsegment() {
 					</div>
 				</div>
 			</section>
-			{/* <div className='px-3 px-sm-4'>
-				<div className="container">
-					<div className="row">
-						<div className="col-12 p-2">
-							<div className="card">
-								<div className="card-body">
-									<h5 className="card-title">Card title</h5>
-									<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									<a href="#" className="btn btn-primary">Go somewhere</a>
-								</div>
-							</div>
-						</div>
-						<div className="col-12 p-2">
-							<div className="card">
-								<div className="card-body">
-									<h5 className="card-title">Card title</h5>
-									<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-									<a href="#" className="btn btn-primary">Go somewhere</a>
-								</div>
-							</div>
-						</div>
-					</div>
-
+			<div className="container p-3 p-sm-5">
+				<h1> Dev Team</h1>
+				<div className="lead mt-3">
+					<ul style={{
+						listStyleType: "none",
+						padding: "0"
+					}}>
+						<li>
+							<img src={anubhab} style={{
+								width: "50px",
+								height: "50px",
+								borderRadius: "50%",
+								margin: "0 10px"
+							}} alt="avatar" className="avatar p-2" />
+							<a href="https://anubhavp.dev/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Anubhab Patnaik</a>
+						</li>
+						<li>
+							<img src="https://avatars.githubusercontent.com/u/90375759?v=4" style={{
+								width: "50px",
+								height: "50px",
+								borderRadius: "50%",
+								margin: "0 10px"
+							}} alt="avatar" className="avatar p-2" />
+							<a href="https://github.com/smrutid12/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Smruti Dash</a>
+						</li>
+					</ul>
 				</div>
-			</div> */}
+				<h1 className='mt-3'> Contributors</h1>
+				<div className='mt-3'>
+					<ul style={{
+						listStyleType: "none",
+					}}>
+						<li>
+							<a href="https://anubhavp.dev/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Anubhab Patnaik</a>
+
+						</li>
+						<li>
+							Srijan Paul
+						</li>
+						<li>
+							Swayam Vikash Pattanaik
+						</li>
+						<li>
+							Abinash Parida
+						</li>
+						<li>
+							<a href="https://github.com/smrutid12/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Smruti Dash</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</>
 	)
 }

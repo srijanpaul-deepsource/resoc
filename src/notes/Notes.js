@@ -1,5 +1,5 @@
 import React from 'react'
-import astronaut from '../assets/img/Astronaut helmet.svg'
+import programming from '../assets/img/programming.svg'
 export default function Notes() {
 	return (
 		<>
@@ -13,7 +13,7 @@ export default function Notes() {
 								Get started with your notes here
 							</p>
 						</div>
-						<img className="img-fluid w-50 d-none d-sm-block" src={astronaut} alt="in office" />
+						<img className="img-fluid w-50 d-none d-sm-block" src={programming} alt="in office" />
 					</div>
 				</div>
 			</section>
@@ -48,23 +48,13 @@ export default function Notes() {
 									<a href='envs' className='text-var notes-link'>Environmental Science</a>
 								</li>
 							</ul>
-						
-						<hr 
-						style={{	
-						maxWidth: '100%',
-						}}
-						/>
-						
+						<hr/>
 							<ul style={{
 								listStyleType: 'none',
 							}}>
 								<li><a href='engmath3' className='text-var notes-link'>Engineering Maths III</a></li>
 								
 							</ul>
-						
-						<hr style={{
-							borderStyle: 'dotted',
-						}} />
 					</div>
 					</div>
 			</div>

@@ -3,21 +3,21 @@ import programming from '../assets/img/programming.svg'
 export default function Notes() {
 	return (
 		<>
-			<div className=''>
+			<div className='container'>
       <section className=" pt-5 px-sm-3 px-5 cdin">
 				<div className="container ">
 					<div className="d-sm-flex align-items-center justify-content-between mainc">
 						<div className="img-home">
 							<h1 className="heading">NOTES<span></span></h1>
 							<p className="lead my-4">
-								Get started with your notes here
+								Get started here.
 							</p>
 						</div>
 						<img className="img-fluid w-50 d-none d-sm-block" src={programming} alt="in office" />
 					</div>
 				</div>
 			</section>
-				<div className='p-5'>
+				<div className='p-3 p-sm-5'>
 					<div className="container">
 						
 							<ul style={{

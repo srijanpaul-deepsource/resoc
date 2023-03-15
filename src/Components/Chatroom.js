@@ -6,6 +6,7 @@ import 'firebase/compat/firestore'
 import 'firebase/analytics';
 import { useNavigate } from 'react-router-dom'
 import { useCollectionData } from 'react-firebase-hooks/firestore';
+import office from '../assets/img/community.svg'
 import * as Icon from 'react-bootstrap-icons'
 
 const auth = firebase.auth();
@@ -13,26 +14,42 @@ const firestore = firebase.firestore();
 
 function Chat() {
   return (<>
-    <div className="App">
+    <div className='container'>
 
-      <section className="text-dark">
-        <div className="container pt-5 h-100">
-          <div className="row d-flex justify-content-center align-items-center h-100">
-            <div className="col">
-              <div className="card" id="list1" style={{ borderRadius: .75 + "rem", backgroundColor: "#f8f9fa" }}>
-                <div className="card-body px-md-5">
-                  <p className="h1 text-center m-2 text-dark">
-                    <i className="fas fa-check-square me-1"></i>
-                    Community Chat 🔥💬
-                  </p>
-                  <SignOut />
-                  <ChatRoom />
+      <div className="container ">
+        <div className="d-sm-flex align-items-center justify-content-between mainc">
+          <div className="img-home">
+            <h1 className="heading">SOC<span></span><span className="text-secondary">HOME</span></h1>
+            <p className="lead my-4">
+              Connect with like-minded folk.
+            </p>
+          </div>
+          <img className="img-fluid w-50 d-none d-sm-block" src={office} alt="in office" />
+        </div>
+      </div>
+
+      <div className='p-3 p-sm-5'>
+        <div className="App">
+          <section className="text-dark">
+            <div className="container pt-5 h-100">
+              <div className="row d-flex justify-content-center align-items-center h-100">
+                <div className="col">
+                  <div className="card" id="list1" style={{ borderRadius: .75 + "rem", backgroundColor: "#f8f9fa" }}>
+                    <div className="card-body px-md-5">
+                      <p className="h1 text-center m-2 text-dark">
+                        <i className="fas fa-check-square me-1"></i>
+                        Community Chat 🔥💬
+                      </p>
+                      <SignOut />
+                      <ChatRoom />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </div>
     </div>
   </>);
 }

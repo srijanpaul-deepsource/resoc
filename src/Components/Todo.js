@@ -40,7 +40,7 @@ export default function Todo() {
         setInput('')
     }
     return (<>
-        <div className=''>
+        <div className='container'>
             <section className=" pt-5 px-sm-3 px-5 cdin">
                 <div className="container ">
                     <div className="d-sm-flex align-items-center justify-content-between mainc">
@@ -54,7 +54,7 @@ export default function Todo() {
                     </div>
                 </div>
             </section>
-            <div className='p-3 p-sm-5'>
+            <div className='p-2 p-sm-5'>
                 <div className="container">
                     { todos.length > 0 && 
                     <p>Pending: <b>{todos.length}</b></p>}

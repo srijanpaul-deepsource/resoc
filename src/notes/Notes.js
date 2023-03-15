@@ -1,5 +1,5 @@
 import React from 'react'
-import office from '../assets/img/intheoffice.svg'
+import astronaut from '../assets/img/Astronaut helmet.svg'
 export default function Notes() {
 	return (
 		<>
@@ -13,7 +13,7 @@ export default function Notes() {
 								Get started with your notes here
 							</p>
 						</div>
-						<img className="img-fluid w-50 d-none d-sm-block" src={office} alt="in office" />
+						<img className="img-fluid w-50 d-none d-sm-block" src={astronaut} alt="in office" />
 					</div>
 				</div>
 			</section>

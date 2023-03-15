@@ -12,19 +12,20 @@ export default function PageNotFound () {
 							<p className="lead my-4">
 								Not Found
 							</p>
+							<p>
+							Well... how did we get here?<br />
+							Let's get back <a href='/' className='text-var'>on track</a>.
+							</p>
 						</div>
 						<img className="img-fluid w-50 d-none d-sm-block" src={moon} alt="in office" />
 					</div>
 				</div>
 			</section>
-				<div className='p-5'>
+				<div>
 					<div className="container" style={{
-						minHeight: '10vh'
+						minHeight: '16vh'
 					}}>
-						Well... how did we get here?<br />
-						Let's get back <a href='/' className='text-var'>on track</a>.
-
-					</div>	
+											</div>	
 				</div>
 				
     </>

@@ -32,7 +32,7 @@ export default function Landingsegment () {
 						</p>
 								<div className='sponsor my-2'>
 									<a href='https://www.buymeacoffee.com/anubhabr500' className='' target='_blank' rel='noreferrer'>
-										<img src='https://cdn.buymeacoffee.com/buttons/v2/default-white.png' alt='Buy Me A Coffee' style={{height: '30px', width: '120px'}} />
+										<img src='https://cdn.buymeacoffee.com/buttons/v2/default-white.png' alt='Buy Me A Coffee' style={{height: '33px', width: '120px'}} />
 									</a>
 								</div>
 					</div>	

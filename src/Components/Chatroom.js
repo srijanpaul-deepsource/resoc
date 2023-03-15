@@ -79,8 +79,7 @@ function ChatRoom() {
     <div className='d-flex justify-content-center'>
 
     <Form className='form d-flex justify-content-between' onSubmit={sendMessage}>
-
-      <input className='inp' value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Start typing " />      
+      <input className='form-control form-control-sm' value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Start typing " />      
       <button  type="btn submit" disabled={!formValue} className="btn mx-2" style={{ background: "none", outline: "none", color: isDark ? "white" : "black",}}><Send /></button>
     </Form>
     </div>

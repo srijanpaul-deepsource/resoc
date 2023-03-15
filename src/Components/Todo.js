@@ -10,7 +10,6 @@ import {
 } from 'react-bootstrap-icons';
 import { Form } from 'react-bootstrap'
 import office from '../assets/img/intheoffice.svg'
-import '../assets/css/Todoapp.css'
 
 export default function Todo() {
     var dark = false;

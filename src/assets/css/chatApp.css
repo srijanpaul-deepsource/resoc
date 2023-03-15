@@ -1,36 +1,3 @@
-.App {
-    text-align: center;
-    max-width: 728px;
-    margin: 0 auto;
-}
-
-
-/* .App header {
-    background-color: #212529;
-    height: 10vh;
-    min-height: 50px;
-    color: white;
-    position: fixed;
-    width: 100%;
-    max-width: 728px;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 99;
-    padding: 10px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.App section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #212529;
-} */
-
 .main {
     padding: 10px;
     height: 100vh;
@@ -45,10 +12,12 @@
 }
 
 .main::-webkit-scrollbar-track {
+    display: none;
     background: --var(--text-var)
 }
 
 .main::-webkit-scrollbar-thumb {
+    display: none;
     background: #f7f7f7;
     border-radius: 2rem;
 }
@@ -65,11 +34,6 @@
 }
 
 
-/* .form button {
-    width: 20%;
-    background-color: rgb(56, 56, 143);
-} */
-
 .inp {
     line-height: 1.5;
     width: 90%;
@@ -83,30 +47,10 @@
     background: #ffffff !important;
 }
 
-
-/* .ButtonSend {
-    background-color: #282c34;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    font-size: 1.25rem;
-} */
-
 button:disabled {
     opacity: 0.5;
     cursor: not-allowed;
 }
-
-
-/* ul,
-li {
-    text-align: left;
-    list-style: none;
-} */
 
 .para {
     max-width: 500px;
@@ -127,18 +71,6 @@ li {
 .sent {
     flex-direction: row-reverse;
 }
-
-
-/* .sent p {
-    color: white;
-    background: #212529;
-    align-self: flex-end;
-}
-
-.received p {
-    background: #f8f9fa;
-    color: black;
-} */
 
 .profphoto {
     width: 40px;

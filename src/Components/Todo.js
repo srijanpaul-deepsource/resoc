@@ -8,6 +8,7 @@ import {
     Check2Square,
     PlusLg,
 } from 'react-bootstrap-icons';
+import { Form } from 'react-bootstrap'
 import office from '../assets/img/intheoffice.svg'
 import '../assets/css/Todoapp.css'
 
@@ -45,7 +46,7 @@ export default function Todo() {
                 <div className="container ">
                     <div className="d-sm-flex align-items-center justify-content-between mainc">
                         <div className="img-home">
-                            <h1 className="heading">Tasks ✔️</h1>
+                            <h1 className="d-inline heading">Tasks ✔️</h1>
                             <p className="lead my-4">
                                 Manage your tasks with ease.
                             </p>
@@ -58,10 +59,13 @@ export default function Todo() {
                 <div className="container">
                     { todos.length > 0 && 
                     <p>Pending: <b>{todos.length}</b></p>}
-                    <div className=" d-flex justify-content-between">
+                    
+                    <Form className=" d-flex justify-content-between" onSubmit={addTodo}>
+                        
                         <input type="text" className="form-control form-control-sm" id="exampleFormControlInput1" placeholder="Add new task..." value={input} onChange={e => setInput(e.target.value)} />
-                        <button disabled={!input} type="submit" className="btn btn-text-var" style={{ background: "none", outline: "none",color: dark ? "white" : "black", }} onClick={addTodo}><PlusLg/></button>
-                    </div>
+                        <button  type="btn submit" disabled={!input} className="btn btn-text-var" style={{ background: "none", outline: "none",color: isDark ? "white" : "black", }}><PlusLg/></button>
+                    </Form>
+                    
                     {todos.map((todo => (<>
 
                         <li style={{
@@ -69,7 +73,7 @@ export default function Todo() {
                         }}>
                             <div className='d-flex justify-content-between'>
                                 <div className='d-flex justify-content-start' style={{ alignItems: "center" }}>
-                                    <button type="button" className="btn" style={{ background: "none", outline: "none",color: dark ? "white" : "black",
+                                    <button type="button" className="btn" style={{ background: "none", outline: "none",color: isDark ? "white" : "black",
                                     paddingLeft: "0px", 
                                     
                                 }} onClick={e =>
@@ -81,7 +85,7 @@ export default function Todo() {
                                 </div>
                                 <button type="button" className="btn" style={{ background: "none",
                                     outline: "none",
-                                    color: dark ? "white" : "black",
+                                    color: isDark ? "white" : "black",
                             }} onClick={e => firestore.collection('Todos').doc(currentUser.uid).collection('Todos').doc(todo.id).delete()}><Trash /></button>
                             </div>
                         </li>

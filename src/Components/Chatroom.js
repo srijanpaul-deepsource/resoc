@@ -7,61 +7,42 @@ import 'firebase/analytics';
 import { useNavigate } from 'react-router-dom'
 import { useCollectionData } from 'react-firebase-hooks/firestore';
 import office from '../assets/img/community.svg'
-import * as Icon from 'react-bootstrap-icons'
+import {Send} from 'react-bootstrap-icons'
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
+var dark = false;
 function Chat() {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark = true;
+    
   return (<>
     <div className='container'>
-
-      <div className="container ">
-        <div className="d-sm-flex align-items-center justify-content-between mainc">
-          <div className="img-home">
-            <h1 className="heading">SOC<span></span><span className="text-secondary">HOME</span></h1>
-            <p className="lead my-4">
-              Connect with like-minded folk.
-            </p>
-          </div>
-          <img className="img-fluid w-50 d-none d-sm-block" src={office} alt="in office" />
-        </div>
-      </div>
-
-      <div className='p-3 p-sm-5'>
-        <div className="App">
-          <section className="text-dark">
-            <div className="container pt-5 h-100">
-              <div className="row d-flex justify-content-center align-items-center h-100">
-                <div className="col">
-                  <div className="card" id="list1" style={{ borderRadius: .75 + "rem", backgroundColor: "#f8f9fa" }}>
-                    <div className="card-body px-md-5">
-                      <p className="h1 text-center m-2 text-dark">
-                        <i className="fas fa-check-square me-1"></i>
-                        Community Chat 🔥💬
-                      </p>
-                      <SignOut />
-                      <ChatRoom />
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <section className="pt-5 px-sm-3 px-4 cdin">
+        <div className="container ">
+          <div className="d-sm-flex align-items-center justify-content-between mainc">
+            <div className="img-home">
+              <h1 className="heading">SOC<span className="text-secondary">HOME</span></h1>
+              <p className="lead my-4">
+                Connect with like-minded folk.
+              </p>
             </div>
-          </section>
+            <img className="img-fluid w-50 d-none d-sm-block" src={office} alt="in office" />
+          </div>
         </div>
+      </section>
+      <div className='p-2 p-sm-5'>
+      <ChatRoom />
       </div>
     </div>
   </>);
 }
 
-function SignOut() {
-  const navigate = useNavigate()
-  return auth.currentUser && (
-    <Button variant='outline-secondary' className="sign-out m-2 text-center" onClick={() => auth.signOut() && navigate('/')}>Sign Out</Button>)
-}
-
-
 function ChatRoom() {
+  const [isDark, setIsDark] = React.useState(dark);
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+      event.matches ? setIsDark(true) : setIsDark(false);
+    });
   const dummy = useRef();
   const messagesRef = firestore.collection('messages');
   const query = messagesRef.orderBy('createdAt').limitToLast(25);
@@ -95,14 +76,14 @@ function ChatRoom() {
       <span ref={dummy}></span>
 
     </main>
+    <div className='d-flex justify-content-center'>
 
-    <Form className='form' onSubmit={sendMessage}>
+    <Form className='form d-flex justify-content-between' onSubmit={sendMessage}>
 
-      <input className='inp' value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Start typing " />
-      <Button className='ButtonSend mx-2' type="submit" disabled={!formValue} > <Icon.Send />
-      </Button>
-
+      <input className='inp' value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Start typing " />      
+      <button  type="btn submit" disabled={!formValue} className="btn mx-2" style={{ background: "none", outline: "none", color: isDark ? "white" : "black",}}><Send /></button>
     </Form>
+    </div>
   </>)
 }
 

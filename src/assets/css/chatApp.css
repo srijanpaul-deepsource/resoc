@@ -33,7 +33,7 @@
 
 .main {
     padding: 10px;
-    height: 28vh;
+    height: 100vh;
     margin: 10vh 0 10vh;
     overflow-y: scroll;
     display: flex;
@@ -45,11 +45,11 @@
 }
 
 .main::-webkit-scrollbar-track {
-    background: #f8f9fa;
+    background: --var(--text-var)
 }
 
 .main::-webkit-scrollbar-thumb {
-    background: #1e1e24;
+    background: #f7f7f7;
     border-radius: 2rem;
 }
 

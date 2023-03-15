@@ -1,5 +1,5 @@
 import React from 'react'
-import moon from '../assets/img/undraw_on_the_office_fbfs.svg'
+import office from '../assets/img/intheoffice.svg'
 export default function Notes() {
 	return (
 		<>
@@ -13,7 +13,7 @@ export default function Notes() {
 								Get started with your notes here
 							</p>
 						</div>
-						<img className="img-fluid w-50 d-none d-sm-block" src={moon} alt="in office" />
+						<img className="img-fluid w-50 d-none d-sm-block" src={office} alt="in office" />
 					</div>
 				</div>
 			</section>

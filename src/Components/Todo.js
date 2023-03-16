@@ -41,7 +41,7 @@ export default function Todo() {
     }
     return (<>
         <div className='container'>
-            <section className=" pt-5 px-sm-3 px-5 cdin">
+            <section className=" pt-5 px-sm-3 px-4 cdin">
                 <div className="container ">
                     <div className="d-sm-flex align-items-center justify-content-between mainc">
                         <div className="img-home">

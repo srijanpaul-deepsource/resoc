@@ -5,7 +5,8 @@ import '../assets/css/dashboard.css'
 export default function Landingsegment() {
 	return (
 		<>
-			<section className=" py-4 cdin px-4 px-sm-1">
+		<div className='container'>
+			<section className=" pt-4 px-3 px-sm-0">
 				<div className="container ">
 					<div className="d-sm-flex align-items-center justify-content-between mainc">
 						<div className="img-home">
@@ -18,8 +19,8 @@ export default function Landingsegment() {
 					</div>
 				</div>
 			</section>
-			<div className="container p-3 p-sm-5">
-				<h1> Dev Team</h1>
+			<div className="container p-2 p-sm-5">
+				<h1 className='ps-2'> Dev Team</h1>
 				<div className="lead mt-3">
 					<ul style={{
 						listStyleType: "none",
@@ -45,10 +46,11 @@ export default function Landingsegment() {
 						</li>
 					</ul>
 				</div>
-				<h1 className='mt-3'> Contributors</h1>
+				<h1 className='mt-3 ps-2'> Contributors</h1>
 				<div className='mt-3'>
 					<ul style={{
 						listStyleType: "none",
+						paddingLeft: "20px"
 					}}>
 						<li>
 							<a href="https://anubhavp.dev/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Anubhab Patnaik</a>
@@ -68,6 +70,7 @@ export default function Landingsegment() {
 						</li>
 					</ul>
 				</div>
+			</div>
 			</div>
 		</>
 	)

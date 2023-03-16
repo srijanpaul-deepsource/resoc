@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import logo1 from '../assets/img/moon.png'
 import logo2 from '../assets/img/sun.png'
+import { Link } from "react-router-dom";
 
 export default function Header(props) {
   var [buttonText, setButtonText] = useState("Login");
@@ -28,9 +29,9 @@ export default function Header(props) {
   }
   var dark = false;
 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  dark = true;
-}
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    dark = true;
+  }
 
   currentUser ? (buttonText = username) : (buttonText = "Login");
   const [isDark, setIsDark] = React.useState(dark);
@@ -45,9 +46,11 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
       <Navbar className='navbar navbar-expand-lg navbar-dark py-4 cdin' expand="lg">
         <Container >
           <Nav >
-            <Navbar.Brand href="/">
+          <Navbar.Brand>
+          <Link to="/">
               <img src={logo1} alt="logo" width="30" height="30" className="d-inline-block align-top" />
-            </Navbar.Brand>
+            </Link>
+          </Navbar.Brand>
           </Nav>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
@@ -56,13 +59,18 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="/notes">Notes</Nav.Link>
+              <Link to="/notes" className="nav-link">Notes</Link>
+              <Link to="/taskboard" className="nav-link">Tasks</Link>
+              <Link to="/community" className="nav-link">Community</Link>
+              {/* <Nav.Link href="/notes">Notes</Nav.Link>
               <Nav.Link href="/taskboard">Tasks</Nav.Link>
-              <Nav.Link href="/community">Community</Nav.Link>
+              <Nav.Link href="/community">Community</Nav.Link> */}
             </Nav>
             <Nav>
-              <Nav.Link href="/aboutus">About Us</Nav.Link>
-              <Nav.Link className='text-var' href="/login"> {buttonText}</Nav.Link> 
+               <Link to="/aboutus" className="nav-link">About Us</Link>
+               <Link to="/login" className="nav-link">{buttonText}</Link>
+              {/* <Nav.Link href="/aboutus">About Us</Nav.Link>
+              <Nav.Link className='text-var' href="/login"> {buttonText}</Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -74,8 +82,10 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
       <Navbar className='navbar navbar-expand-lg py-4 cdin' expand="lg">
         <Container >
           <Nav >
-            <Navbar.Brand href="/">
-              <img src={logo2} alt="logo" width="30" height="30" className="d-inline-block align-top" />
+            <Navbar.Brand>
+              <Link to="/">
+                <img src={logo2} alt="logo" width="30" height="30" className="d-inline-block align-top" />
+              </Link>
             </Navbar.Brand>
           </Nav>
           <Navbar.Toggle aria-controls="navbarScroll" />
@@ -85,13 +95,19 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="/notes">Notes</Nav.Link>
-              <Nav.Link href="/taskboard">Tasks</Nav.Link>
-              <Nav.Link href="/community">Community</Nav.Link>
+              <Link to="/notes" className="nav-link">Notes</Link>
+              <Link to="/taskboard" className="nav-link">Tasks</Link>
+              <Link to="/community" className="nav-link">Community</Link>
+
+              {/* <Nav.Link activeClassName="active" href="/notes">Notes</Nav.Link> */}
+              {/* <Nav.Link activeClassName="active" href="/taskboard">Tasks</Nav.Link> */}
+              {/* <Nav.Link activeClassName="active" href="/community">Community</Nav.Link> */}
             </Nav>
             <Nav>
-              <Nav.Link href="/aboutus">About Us</Nav.Link>
-              <Nav.Link className='text-var' href="/login"> {buttonText}</Nav.Link> 
+            <Link to="/aboutus" className="nav-link">About Us</Link>
+               <Link to="/login" className="nav-link">{buttonText}</Link>
+              {/* <Nav.Link href="/aboutus">About Us</Nav.Link>
+              <Nav.Link className='text-var' href="/login"> {buttonText}</Nav.Link> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

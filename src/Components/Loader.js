@@ -23,11 +23,6 @@ function Loader() {
         style={{
           transform: `rotate(${rotation}deg)`,
           position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transformOrigin: 'center',
-          marginTop: `${-loaderImg.height / 2}px`,
-          marginLeft: `${-loaderImg.width / 2}px`
         }}
       />
     </div>

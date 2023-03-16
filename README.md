@@ -1,22 +1,18 @@
 # resoc
 
-Welcome to resoc. Resoc is an abbreviation for college resources: *"res" + "co"*. This website has been made to share all the resources of my college Silicon Institute of Technology. It is a social media site cum notes hub. This website inlcudes assignments, notes, and other resources. You can login here and use built-in bookmarks page. You can add your todo list to this site, chat with the rest of the network, post your queries and request for resources to be added in the site! We will be introducing a built-in search engine that can be used to search for notes and other resources. 
+RESOC is the coolest academic notes-sharing platform around, built by a bunch of tech-savvy students at Silicon Institute, and it's totally free ❤️. You don't have to sell your soul to afford good quality notes anymore.
 Visit [resoc](www.notes-sit.live) !
 
-- [Tech stack & Libraries used](#tech-stack-libraries-used)
-- [Workflow](#workflow)
-  
+- [Tech stack & Libraries used](#tech-stack)  
 
-## Tech Stack & Libraries Used
+## Tech Stack
 
-The tech stack used in this project is:
-
-- [ReactJs](https://reactjs.org) for the frontend	design and development.
+- [ReactJs](https://reactjs.org) for the frontend design and development.
 - [Firebase](https://firebase.google.com/) for the backend, hosting and the database.
 - [CloudFirestore](https://firebase.google.com/docs/firestore) for the database management.
 - [React-Bootstrap](https://react-bootstrap.github.io/) for the UI development.
+- [React-Router](https://reactrouter.com/) for the routing.
 
-<!-- ## Workflow
+## License
 
-The workflow is as follows:
-As your visit the website, the first page that you encounter is the home page -->
+[MIT](https://choosealicense.com/licenses/mit/)

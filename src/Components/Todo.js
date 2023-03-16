@@ -45,7 +45,11 @@ export default function Todo() {
                 <div className="container ">
                     <div className="d-sm-flex align-items-center justify-content-between mainc">
                         <div className="img-home">
-                            <h1 className="d-inline heading">Tasks ✔️</h1>
+                            <h1 className="d-inline heading"
+                            style={{
+                                whiteSpace: "nowrap",
+                            }}
+                            >Tasks ✔️</h1>
                             <p className="lead my-4">
                                 Manage your tasks with ease.
                             </p>

@@ -5,7 +5,7 @@ import { Form} from 'react-bootstrap'
 import 'firebase/compat/firestore'
 import 'firebase/analytics';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
-import office from '../assets/img/community.svg'
+import community from '../assets/img/standout.svg'
 import {Send} from 'react-bootstrap-icons'
 
 const auth = firebase.auth();
@@ -26,7 +26,7 @@ function Chat() {
                 Connect with like-minded folk.
               </p>
             </div>
-            <img className="img-fluid w-50 d-none d-sm-block" src={office} alt="in office" />
+            <img className="img-fluid w-50 d-none d-sm-block" src={community} alt="in office" />
           </div>
         </div>
       </section>

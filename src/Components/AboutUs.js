@@ -1,5 +1,5 @@
 import React from 'react'
-import astronaut from '../assets/img/Astronaut helmet.svg'
+import astronaut from '../assets/img/astronauthelmet.svg'
 import anubhab from '../assets/img/anubhab.jpeg'
 import '../assets/css/dashboard.css'
 export default function Landingsegment() {

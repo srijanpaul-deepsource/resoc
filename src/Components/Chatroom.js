@@ -5,7 +5,7 @@ import { Form} from 'react-bootstrap'
 import 'firebase/compat/firestore'
 import 'firebase/analytics';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
-import community from '../assets/img/standout.svg'
+import community from '../assets/img/team.svg'
 import {Send} from 'react-bootstrap-icons'
 
 const auth = firebase.auth();

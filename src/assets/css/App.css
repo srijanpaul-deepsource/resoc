@@ -10,6 +10,7 @@ html {
     -webkit-font-smoothing: antialiased !important;
     color: #000000;
     font-size: 17px;
+    font-display: swap;
 }
 
 @media (min-width: 768px) {

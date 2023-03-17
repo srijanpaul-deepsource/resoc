@@ -73,14 +73,37 @@ export default function Todo() {
         </div>
       </div>
     </section>
-    <div className='px-2 px-sm-5' style={{
-      // minHeight: "50vh",
-    }}>
-      <div className="container py-2 ">
-        {todos.length > 0 && <p>Pending: <b>{todos.length}</b></p>}
-        <Form className=" d-flex justify-content-between" onSubmit={addTodo}>
-          <input type="text" className="form-control form-control-sm" id="exampleFormControlInput1" placeholder="Add new task..." value={input} onChange={e => setInput(e.target.value)} />
-          <button type="btn submit" disabled={!input} className="btn btn-text-var" style={{ background: "none", outline: "none", color: isDark ? "white" : "black", }}><PlusLg /></button>
+    <div className='px-2 px-sm-5'>
+      <div className="py-2 px-1">
+        {todos.length >=0 && <p>Pending: <b>{todos.length}</b>
+        <br/>
+        <button className="btn"
+        style={{
+          color: '#ff5e5b',
+          paddingLeft: "0px",
+        }}
+        onClick={() => 
+          firestore.collection(collection_used).doc(auth.currentUser.uid).collection('Todos').get().then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                doc.ref.delete();
+            });
+        })
+        }>DELETE ALL</button>        
+        
+        </p>}
+
+        <Form className=" d-flex justify-content-between"
+        
+         onSubmit={addTodo}>
+          <input style={{
+            userScalable: "no",
+          }} type="text" className="form-control form-control-sm" id="exampleFormControlInput1" placeholder="Add new task..." value={input} onChange={e => setInput(e.target.value)} />
+          <button type="btn submit" disabled={!input} className="btn btn-text-var" style={{
+            background: "none",
+            outline: "dashed 1px",
+            marginLeft: "10px",
+            color: isDark ? "white" : "black", 
+            }}><PlusLg /></button>
         </Form>
 
         <ul className="list-group list-group-flush">

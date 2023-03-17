@@ -31,7 +31,10 @@ function Chat() {
               Connect and engage with like-minded folk, and give us a holler!
             </p>
           </div>
-          <img className="img-fluid w-50 d-none d-sm-block" src={community} alt="in office" />
+          <img className="img-fluid w-50 d-none d-sm-block p-5" src={community} style={{
+            marginBlockEnd: "20px",
+
+          }} alt="in office" />
         </div>
       </div>
     </section>
@@ -52,7 +55,7 @@ function Chat() {
           <button className="btn btn-light" onClick={() => setLimit(limit + 25)}>Load More</button>
         }
       </div>
-      <ChatRoom limit={limit}
+      <ChatRoom dark ={isDark} limit={limit}
       />
     </div>
 
@@ -60,11 +63,8 @@ function Chat() {
 }
 
 function ChatRoom(props) {
-  console.log(props.limit);
-  const [isDark, setIsDark] = React.useState(dark);
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    event.matches ? setIsDark(true) : setIsDark(false);
-  });
+  // console.log(props.limit);
+  
   const dummy = useRef();
   const messagesRef = firestore.collection('messages');
   const query = messagesRef.orderBy('createdAt').limitToLast(props.limit);
@@ -82,7 +82,8 @@ function ChatRoom(props) {
       text: formValue,
       createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       uid,
-      photoURL
+      photoURL,
+      id: uid + Date.now() + Math.random()
     })
 
     setFormValue('');
@@ -97,7 +98,7 @@ function ChatRoom(props) {
       <div className='d-flex justify-content-between'>
         <Form className='form mx-4 my-3' onSubmit={sendMessage}>
           <input className='form-control form-control-sm' value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Start typing " />
-          <button type="btn submit" disabled={!formValue} className="btn mx-1" style={{ background: "none", outline: "none", color: isDark ? "white" : "black", }}><Send /></button>
+          <button type="btn submit" disabled={!formValue} className="btn mx-1" style={{ background: "none", outline: "none", color: props.dark ? "white" : "black", }}><Send /></button>
         </Form>
       </div>
     </main>
@@ -107,15 +108,15 @@ function ChatRoom(props) {
 
 function ChatMessage(props) {
   const { text, uid, photoURL } = props.message;
-
+  // console.log(text + props.message.id)
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
-
   return (<>
     <div style={{
       textAlign: messageClass === 'sent' ? 'right' : 'left',
     }} className={`message ${messageClass} px-sm-2`}>
       <img className='profphoto' src={photoURL || 'https://adorable-avatars.broken.services/120/myseed'} alt='' />
-      <p className='para' style={{
+      <p className='para' key="{props.key}"
+      style={{
         fontSize: '0.8rem',
       }}>{text}</p>
     </div>

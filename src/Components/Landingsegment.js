@@ -19,7 +19,7 @@ export default function Landingsegment() {
 					</div>
 				</div>
 			</section>
-			<div className='px-3 px-sm-5'>
+			<div className='mt-3 px-3 px-sm-5'>
 				<div className="container">
 					<p>
 						RESOC is the coolest academic notes-sharing platform around, built by a bunch of tech-savvy students at Silicon Institute, and it's totally free ❤️. You don't have to sell your soul to afford good quality notes anymore. <br></br>

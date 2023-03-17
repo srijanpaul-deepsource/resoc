@@ -26,7 +26,7 @@ export default function Todo() {
     });
     useEffect(() => {
         firestore.collection('Todos').doc(currentUser.uid).collection('Todos').orderBy('timestamp', 'desc').onSnapshot(snapshot => {
-            setTodos(snapshot.docs.map(doc => ({ id: doc.id, todo: doc.data().todo, done: doc.data().done })))
+            setTodos(snapshot.docs.map(doc => ({ id: doc.id, todo: doc.data().todo, done: doc.data().done, key: doc.data().id })))
         })
 
     }, [])
@@ -34,13 +34,15 @@ export default function Todo() {
     const addTodo = (e) => {
         e.preventDefault()
         firestore.collection('Todos').doc(currentUser.uid).collection('Todos').add({
-            todo: input, timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            todo: input,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+            done: false,
+            id: currentUser.uid + Date.now() + Math.random()
         })
         setTodos([...todos, input])
         setInput('')
     }
     return (<>
-
         <section className=" py-4 px-4 px-sm-1 cdin">
             <div className="container ">
                 <div className="d-sm-flex align-items-center justify-content-between mainc">
@@ -71,9 +73,11 @@ export default function Todo() {
                     <button type="btn submit" disabled={!input} className="btn btn-text-var" style={{ background: "none", outline: "none", color: isDark ? "white" : "black", }}><PlusLg /></button>
                 </Form>
 
-                {todos.map((todo => (<>
-
-                    <li style={{
+                {todos.map((todo => (
+                console.log(todo.key),
+                <>
+                  <li key={todo.key}
+                    style={{
                         listStyle: "none",
                     }}>
                         <div className='d-flex justify-content-between'>
@@ -87,7 +91,7 @@ export default function Todo() {
                                         done: !todo.done
                                     })
                                 }><Check2Square /></button>
-                                <div style={{ textDecoration: todo.done ? "line-through" : "none", }}>{todo.todo}</div>
+                                <div style={{ textDecoration: todo.done ? "line-through" : "none", }} key={todo.id}>{todo.todo}</div>
                             </div>
                             <button type="button" className="btn" style={{
                                 background: "none",

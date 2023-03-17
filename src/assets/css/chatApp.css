@@ -1,11 +1,8 @@
 .main {
-    padding: 10px;
-    /* overflow-y: scroll; */
     border-radius: 1rem;
     border-color: --var(--text-var);
-    border-width: 0.5px;
-    border-style: solid;
-    /* opacity */
+    border-width: 1px;
+    border-style: dashed;
     display: flex;
     flex-direction: column;
 }

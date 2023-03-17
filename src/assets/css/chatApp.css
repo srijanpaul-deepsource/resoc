@@ -1,8 +1,11 @@
 .main {
     padding: 10px;
-    height: 100vh;
-    margin: 0vh 0 10vh;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
+    border-radius: 1rem;
+    border-color: --text-var;
+    border-width: 0.5px;
+    border-style: solid;
+    /* opacity */
     display: flex;
     flex-direction: column;
 }
@@ -54,18 +57,17 @@ button:disabled {
 
 .para {
     max-width: 500px;
-    margin-bottom: 12px;
     line-height: 24px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 25px;
     position: relative;
     /* color: white; */
-    text-align: center;
+
 }
 
 .message {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .sent {

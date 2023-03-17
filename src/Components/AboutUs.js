@@ -20,8 +20,8 @@ export default function Landingsegment() {
 				</div>
 			</section>
 			<div className="container p-2 p-sm-5 ">
-				<h1 className='ps-2'> Dev Team</h1>
-				<div className="lead mt-3">
+				<h1 className='p-2'> Dev Team</h1>
+				<div className="lead mt-3 p-1">
 					<ul style={{
 						listStyleType: "none",
 						padding: "0"

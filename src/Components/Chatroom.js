@@ -14,16 +14,21 @@ const firestore = firebase.firestore();
 var dark = false;
 function Chat() {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark = true;
-    
+  const [limit, setLimit] = useState(25);
+  const [isDark, setIsDark] = React.useState(dark);
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    event.matches ? setIsDark(true) : setIsDark(false);
+  });
+
   return (<>
-    <div className='container'>
-      <section className="pt-5 px-sm-2 px-4 cdin">
+      <section className="py-4 px-4 px-sm-1 cdin">
         <div className="container ">
           <div className="d-sm-flex align-items-center justify-content-between mainc">
             <div className="img-home">
               <h1 className="heading">SOC<span className="text-secondary">HOME</span></h1>
               <p className="lead my-4">
-                Connect with like-minded folk.
+                Connect and engage with like-minded folk, and give us a holler!
               </p>
             </div>
             <img className="img-fluid w-50 d-none d-sm-block" src={community} alt="in office" />
@@ -31,25 +36,39 @@ function Chat() {
         </div>
       </section>
       <div className='p-2 p-sm-5'>
-      <ChatRoom />
+        <button className="btn"
+        style={{
+          color : '#ff5e5b',
+        }}
+        onClick={() => auth.signOut()}>SIGN OUT</button>
+      <div className=" py-2 d-flex align-items-center justify-content-start mb-2">
+      {isDark &&
+      <button className="btn btn-dark" onClick={() => setLimit(limit + 25)}>Load More</button>
+      } 
+      {!isDark && 
+      <button className="btn btn-light" onClick={() => setLimit(limit + 25)}>Load More</button>
+      }
       </div>
-    </div>
+      <ChatRoom limit={limit}
+      />
+      </div>
+    
   </>);
 }
 
-function ChatRoom() {
+function ChatRoom(props) {
+  console.log(props.limit);
   const [isDark, setIsDark] = React.useState(dark);
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
       event.matches ? setIsDark(true) : setIsDark(false);
     });
   const dummy = useRef();
   const messagesRef = firestore.collection('messages');
-  const query = messagesRef.orderBy('createdAt').limitToLast(25);
+  const query = messagesRef.orderBy('createdAt').limitToLast(props.limit);
 
   const [messages] = useCollectionData(query, { idField: 'id' });
 
   const [formValue, setFormValue] = useState('');
-
 
   const sendMessage = async (e) => {
     e.preventDefault();
@@ -68,20 +87,17 @@ function ChatRoom() {
   }
 
   return (<>
-    <main className='main' >
-
+    <main className='main p-sm-4' >
       {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
-
       <span ref={dummy}></span>
-
+    
+      <div className='d-flex justify-content-center'>
+        <Form className='form d-flex justify-content-between' onSubmit={sendMessage}>
+          <input className='form-control form-control-sm' value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Start typing " />      
+          <button  type="btn submit" disabled={!formValue} className="btn mx-2" style={{ background: "none", outline: "none", color: isDark ? "white" : "black",}}><Send /></button>
+        </Form>
+      </div>
     </main>
-    <div className='d-flex justify-content-center'>
-
-    <Form className='form d-flex justify-content-between' onSubmit={sendMessage}>
-      <input className='form-control form-control-sm' value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Start typing " />      
-      <button  type="btn submit" disabled={!formValue} className="btn mx-2" style={{ background: "none", outline: "none", color: isDark ? "white" : "black",}}><Send /></button>
-    </Form>
-    </div>
   </>)
 }
 
@@ -92,9 +108,13 @@ function ChatMessage(props) {
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
 
   return (<>
-    <div style={{ textAlign: 'center' }} className={`message ${messageClass}`}>
+    <div style={{
+      textAlign: messageClass === 'sent' ? 'right' : 'left',
+    }} className={`message ${messageClass} px-sm-2`}>
       <img className='profphoto' src={photoURL || 'https://adorable-avatars.broken.services/120/myseed'} alt='' />
-      <p className='para'>{text}</p>
+      <p className='para' style={{
+        fontSize: '0.8rem',
+      }}>{text}</p>
     </div>
   </>)
 }

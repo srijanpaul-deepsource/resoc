@@ -4,7 +4,7 @@ export default function Notes() {
 	return (
 		<>
 			<div className='container'>
-				<section className="pt-5 px-sm-3 px-5 cdin">
+				<section className="pt-5 px-sm-3 px-4 cdin">
 					<div className="container ">
 						<div className="d-sm-flex align-items-center justify-content-between mainc">
 							<div className="img-home">
@@ -18,10 +18,11 @@ export default function Notes() {
 					</div>
 				</section>
 				<div className='p-3 p-sm-5'>
-					<div className="container">
+					<div className="container px-sm-5">
 
 						<ul style={{
 							listStyleType: 'none',
+							padding: '0px',
 						}}>
 							<li><a href='engmath1' className='text-var notes-link'>Engineering Maths I</a></li>
 							<li><a href='engmath2' className='text-var notes-link'>Engineering Maths II</a></li>
@@ -51,6 +52,7 @@ export default function Notes() {
 						<hr />
 						<ul style={{
 							listStyleType: 'none',
+							padding: '0px',
 						}}>
 							<li><a href='engmath3' className='text-var notes-link'>Engineering Maths III</a></li>
 
@@ -58,6 +60,7 @@ export default function Notes() {
 					</div>
 				</div>
 			</div>
+
 		</>
 	)
 }

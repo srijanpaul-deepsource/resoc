@@ -66,7 +66,7 @@ function ChatRoom(props) {
   // console.log(props.limit);
   
   const dummy = useRef();
-  const messagesRef = firestore.collection('messages');
+  const messagesRef = firestore.collection('messages-prod');
   const query = messagesRef.orderBy('createdAt').limitToLast(props.limit);
 
   const [messages] = useCollectionData(query, { idField: 'id' });

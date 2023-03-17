@@ -56,7 +56,7 @@ export default function Todo() {
     setInput("");
   }
   return (<>
-    <section className=" py-4 px-4 px-sm-1 cdin">
+    <section className=" py-4 px-3 px-sm-1 cdin">
       <div className="container ">
         <div className="d-sm-flex align-items-center justify-content-between mainc">
           <div className="img-home">
@@ -74,7 +74,7 @@ export default function Todo() {
       </div>
     </section>
     <div className='px-2 px-sm-5'>
-      <div className="py-2 px-1">
+      <div className="py-2 px-2">
         {todos.length >=0 && <p>Pending: <b>{todos.length}</b>
         <br/>
         <button className="btn"

@@ -3,8 +3,8 @@ import programming from '../assets/img/programming.svg'
 export default function Notes() {
 	return (
 		<>
-			<div className='container'>
-				<section className="pt-5 px-sm-3 px-4 cdin">
+			
+				<section className="py-4 px-sm-3 px-3 cdin">
 					<div className="container ">
 						<div className="d-sm-flex align-items-center justify-content-between mainc">
 							<div className="img-home">
@@ -17,7 +17,7 @@ export default function Notes() {
 						</div>
 					</div>
 				</section>
-				<div className='p-3 p-sm-5'>
+				<div className='px-3 px-sm-5'>
 					<div className="container px-sm-5">
 
 						<ul style={{
@@ -59,7 +59,7 @@ export default function Notes() {
 						</ul>
 					</div>
 				</div>
-			</div>
+			
 
 		</>
 	)

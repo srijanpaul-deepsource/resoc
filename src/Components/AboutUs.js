@@ -6,7 +6,7 @@ export default function Landingsegment() {
 	return (
 		<>
 		<div className='container'>
-			<section className=" pt-4 px-3 px-sm-0">
+			<section className=" pt-4 px-2 px-sm-0">
 				<div className="container ">
 					<div className="d-sm-flex align-items-center justify-content-between mainc">
 						<div className="img-home">
@@ -19,7 +19,7 @@ export default function Landingsegment() {
 					</div>
 				</div>
 			</section>
-			<div className="container p-2 p-sm-5 ">
+			<div className="p-sm-5 ">
 				<h1 className='p-2'> Dev Team</h1>
 				<div className="lead mt-3 p-1">
 					<ul style={{

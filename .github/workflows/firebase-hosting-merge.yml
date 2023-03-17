@@ -19,7 +19,6 @@ jobs:
       REACT_APP_FIREBASE_MEASUREMENT_ID: ${{ secrets.REACT_APP_FIREBASE_MEASUREMENT_ID }}
     steps:
       - uses: actions/checkout@v2
-      - run: printenv
       - run: npm ci && CI=false && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:

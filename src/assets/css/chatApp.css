@@ -2,7 +2,7 @@
     padding: 10px;
     /* overflow-y: scroll; */
     border-radius: 1rem;
-    border-color: --text-var;
+    border-color: --var(--text-var);
     border-width: 0.5px;
     border-style: solid;
     /* opacity */
@@ -16,7 +16,7 @@
 
 .main::-webkit-scrollbar-track {
     display: none;
-    background: --var(--text-var)
+    background: --var(--text-var);
 }
 
 .main::-webkit-scrollbar-thumb {

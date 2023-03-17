@@ -6,7 +6,7 @@ export default function Footer () {
     <>
       <footer className='p-2 text-center sticky-bottom position-relative' id='learnaboutus'>
         <div className=' container '>
-          <p> Made with ❤️ by <Link to='/aboutus' className='text-var'>TeamSoc</Link> 
+          <p> Made with ❤️ by TeamSoc
           </p>
         </div>
       </footer>

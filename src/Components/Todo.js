@@ -56,8 +56,8 @@ export default function Todo() {
     setInput("");
   }
   return (<>
-    <section className=" py-4 px-3 px-sm-1 cdin">
-      <div className="container ">
+    <section className=" py-4 px-4 px-sm-1 cdin">
+      {/* <div className="container "> */}
         <div className="d-sm-flex align-items-center justify-content-between mainc">
           <div className="img-home">
             <h1 className="d-inline heading"
@@ -70,7 +70,7 @@ export default function Todo() {
             </p>
           </div>
           <img className="img-fluid w-50 d-none d-sm-block" src={office} alt="in office" />
-        </div>
+        {/* </div> */}
       </div>
     </section>
     <div className='px-2 px-sm-5'>

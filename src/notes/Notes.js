@@ -4,8 +4,8 @@ export default function Notes() {
 	return (
 		<>
 			
-				<section className="py-4 px-sm-3 px-3 cdin">
-					<div className="container ">
+				<section className="py-4 px-sm-3 px-4 cdin">
+					{/* <div className="container "> */}
 						<div className="d-sm-flex align-items-center justify-content-between mainc">
 							<div className="img-home">
 								<h1 className="heading">NOTES<span></span></h1>
@@ -15,7 +15,7 @@ export default function Notes() {
 							</div>
 							<img className="img-fluid w-50 d-none d-sm-block" src={programming} alt="in office" />
 						</div>
-					</div>
+					{/* </div> */}
 				</section>
 				<div className='px-3 px-sm-5'>
 					<div className="container px-sm-5">

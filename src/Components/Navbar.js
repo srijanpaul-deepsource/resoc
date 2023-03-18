@@ -62,15 +62,12 @@ export default function Header(props) {
               <Link to="/notes" className="nav-link">Notes</Link>
               <Link to="/taskboard" className="nav-link">Tasks</Link>
               <Link to="/community" className="nav-link">Community</Link>
-              {/* <Nav.Link href="/notes">Notes</Nav.Link>
-              <Nav.Link href="/taskboard">Tasks</Nav.Link>
-              <Nav.Link href="/community">Community</Nav.Link> */}
+              
             </Nav>
             <Nav>
                <Link to="/aboutus" className="nav-link">About Us</Link>
-               <Link to="/login" className="nav-link">{buttonText}</Link>
-              {/* <Nav.Link href="/aboutus">About Us</Nav.Link>
-              <Nav.Link className='text-var' href="/login"> {buttonText}</Nav.Link> */}
+               {currentUser && <Link to="/profile" className="nav-link">{buttonText}</Link>}
+              {!currentUser && <Link to="/login" className="nav-link">{buttonText}</Link>}
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -98,16 +95,11 @@ export default function Header(props) {
               <Link to="/notes" className="nav-link">Notes</Link>
               <Link to="/taskboard" className="nav-link">Tasks</Link>
               <Link to="/community" className="nav-link">Community</Link>
-
-              {/* <Nav.Link activeClassName="active" href="/notes">Notes</Nav.Link> */}
-              {/* <Nav.Link activeClassName="active" href="/taskboard">Tasks</Nav.Link> */}
-              {/* <Nav.Link activeClassName="active" href="/community">Community</Nav.Link> */}
             </Nav>
             <Nav>
             <Link to="/aboutus" className="nav-link">About Us</Link>
-               <Link to="/login" className="nav-link">{buttonText}</Link>
-              {/* <Nav.Link href="/aboutus">About Us</Nav.Link>
-              <Nav.Link className='text-var' href="/login"> {buttonText}</Nav.Link> */}
+            {currentUser && <Link to="/profile" className="nav-link">{buttonText}</Link>}
+            {!currentUser && <Link to="/login" className="nav-link">{buttonText}</Link>}
             </Nav>
           </Navbar.Collapse>
         </Container>

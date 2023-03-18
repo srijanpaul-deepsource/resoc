@@ -7,7 +7,7 @@
     flex-direction: column;
 }
 
-.main::-webkit-scrollbar {
+/* .main::-webkit-scrollbar {
     width: 0.25rem;
 }
 
@@ -20,7 +20,7 @@
     display: none;
     background: #f7f7f7;
     border-radius: 2rem;
-}
+} */
 
 .form {
     /* height: 10vh; */

@@ -2,7 +2,23 @@ import React, { useState} from "react";
 import { Card, Button, Alert, Container } from "react-bootstrap";
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
+import profile from "../assets/img/profile-page.svg";
+import { auth } from "../firebase";
+
+var dark = false;
 export default function Profile() {
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark = true;
+  const [isDark, setIsDark] = React.useState(dark);
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    event.matches ? setIsDark(true) : setIsDark(false);
+  });
+  const [name, setName ] = useState(
+    auth.currentUser.displayName? auth.currentUser.displayName.slice(
+      0, auth.currentUser.displayName.indexOf(" ")) : auth.currentUser.email.slice(
+        0, auth.currentUser.email.indexOf("@")
+      )
+    );
   const [error, setError] = useState("");
   const { currentUser, logout } = useAuth();
   const navigate = useNavigate();
@@ -19,28 +35,42 @@ export default function Profile() {
 
   return (
     <>
-      <Container
-        className="d-flex align-items-center justify-content-center h-100"
-        style={{ minHeight: "80vh" }}
-      >
-        <div className="w-100" style={{ maxWidth: "400px" }}>
-          <Card>
-            <Card.Body className="text-dark">
-              <h2 className="text-center mb-4">Profile</h2>
-              {error && <Alert variant="danger">{error}</Alert>}
-              <strong >Email:</strong> {currentUser.email}
-              <Link to="/update-profile" className="btn btn-dark w-100 mt-3">
-                Update Profile
-              </Link>
-            </Card.Body>
-          </Card>
-          <div className="w-100 text-center mt-2">
-            <Button variant="link" className="text-dark btn btn-light w-100 mt-3" onClick={handleLogout}>
-              Log Out
-            </Button>
+     <section className="py-4 px-4 px-sm-1 cdin">
+      {/* <div className="container "> */}
+        <div className="d-sm-flex align-items-center justify-content-between mainc">
+          <div className="img-home">
+            <h1 className="heading">{name}</h1>
+            <p className="lead my-4">
+              Hey {name}, welcome to RESOC!
+              Manage your profile here.
+            </p>
           </div>
-        </div>
-      </Container>
+          <img className="img-fluid w-50 d-none d-sm-block p-5" src={profile} style={{
+            marginBlockEnd: "20px",
+
+          }} alt="in office" />
+        {/* </div> */}
+      </div>
+    </section>
+    <div className='p-2 p-sm-5'>
+      <button className="btn"
+        style={{
+          color: '#ff5e5b',
+        }}
+        onClick={() => auth.signOut()}>SIGN OUT</button>
+      <div className=" py-2 d-flex align-items-center justify-content-start mb-2">
+        {isDark &&
+          <button className="btn btn-dark"><Link to="/update-profile">Update Profile
+        </Link>
+          </button>
+        }
+        {!isDark &&
+          <button className="btn btn-light"><Link className='text-var text-decoration-none'to="/update-profile">UPDATE PASSWORD
+        </Link></button>
+        }
+      </div>
+
+    </div>
     </>
   );
 }

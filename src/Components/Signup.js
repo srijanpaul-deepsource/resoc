@@ -5,6 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 
 export default function Signup () {
+  const nameRef = useRef()
   const emailRef = useRef()
   const passwordRef = useRef()
   const confirmPasswordRef = useRef()
@@ -39,6 +40,13 @@ export default function Signup () {
               {error && <Alert variant='danger' className='text-center'>{error}</Alert>}
 
               <Form onSubmit={handleSubmit}>
+
+                <FormGroup id="name">
+                <Form.Label>Name</Form.Label>
+                <Form.Control type='email' ref={nameRef} required />
+                </FormGroup>
+
+
                 <FormGroup id='email'>
                   <Form.Label>Email</Form.Label>
                   <Form.Control type='email' ref={emailRef} required />

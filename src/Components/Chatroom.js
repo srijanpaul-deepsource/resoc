@@ -39,9 +39,7 @@ function Chat() {
       </div>
     </section>
 
-    <div className='p-2 p-sm-5' style={{
-
-    }}>
+    <div className='p-2 p-sm-5'>
       <button className="btn"
         style={{
           color: '#ff5e5b',

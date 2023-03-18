@@ -72,8 +72,19 @@ function App() {
                 </IsLoggedIn>
               }
             />
+            <Route
+              path='/profile'
+              element={
+                <RequireAuth redirectTo='/login'>
+                  <Suspense fallback={<Loader />}>
+                    <Profile />
+                  </Suspense>
+                </RequireAuth>
+              }
+            />
+
             <Route path='/signup' caseSensitive={false} element={<Suspense fallback={<Loader />}><Signup /></Suspense>} />
-            <Route path='/profile' caseSensitive={false} element={<Suspense fallback={<Loader />}><Profile /></Suspense>} />
+            {/* <Route path='/profile' caseSensitive={false} element={<Suspense fallback={<Loader />}><Profile /></Suspense>} /> */}
             <Route path='/forgot-password' element={<Suspense fallback={<Loader />}><ForgotPassword /></Suspense>} />
             <Route path="*" element={<PageNotFound />} />
           </Routes>

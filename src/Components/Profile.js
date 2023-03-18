@@ -3,6 +3,7 @@ import { useAuth } from "../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 import profile from "../assets/img/profile-page.svg";
 import { auth } from "../firebase";
+import { Alert } from "react-bootstrap";
 
 
 var dark = false;
@@ -14,9 +15,10 @@ export default function Profile() {
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     event.matches ? setIsDark(true) : setIsDark(false);
   });
-  const [name, setName ] = useState(auth.currentUser.displayName? auth.currentUser.displayName : auth.currentUser.email);
+  const name =auth.currentUser.displayName? auth.currentUser.displayName : auth.currentUser.email.slice(0, auth.currentUser.email.indexOf('@'));
   const [error, setError] = useState("");
-  const { currentUser, logout } = useAuth();
+  const [errorDef, setErrorDef] = useState("");
+  const { logout } = useAuth();
   const navigate = useNavigate();
   async function handleLogout() {
     setError("");
@@ -24,14 +26,20 @@ export default function Profile() {
       await logout();
       navigate("/");
       window.location.reload();
-    } catch {
+    } catch(e) {
       setError("Failed to log out");
+      setErrorDef(e.message);
     }
   }
 
   return (
     <>
      <section className="py-4 px-4 px-sm-1 cdin">
+      {error && <Alert variant="danger" className="text-center">{error}</Alert>}
+      {errorDef && <p style={{
+        fontStyle: "italic"
+      }}>{errorDef}</p>}
+      
       {/* <div className="container "> */}
         <div className="d-sm-flex align-items-center justify-content-between mainc">
           <div className="img-home">

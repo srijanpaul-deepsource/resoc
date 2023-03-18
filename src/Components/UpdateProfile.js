@@ -4,6 +4,7 @@ import { useAuth } from '../contexts/AuthContext'
 import { useNavigate } from 'react-router-dom'
 import { auth } from '../firebase';
 import profile from '../assets/img/profile-page.svg';
+import Loader from './Loader';
 
 var dark = false;
 export default function UpdateProfile () {
@@ -55,7 +56,8 @@ export default function UpdateProfile () {
         setLoading(false)
       })
   }
-
+  if(loading) return <Loader />
+  else
   return (
     <>
      <section className="pt-4 px-4 px-sm-1 cdin">

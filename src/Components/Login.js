@@ -5,7 +5,8 @@ import { Link, useNavigate } from 'react-router-dom'
 import firebase from 'firebase/compat/app'
 import { auth } from '../firebase'
 import '../assets/css/chatApp.css'
-import { Google, BoxArrowInRight } from 'react-bootstrap-icons'
+import { Google} from 'react-bootstrap-icons'
+import Loader from './Loader'
 
 var dark = false;
 export default function Login() {
@@ -42,8 +43,8 @@ export default function Login() {
     auth.signInWithPopup(provider);
   }
 
-
-  return (
+if(loading) return (<Loader />)
+else return (
     <>
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>

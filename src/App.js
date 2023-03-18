@@ -24,14 +24,13 @@ function App() {
   return (
     <>
       <Router>
-        <Routes>
-        </Routes>
         <AuthProvider>
           <Header />
           <Routes>
             <Route path='/' element={<Landingsegment />} />
             <Route path='/aboutus' element={<Suspense fallback={<Loader />}><AboutUs /></Suspense>} />
             <Route path='/notes' element={<Suspense fallback={<Loader />}><Notes /></Suspense>} />
+            <Route path='/visitloader' element={<Loader />} />
             <Route
               path='/update-profile'
               element={

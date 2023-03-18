@@ -20,6 +20,7 @@ export default function Todo() {
     dark = true;
   }
   const firestore = firebase.firestore();
+  const [donetodos, setDonetodos] = useState(0);
   const [todos, setTodos] = useState([])
   const [input, setInput] = useState('')
   const [isDark, setIsDark] = React.useState(dark);
@@ -29,7 +30,13 @@ export default function Todo() {
   useEffect(() => {
     firestore.collection(collection_used).doc(auth.currentUser.uid).collection('Todos').orderBy('timestamp', 'desc').onSnapshot(snapshot => {
       setTodos(snapshot.docs.map(doc => ({ id: doc.id, todo: doc.data().todo, done: doc.data().done, key: doc.data().id })))
+
+      if(snapshot.docs.length > 0) {
+        setDonetodos(snapshot.docs.filter(doc => doc.data().done === true).length)
+      }
     })
+
+
   }, [])
 
   const addTodo = async (e) => {
@@ -75,7 +82,25 @@ export default function Todo() {
     </section>
     <div className='px-2 px-sm-5'>
       <div className="py-2 px-2">
-        {todos.length >=0 && <p>Pending: <b>{todos.length}</b>
+        {todos.length >=0 && 
+        <p>Pending: <b>
+           {(todos.length - donetodos)>=0?
+            (todos.length - donetodos) : 0}
+          </b>
+        <br/>
+        <button className="btn"
+        style={{
+          paddingLeft: "0px",
+        }}
+        onClick={() => 
+          firestore.collection(collection_used).doc(auth.currentUser.uid).collection('Todos').get().then((querySnapshot) => {
+            querySnapshot.forEach((doc) => {
+                if(doc.data().done === true) {
+                  doc.ref.delete();
+                }
+            });
+        })
+        }><s className='text-var'>DELETE DONE</s></button>   
         <br/>
         <button className="btn"
         style={{
@@ -88,7 +113,7 @@ export default function Todo() {
                 doc.ref.delete();
             });
         })
-        }>DELETE ALL</button>        
+        }>DELETE ALL</button>
         
         </p>}
 

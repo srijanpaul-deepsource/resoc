@@ -24,9 +24,11 @@ export default function Signup () {
     try {
       setError('')
       setLoading(true)
+      const name = nameRef.current.value
       const user = await signup(emailRef.current.value, passwordRef.current.value)
+      
       await user.user.updateProfile({
-        displayName: nameRef.current.value
+        displayName: name
       })
       history('/')
     } catch(e) {
@@ -36,9 +38,9 @@ export default function Signup () {
     setLoading(false)
   }
 
-  return (
+  if(loading) return (<Loader />)
+  else return (
     <>
-    {loading && <Loader />}
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card style={{

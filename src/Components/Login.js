@@ -4,12 +4,23 @@ import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
 import firebase from 'firebase/compat/app'
 import { auth } from '../firebase'
+import '../assets/css/chatApp.css'
+import { Google, BoxArrowInRight } from 'react-bootstrap-icons'
 
+var dark = false;
 export default function Login() {
+  const history = useNavigate()
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark = true;
+  const [isDark, setIsDark] = React.useState(dark);
+
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    event.matches ? setIsDark(true) : setIsDark(false);
+  });
   const emailRef = useRef()
   const passwordRef = useRef()
   const { login } = useAuth()
   const [error, setError] = useState('')
+  const [errorDef, setErrorDef] = useState('')
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
 
@@ -20,8 +31,9 @@ export default function Login() {
       setLoading(true)
       await login(emailRef.current.value, passwordRef.current.value)
       navigate('/')
-    } catch {
+    } catch(e) {
       setError('Failed to log in')
+      setErrorDef(e.message)
     }
     setLoading(false)
   }
@@ -35,10 +47,22 @@ export default function Login() {
     <>
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
-          <Card>
-            <Card.Body className='text-dark'>
+          <Card  style={{
+                borderRadius: '1rem',
+                borderColor: 'var(--text-var)',
+                borderWidth: '1px',
+                borderStyle: 'dashed',
+                display: 'flex',
+                flexDirection: 'column',
+                backgroundColor: 'var(--bg-dark)'
+            
+          }}>
+            <Card.Body className='text-var'>
               <h2 className='text-center mb-4'>Log In</h2>
               {error && <Alert variant='danger'>{error}</Alert>}
+              {errorDef && <p style={{
+                fontStyle: 'italic'
+              }}>{errorDef}</p>}
 
               <Form onSubmit={handleSubmit}>
                 <FormGroup id='email'>
@@ -50,11 +74,21 @@ export default function Login() {
                   <Form.Label>Password</Form.Label>
                   <Form.Control type='password' ref={passwordRef} required />
                 </FormGroup>
-                <Button disabled={loading} className='w-100 mt-2 btn btn-dark' type='submit'>Log In</Button>
+                <Button disabled={loading} className=' w-100 mt-3 btn btn-primary' type='submit'>Log In</Button>
               </Form>
-              <Button disabled={loading} className='w-100 mt-2 btn btn-dark' type='submit' onClick={signInWithGoogle}> <i className="bi bi-google mx-2"></i>  Sign In With Google </Button>
+              {isDark &&
+              <button style={{
+                color: 'var(--text-var)',
+              }} className="btn w-100" onClick={signInWithGoogle}> <Google/>  Sign In With Google</button>
+              }
+              {!isDark &&
+              <button  className="btn w-100 mt-2" onClick={signInWithGoogle}> <Google/>  Sign In With Google</button>
+              }
+              
               <div className='w-100 text-center mt-3'>
-                <Link to='/forgot-password' className='text-dark'>Forgot Password</Link>
+                <Link to='/forgot-password' style={{
+                  color: '#ff5e5b',
+                }}>Forgot Password</Link>
               </div>
             </Card.Body>
           </Card>

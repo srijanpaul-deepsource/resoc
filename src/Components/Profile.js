@@ -14,12 +14,7 @@ export default function Profile() {
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
     event.matches ? setIsDark(true) : setIsDark(false);
   });
-  const [name, setName ] = useState(
-    auth.currentUser.displayName? auth.currentUser.displayName.slice(
-      0, auth.currentUser.displayName.indexOf(" ")) : auth.currentUser.email.slice(
-        0, auth.currentUser.email.indexOf("@")
-      )
-    );
+  const [name, setName ] = useState(auth.currentUser.displayName? auth.currentUser.displayName : auth.currentUser.email);
   const [error, setError] = useState("");
   const { currentUser, logout } = useAuth();
   const navigate = useNavigate();

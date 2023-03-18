@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react'
 import { Card, Button, Form, FormGroup, Alert, Container } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
+import Loader from './Loader'
 
 
 export default function Signup () {
@@ -11,6 +12,7 @@ export default function Signup () {
   const confirmPasswordRef = useRef()
   const { signup } = useAuth()
   const [error, setError] = useState('')
+  const [errorDef, setErrorDef] = useState('')
   const [loading, setLoading] = useState(false)
   const history = useNavigate()
 
@@ -22,28 +24,44 @@ export default function Signup () {
     try {
       setError('')
       setLoading(true)
-      await signup(emailRef.current.value, passwordRef.current.value)
+      const user = await signup(emailRef.current.value, passwordRef.current.value)
+      await user.user.updateProfile({
+        displayName: nameRef.current.value
+      })
       history('/')
-    } catch {
+    } catch(e) {
       setError('Error signing up')
+      setErrorDef(e.message)
     }
     setLoading(false)
   }
 
   return (
     <>
+    {loading && <Loader />}
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
-          <Card>
-            <Card.Body className='text-dark'>
+          <Card style={{
+            borderRadius: '1rem',
+            borderColor: 'var(--text-var)',
+            borderWidth: '1px',
+            borderStyle: 'dashed',
+            display: 'flex',
+            flexDirection: 'column',
+            backgroundColor: 'var(--bg-dark)'
+          }}>
+            <Card.Body className='text-var'>
               <h2 className='text-center mb-4'>Sign Up</h2>
               {error && <Alert variant='danger' className='text-center'>{error}</Alert>}
+              {errorDef && <p style={{
+                fontStyle: 'italic'
+              }}>{errorDef}</p>}
 
               <Form onSubmit={handleSubmit}>
 
                 <FormGroup id="name">
                 <Form.Label>Name</Form.Label>
-                <Form.Control type='email' ref={nameRef} required />
+                <Form.Control type='name' ref={nameRef} required />
                 </FormGroup>
 
 
@@ -61,7 +79,7 @@ export default function Signup () {
                   <Form.Label>Password Confirmation</Form.Label>
                   <Form.Control type='password' ref={confirmPasswordRef} required />
                 </FormGroup>
-                <Button disabled={loading} className='w-100 mt-2 btn btn-dark' type='submit'>Sign Up</Button>
+                <Button disabled={loading} className='w-100 mt-2 btn btn-primary' type='submit'>Sign Up</Button>
               </Form>
             </Card.Body>
           </Card>

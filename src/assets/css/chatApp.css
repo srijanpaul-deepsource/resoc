@@ -1,6 +1,6 @@
 .main {
     border-radius: 1rem;
-    border-color: --var(--text-var);
+    border-color: --var(--body-bg);
     border-width: 1px;
     border-style: dashed;
     display: flex;
@@ -44,7 +44,7 @@
     border: none;
     padding: 0 10px;
     border-radius: .75rem;
-    background: #ffffff !important;
+    /* background: #ffffff !important; */
 }
 
 button:disabled {
@@ -55,7 +55,7 @@ button:disabled {
 .para {
     max-width: 500px;
     line-height: 24px;
-    padding: 10px 10px;
+    /* padding: 10px 10px; */
     border-radius: 25px;
     position: relative;
     /* color: white; */

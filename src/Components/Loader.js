@@ -11,12 +11,12 @@ function Loader() {
     const interval = setInterval(() => {
       setRotation(prevRotation => prevRotation + 10);
     }, 50);
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setShowMessage(true);
     }, 7500);
     return () => {
       clearInterval(interval);
-      clearTimeout();
+      clearTimeout(timeout);
     };
   }, []);
 

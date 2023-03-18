@@ -1,22 +1,30 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { Card, Button, Form, FormGroup, Alert, Container } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
 import firebase from 'firebase/compat/app'
 import { auth } from '../firebase'
 import '../assets/css/chatApp.css'
-import { Google} from 'react-bootstrap-icons'
+import { Google } from 'react-bootstrap-icons'
 import Loader from './Loader'
 
 var dark = false;
 export default function Login() {
   const history = useNavigate()
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark = true;
-  const [isDark, setIsDark] = React.useState(dark);
+  const [isDark, setIsDark] = useState(dark);
 
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    event.matches ? setIsDark(true) : setIsDark(false);
-  });
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (event) => setIsDark(event.matches ? true : false);
+
+    mediaQuery.addEventListener('change', handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    }
+  }, []);
+
   const emailRef = useRef()
   const passwordRef = useRef()
   const { login } = useAuth()
@@ -80,7 +88,7 @@ else return (
               {isDark &&
               <button style={{
                 color: 'var(--text-var)',
-              }} className="btn w-100" onClick={signInWithGoogle}> <Google/>  Sign In With Google</button>
+              }} className="btn w-100 mt-2" onClick={signInWithGoogle}> <Google/>  Sign In With Google</button>
               }
               {!isDark &&
               <button  className="btn w-100 mt-2" onClick={signInWithGoogle}> <Google/>  Sign In With Google</button>

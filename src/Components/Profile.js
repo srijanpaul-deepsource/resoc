@@ -1,12 +1,13 @@
 import React, { useState} from "react";
-import { Card, Button, Alert, Container } from "react-bootstrap";
 import { useAuth } from "../contexts/AuthContext";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import profile from "../assets/img/profile-page.svg";
 import { auth } from "../firebase";
 
+
 var dark = false;
 export default function Profile() {
+  const history = useNavigate();
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark = true;
   const [isDark, setIsDark] = React.useState(dark);
 
@@ -48,11 +49,11 @@ export default function Profile() {
           <img className="img-fluid w-50 d-none d-sm-block p-5" src={profile} style={{
             marginBlockEnd: "20px",
 
-          }} alt="in office" />
+          }} alt="profiledoc" />
         {/* </div> */}
       </div>
     </section>
-    <div className='p-2 p-sm-5'>
+    <div className='p-2 px-sm-5 py-sm-4'>
       <button className="btn"
         style={{
           color: '#ff5e5b',
@@ -60,13 +61,14 @@ export default function Profile() {
         onClick={() => auth.signOut()}>SIGN OUT</button>
       <div className=" py-2 d-flex align-items-center justify-content-start mb-2">
         {isDark &&
-          <button className="btn btn-dark"><Link to="/update-profile">Update Profile
-        </Link>
+          <button className="btn btn-dark" onClick={()=> history("/update-profile")
+          }>Update Profile
           </button>
         }
         {!isDark &&
-          <button className="btn btn-light"><Link className='text-var text-decoration-none'to="/update-profile">UPDATE PASSWORD
-        </Link></button>
+          <button className="btn btn-light" onClick={()=> history("/update-profile")
+        }>UPDATE PASSWORD
+        </button>
         }
       </div>
 

@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
-import { Form, Button, Card, Alert, Container } from 'react-bootstrap'
+import { Form, Alert, } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { auth } from '../firebase';
 import profile from '../assets/img/profile-page.svg';
 
@@ -58,10 +58,10 @@ export default function UpdateProfile () {
 
   return (
     <>
-     <section className="py-4 px-4 px-sm-1 cdin">
+     <section className="pt-4 px-4 px-sm-1 cdin">
+        {error && <Alert variant='danger'>{error}</Alert>}
       {/* <div className="container "> */}
         <div className="d-sm-flex align-items-center justify-content-between mainc">
-        {error && <Alert variant='danger'>{error}</Alert>}
           <div className="img-home">
             <h1 className="heading">{name}</h1>
             <p className="lead my-4">
@@ -76,8 +76,11 @@ export default function UpdateProfile () {
         
       </div>
     </section>
-    <div className='px-2 px-sm-5'>
-      <div className=" p-sm-2">
+    
+      <div className="px-2 px-sm-5"
+      style={{
+        maxWidth: "500px",
+       }}> 
 
          <Form onSubmit={handleSubmit}>
          <Form.Group id='email' className='mb-2'>
@@ -87,6 +90,8 @@ export default function UpdateProfile () {
              ref={emailRef}
              required
              defaultValue={currentUser.email}
+             disabled
+
            />
          </Form.Group>
          <Form.Group id='password' className='mb-2'>
@@ -105,17 +110,20 @@ export default function UpdateProfile () {
              placeholder='Leave blank to keep the same'
            />
          </Form.Group>
-         {isDark ? 
-         <button className=" mt-3 btn btn-dark" type='submit'
-          >UPDATE
-        </button> :
-        <button className=" mt-3 btn btn-light" type='submit'
-        >UPDATE
-      </button> 
+         <button className="btn mt-2"
+        style={{
+          color: '#ff5e5b',
+        }}
+        type='submit'>UPDATE</button>  {isDark ? 
+          <button className=" mt-2 btn btn-dark" onClick={ () => history('/profile')}
+           >CANCEL
+         </button> :
+         <button className=" mt-2 btn btn-light" onClick={ () => history('/profile')}
+         >CANCEL
+       </button> }
+         </Form>
         
-        }
-          </Form>
-      </div>
+      
 
     </div>
     </>

@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import Loader from './Loader'
 
 
-export default function Signup () {
+export default function Signup() {
   const nameRef = useRef()
   const emailRef = useRef()
   const passwordRef = useRef()
@@ -16,7 +16,7 @@ export default function Signup () {
   const [loading, setLoading] = useState(false)
   const history = useNavigate()
 
-  async function handleSubmit (e) {
+  async function handleSubmit(e) {
     e.preventDefault()
     if (passwordRef.current.value !== confirmPasswordRef.current.value) {
       return setError('Passwords do not match')
@@ -27,20 +27,20 @@ export default function Signup () {
       setLoading(true)
       const name = nameRef.current.value
       const user = await signup(emailRef.current.value, passwordRef.current.value)
-      
+
       await user.user.updateProfile({
         displayName: name
       })
       history('/')
-    } catch(e) {
+    } catch (e) {
       setError('Error signing up')
-      if(e.code === 'auth/email-already-in-use') setErrorDef('Email already in use')
-      else if(e.code === 'auth/invalid-email') setErrorDef('Invalid email')
-      else if(e.code === 'auth/operation-not-allowed') setErrorDef('Operation not allowed')
-      else if(e.code === 'auth/weak-password') setErrorDef('Weak password')
-      else if(e.code === 'auth/too-many-requests') setErrorDef('Too many requests. Try again later')
-      else if(e.code === 'auth/user-disabled') setErrorDef('User disabled')
-      
+      if (e.code === 'auth/email-already-in-use') setErrorDef('Email already in use')
+      else if (e.code === 'auth/invalid-email') setErrorDef('Invalid email')
+      else if (e.code === 'auth/operation-not-allowed') setErrorDef('Operation not allowed')
+      else if (e.code === 'auth/weak-password') setErrorDef('Weak password')
+      else if (e.code === 'auth/too-many-requests') setErrorDef('Too many requests. Try again later')
+      else if (e.code === 'auth/user-disabled') setErrorDef('User disabled')
+
       else setErrorDef(e.message)
     }
     setLoading(false)
@@ -50,13 +50,13 @@ export default function Signup () {
       setError('')
       setErrorDef('')
     }, 3000)
-  
+
     return () => {
       clearTimeout(timeoutId)
     }
   }, [error, errorDef])
 
-  if(loading) return (<Loader />)
+  if (loading) return (<Loader />)
   else return (
     <>
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
@@ -80,20 +80,20 @@ export default function Signup () {
               <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-2" controlId="formGroupName">
                   <Form.Label>Name</Form.Label>
-                  <Form.Control type="text" placeholder="Enter name" ref={nameRef} />
+                  <Form.Control type="text" ref={nameRef} />
                 </Form.Group>
-              <Form.Group className="mb-2" controlId="formGroupEmail">
+                <Form.Group className="mb-2" controlId="formGroupEmail">
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" ref={emailRef} />
+                  <Form.Control type="email" ref={emailRef} />
                 </Form.Group>
                 <Form.Group className="mb-2" controlId="formGroupPassword">
                   <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" ref={passwordRef}placeholder="Password" />
+                  <Form.Control type="password" ref={passwordRef} />
                 </Form.Group>
                 <Form.Group className="mb-2" controlId="formGroupConfirmPassword">
                   <Form.Label>Confirm Password</Form.Label>
-                  <Form.Control type="password" ref={confirmPasswordRef}placeholder="Confirm Password" />
-                </Form.Group>              
+                  <Form.Control type="password" ref={confirmPasswordRef} />
+                </Form.Group>
                 <Button disabled={loading} className='w-100 mt-1 btn btn-primary' type='submit'>Sign Up</Button>
               </Form>
             </Card.Body>

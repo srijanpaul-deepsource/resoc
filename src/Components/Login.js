@@ -96,11 +96,11 @@ export default function Login() {
               <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-2" controlId="formGroupEmail">
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" ref={emailRef} />
+                  <Form.Control type="email" ref={emailRef} />
                 </Form.Group>
                 <Form.Group className="mb-2" controlId="formGroupPassword">
                   <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" ref={passwordRef}placeholder="Password" />
+                  <Form.Control type="password" ref={passwordRef}/>
                 </Form.Group>
                 <Button disabled={loading} className=' w-100 mt-1 btn btn-primary' type='submit'>Log In</Button>
               </Form>

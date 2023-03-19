@@ -69,7 +69,7 @@ export default function ForgotPassword() {
               <Form onSubmit={handleSubmit}>
               <Form.Group className="mb-2" controlId="formGroupEmail">
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" ref={emailRef} />
+                  <Form.Control type="email" ref={emailRef} />
                 </Form.Group>
                 <button disabled={loading} className="btn w-100 mt-2"
                   style={{

@@ -109,19 +109,19 @@ export default function UpdateProfile () {
          <Form onSubmit={handleSubmit}>
          <Form.Group className="mb-2" controlId="formGroupName">
                   <Form.Label>Name</Form.Label>
-                  <Form.Control type="text" placeholder="Enter name" ref={nameRef} />
+                  <Form.Control type="text"  ref={nameRef} />
                 </Form.Group>
               <Form.Group className="mb-2" controlId="formGroupEmail">
                   <Form.Label>Email address</Form.Label>
-                  <Form.Control type="email" placeholder="Enter email" ref={emailRef} />
+                  <Form.Control type="email" ref={emailRef} />
                 </Form.Group>
                 <Form.Group className="mb-2" controlId="formGroupPassword">
                   <Form.Label>Password</Form.Label>
-                  <Form.Control type="password" ref={passwordRef}placeholder="Password" />
+                  <Form.Control type="password" ref={passwordRef} />
                 </Form.Group>
                 <Form.Group className="mb-2" controlId="formGroupConfirmPassword">
                   <Form.Label>Confirm Password</Form.Label>
-                  <Form.Control type="password" ref={passwordConfirmRef}placeholder="Confirm Password" />
+                  <Form.Control type="password" ref={passwordConfirmRef} />
                 </Form.Group>              
          <button className="btn mt-2"
         style={{

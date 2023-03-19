@@ -59,8 +59,10 @@ export default function Header(props) {
               navbarScroll
             >
               <Link to="/notes" className="nav-link">Notes</Link>
-              <Link to="/taskboard" className="nav-link">Tasks</Link>
-              <Link to="/community" className="nav-link">Community</Link>
+              {currentUser && <Link to="/taskboard" className="nav-link">Tasks</Link>}
+              {!currentUser && <Link to="/login" className="nav-link">Tasks</Link>}
+              {currentUser && <Link to="/community" className="nav-link">Community</Link>}
+              {!currentUser && <Link to="/login" className="nav-link">Community</Link>}
               
             </Nav>
             <Nav>
@@ -92,8 +94,10 @@ export default function Header(props) {
               navbarScroll
             >
               <Link to="/notes" className="nav-link">Notes</Link>
-              <Link to="/taskboard" className="nav-link">Tasks</Link>
-              <Link to="/community" className="nav-link">Community</Link>
+              {currentUser && <Link to="/taskboard" className="nav-link">Tasks</Link>}
+              {!currentUser && <Link to="/login" className="nav-link">Tasks</Link>}
+              {currentUser && <Link to="/community" className="nav-link">Community</Link>}
+              {!currentUser && <Link to="/login" className="nav-link">Community</Link>}
             </Nav>
             <Nav>
             <Link to="/aboutus" className="nav-link">About Us</Link>

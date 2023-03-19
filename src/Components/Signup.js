@@ -34,7 +34,14 @@ export default function Signup () {
       history('/')
     } catch(e) {
       setError('Error signing up')
-      setErrorDef(e.message)
+      if(e.code === 'auth/email-already-in-use') setErrorDef('Email already in use')
+      else if(e.code === 'auth/invalid-email') setErrorDef('Invalid email')
+      else if(e.code === 'auth/operation-not-allowed') setErrorDef('Operation not allowed')
+      else if(e.code === 'auth/weak-password') setErrorDef('Weak password')
+      else if(e.code === 'auth/too-many-requests') setErrorDef('Too many requests. Try again later')
+      else if(e.code === 'auth/user-disabled') setErrorDef('User disabled')
+      
+      else setErrorDef(e.message)
     }
     setLoading(false)
   }

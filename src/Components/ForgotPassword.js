@@ -22,7 +22,8 @@ export default function ForgotPassword() {
       setMessage('Check your inbox for further instructions')
     } catch (e) {
       setError('Failed to reset password \n')
-      setErrorDef(e.message)
+      if(e.code === 'auth/user-not-found') setErrorDef('No user found with this email')
+      // setErrorDef(e.message)
 
     }
 
@@ -61,7 +62,8 @@ export default function ForgotPassword() {
               <h2 className='text-center mb-4'>Password Reset</h2>
               {error && <Alert variant='danger'>{error}</Alert>}
               {errorDef && <p style={{
-                fontStyle: 'italic'
+                // fontStyle: 'italic'
+                color: '#ff5e5b'
               }}>{errorDef}</p>}
               {message && <Alert variant='success'>{message}</Alert>}
               <Form onSubmit={handleSubmit}>

@@ -31,30 +31,54 @@ export default function Login() {
   const navigate = useNavigate()
   const [cancel, setCancel] = useState(null)
 
+  // async function handleSubmit (e) {
+  //   e.preventDefault()
+  //   try {
+  //     setError('')
+  //     setErrorDef('')
+  //     setLoading(true)
+  //     const name = nameRef.current.value
+  //     const user = await signup(emailRef.current.value, passwordRef.current.value)
+      
+  //     await user.user.updateProfile({
+  //       displayName: name
+  //     })
+  //     history('/')
+  //   } catch(e) {
+  //     setError('Error signing up')
+  //     if(e.code === 'auth/email-already-in-use') setErrorDef('Email already in use')
+  //     else if(e.code === 'auth/invalid-email') setErrorDef('Invalid email')
+  //     else if(e.code === 'auth/operation-not-allowed') setErrorDef('Operation not allowed')
+  //     else if(e.code === 'auth/weak-password') setErrorDef('Weak password')
+  //     else if(e.code === 'auth/too-many-requests') setErrorDef('Too many requests. Try again later')
+  //     else if(e.code === 'auth/user-disabled') setErrorDef('User disabled')
+      
+  //     else setErrorDef(e.message)
+  //   }
+  //   setLoading(false)
+  // }
+
   async function handleSubmit(e) {
     e.preventDefault()
     try {
       setError('')
+      setErrorDef('')
       setLoading(true)
       const cancel = await login(emailRef.current.value, passwordRef.current.value)
       setCancel(cancel)
       navigate('/')
     } catch(e) {
       setError('Failed to log in')
-      setErrorDef(e.message)
+      if(e.code === 'auth/user-not-found') setErrorDef('No user found with this email')
+      else if(e.code === 'auth/wrong-password') setErrorDef('Wrong password')
+      else if(e.code === 'auth/too-many-requests') setErrorDef('Too many requests. Try again later')
+      else if(e.code === 'auth/invalid-email') setErrorDef('Invalid email')
+      else if(e.code === 'auth/user-disabled') setErrorDef('User disabled')
+      else setErrorDef(e.message)
+      
     }
     setLoading(false)
   }
-  
-  useEffect(() => {
-    setError('')
-    setErrorDef('')
-    return () => {
-      if (cancel) {
-        cancel()
-      }
-    }
-  }, [cancel])
 
   React.useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -92,7 +116,8 @@ else return (
               <h2 className='text-center mb-4'>Log In</h2>
               {error && <Alert variant='danger'>{error}</Alert>}
               {errorDef && <p style={{
-                fontStyle: 'italic'
+                // fontStyle: 'italic'
+                color: '#ff5e5b',
               }}>{errorDef}</p>}
 
               <Form onSubmit={handleSubmit}>

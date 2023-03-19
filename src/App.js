@@ -9,9 +9,12 @@ import Header from './Components/Navbar'
 import Footer from './Components/Footer'
 import Landingsegment from './Components/Landingsegment'
 import Loader from './Components/Loader'
+import Login from './Components/Login'
+import Signup from './Components/Signup'
 
-const Signup = lazy(() => import('./Components/Signup'))
-const Login = lazy(() => import('./Components/Login'))
+// const Signup = lazy(() => import('./Components/Signup'))
+// const Login = lazy(() => import('./Components/Login'))
+
 const ForgotPassword = lazy(() => import('./Components/ForgotPassword'))
 const UpdateProfile = lazy(() => import('./Components/UpdateProfile'))
 const Profile = lazy(() => import('./Components/Profile'))
@@ -65,9 +68,9 @@ function App() {
               path='/login'
               element={
                 <IsLoggedIn redirectTo='/profile'>
-                  <Suspense fallback={<Loader />}>
+                  {/* <Suspense fallback={<Loader />}> */}
                     <Login />
-                  </Suspense>
+                  {/* </Suspense> */}
                 </IsLoggedIn>
               }
             />
@@ -82,9 +85,33 @@ function App() {
               }
             />
 
-            <Route path='/signup' caseSensitive={false} element={<Suspense fallback={<Loader />}><Signup /></Suspense>} />
+            <Route
+              path='/signup'
+              element={
+                <IsLoggedIn redirectTo='/profile'>
+                  {/* <Suspense fallback={<Loader />}> */}
+                    <Signup />
+                  {/* </Suspense> */}
+                </IsLoggedIn>
+              }
+            />
+            <Route
+              path='/forgot-password'
+              element={
+                <IsLoggedIn redirectTo='/update-profile'>
+                  <Suspense fallback={<Loader />}>
+                    <ForgotPassword />
+                  </Suspense>
+                </IsLoggedIn>
+              }
+            />
+
+
+
+
+            {/* <Route path='/signup' caseSensitive={false} element={<Suspense fallback={<Loader />}><Signup /></Suspense>} /> */}
             {/* <Route path='/profile' caseSensitive={false} element={<Suspense fallback={<Loader />}><Profile /></Suspense>} /> */}
-            <Route path='/forgot-password' element={<Suspense fallback={<Loader />}><ForgotPassword /></Suspense>} />
+            {/* <Route path='/forgot-password' element={<Suspense fallback={<Loader />}><ForgotPassword /></Suspense>} /> */}
             <Route path="*" element={<PageNotFound />} />
           </Routes>
           <Footer />

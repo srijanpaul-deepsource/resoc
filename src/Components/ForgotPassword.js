@@ -59,7 +59,7 @@ export default function ForgotPassword() {
             }}
           >
             <Card.Body className='text-var'>
-              <h2 className='text-center mb-4'>Password Reset</h2>
+              <h1 className='text-center m-4'>Password Reset</h1>
               {error && <Alert variant='danger'>{error}</Alert>}
               {errorDef && <p style={{
                 // fontStyle: 'italic'
@@ -67,9 +67,9 @@ export default function ForgotPassword() {
               }}>{errorDef}</p>}
               {message && <Alert variant='success'>{message}</Alert>}
               <Form onSubmit={handleSubmit}>
-                <Form.Group id='email'>
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control type='email' ref={emailRef} required />
+              <Form.Group className="mb-2" controlId="formGroupEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" ref={emailRef} />
                 </Form.Group>
                 <button disabled={loading} className="btn w-100 mt-2"
                   style={{

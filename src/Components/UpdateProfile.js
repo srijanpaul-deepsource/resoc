@@ -22,9 +22,10 @@ export default function UpdateProfile () {
 
   const name =auth.currentUser.displayName? auth.currentUser.displayName : auth.currentUser.email.slice(0, auth.currentUser.email.indexOf('@'));
   const emailRef = useRef()
+  const nameRef = useRef()
   const passwordRef = useRef()
   const passwordConfirmRef = useRef()
-  const { currentUser, updatePassword, updateEmail } = useAuth()
+  const { currentUser, updatePassword, updateEmail, updateProfileName } = useAuth()
   const [error, setError] = useState('')
   const [errorDef, setErrorDef] = useState('')
   const [loading, setLoading] = useState(false)
@@ -39,6 +40,10 @@ export default function UpdateProfile () {
     const promises = []
     setLoading(true)
     setError('')
+
+    if(nameRef.current.value !== currentUser.displayName) {
+      promises.push(updateProfileName(nameRef.current.value))
+    }
 
     if (emailRef.current.value !== currentUser.email) {
       promises.push(updateEmail(emailRef.current.value))
@@ -102,33 +107,22 @@ export default function UpdateProfile () {
        }}> 
 
          <Form onSubmit={handleSubmit}>
-         <Form.Group id='email' className='mb-2'>
-           <Form.Label>Email</Form.Label>
-           <Form.Control
-             type='email'
-             ref={emailRef}
-             required
-             defaultValue={currentUser.email}
-             disabled
-
-           />
-         </Form.Group>
-         <Form.Group id='password' className='mb-2'>
-           <Form.Label>Password</Form.Label>
-           <Form.Control
-             type='password'
-             ref={passwordRef}
-             placeholder='Leave blank to keep the same'
-           />
-         </Form.Group>
-         <Form.Group id='password-confirm' className='mb-2'>
-           <Form.Label>Password Confirmation</Form.Label>
-           <Form.Control
-             type='password'
-             ref={passwordConfirmRef}
-             placeholder='Leave blank to keep the same'
-           />
-         </Form.Group>
+         <Form.Group className="mb-2" controlId="formGroupName">
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control type="text" placeholder="Enter name" ref={nameRef} />
+                </Form.Group>
+              <Form.Group className="mb-2" controlId="formGroupEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" ref={emailRef} />
+                </Form.Group>
+                <Form.Group className="mb-2" controlId="formGroupPassword">
+                  <Form.Label>Password</Form.Label>
+                  <Form.Control type="password" ref={passwordRef}placeholder="Password" />
+                </Form.Group>
+                <Form.Group className="mb-2" controlId="formGroupConfirmPassword">
+                  <Form.Label>Confirm Password</Form.Label>
+                  <Form.Control type="password" ref={passwordConfirmRef}placeholder="Confirm Password" />
+                </Form.Group>              
          <button className="btn mt-2"
         style={{
           color: '#ff5e5b',

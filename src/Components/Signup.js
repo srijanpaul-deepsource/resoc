@@ -71,35 +71,30 @@ export default function Signup () {
             backgroundColor: 'var(--bg-dark)'
           }}>
             <Card.Body className='text-var'>
-              <h2 className='text-center mb-4'>Sign Up</h2>
+              <h1 className='text-center m-4'>Sign Up</h1>
               {error && <Alert variant='danger' className='text-center'>{error}</Alert>}
               {errorDef && <p style={{
                 fontStyle: 'italic'
               }}>{errorDef}</p>}
 
               <Form onSubmit={handleSubmit}>
-
-                <FormGroup id="name">
-                <Form.Label>Name</Form.Label>
-                <Form.Control type='name' ref={nameRef} required />
-                </FormGroup>
-
-
-                <FormGroup id='email'>
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control type='email' ref={emailRef} required />
-                </FormGroup>
-
-                <FormGroup id='password'>
+                <Form.Group className="mb-2" controlId="formGroupName">
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control type="text" placeholder="Enter name" ref={nameRef} />
+                </Form.Group>
+              <Form.Group className="mb-2" controlId="formGroupEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" ref={emailRef} />
+                </Form.Group>
+                <Form.Group className="mb-2" controlId="formGroupPassword">
                   <Form.Label>Password</Form.Label>
-                  <Form.Control type='password' ref={passwordRef} required />
-                </FormGroup>
-
-                <FormGroup id='password-confirm'>
-                  <Form.Label>Password Confirmation</Form.Label>
-                  <Form.Control type='password' ref={confirmPasswordRef} required />
-                </FormGroup>
-                <Button disabled={loading} className='w-100 mt-2 btn btn-primary' type='submit'>Sign Up</Button>
+                  <Form.Control type="password" ref={passwordRef}placeholder="Password" />
+                </Form.Group>
+                <Form.Group className="mb-2" controlId="formGroupConfirmPassword">
+                  <Form.Label>Confirm Password</Form.Label>
+                  <Form.Control type="password" ref={confirmPasswordRef}placeholder="Confirm Password" />
+                </Form.Group>              
+                <Button disabled={loading} className='w-100 mt-1 btn btn-primary' type='submit'>Sign Up</Button>
               </Form>
             </Card.Body>
           </Card>

@@ -31,33 +31,6 @@ export default function Login() {
   const navigate = useNavigate()
   const [cancel, setCancel] = useState(null)
 
-  // async function handleSubmit (e) {
-  //   e.preventDefault()
-  //   try {
-  //     setError('')
-  //     setErrorDef('')
-  //     setLoading(true)
-  //     const name = nameRef.current.value
-  //     const user = await signup(emailRef.current.value, passwordRef.current.value)
-      
-  //     await user.user.updateProfile({
-  //       displayName: name
-  //     })
-  //     history('/')
-  //   } catch(e) {
-  //     setError('Error signing up')
-  //     if(e.code === 'auth/email-already-in-use') setErrorDef('Email already in use')
-  //     else if(e.code === 'auth/invalid-email') setErrorDef('Invalid email')
-  //     else if(e.code === 'auth/operation-not-allowed') setErrorDef('Operation not allowed')
-  //     else if(e.code === 'auth/weak-password') setErrorDef('Weak password')
-  //     else if(e.code === 'auth/too-many-requests') setErrorDef('Too many requests. Try again later')
-  //     else if(e.code === 'auth/user-disabled') setErrorDef('User disabled')
-      
-  //     else setErrorDef(e.message)
-  //   }
-  //   setLoading(false)
-  // }
-
   async function handleSubmit(e) {
     e.preventDefault()
     try {
@@ -67,15 +40,15 @@ export default function Login() {
       const cancel = await login(emailRef.current.value, passwordRef.current.value)
       setCancel(cancel)
       navigate('/')
-    } catch(e) {
+    } catch (e) {
       setError('Failed to log in')
-      if(e.code === 'auth/user-not-found') setErrorDef('No user found with this email')
-      else if(e.code === 'auth/wrong-password') setErrorDef('Wrong password')
-      else if(e.code === 'auth/too-many-requests') setErrorDef('Too many requests. Try again later')
-      else if(e.code === 'auth/invalid-email') setErrorDef('Invalid email')
-      else if(e.code === 'auth/user-disabled') setErrorDef('User disabled')
+      if (e.code === 'auth/user-not-found') setErrorDef('No user found with this email')
+      else if (e.code === 'auth/wrong-password') setErrorDef('Wrong password')
+      else if (e.code === 'auth/too-many-requests') setErrorDef('Too many requests. Try again later')
+      else if (e.code === 'auth/invalid-email') setErrorDef('Invalid email')
+      else if (e.code === 'auth/user-disabled') setErrorDef('User disabled')
       else setErrorDef(e.message)
-      
+
     }
     setLoading(false)
   }
@@ -85,35 +58,35 @@ export default function Login() {
       setError('')
       setErrorDef('')
     }, 3000)
-  
+
     return () => {
       clearTimeout(timeoutId)
     }
   }, [error, errorDef])
-  
-  
+
+
   const signInWithGoogle = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider);
   }
 
-if(loading) return (<Loader />)
-else return (
+  if (loading) return (<Loader />)
+  else return (
     <>
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
-          <Card  style={{
-                borderRadius: '0.5rem',
-                borderColor: 'var(--text-var)',
-                borderWidth: '1px',
-                borderStyle: 'dashed',
-                display: 'flex',
-                flexDirection: 'column',
-                backgroundColor: 'var(--bg-dark)'
-            
+          <Card style={{
+            borderRadius: '0.5rem',
+            borderColor: 'var(--text-var)',
+            borderWidth: '1px',
+            borderStyle: 'dashed',
+            display: 'flex',
+            flexDirection: 'column',
+            backgroundColor: 'var(--bg-dark)'
+
           }}>
             <Card.Body className='text-var'>
-              <h2 className='text-center mb-4'>Log In</h2>
+              <h1 className='text-center m-4'>Log In</h1>
               {error && <Alert variant='danger'>{error}</Alert>}
               {errorDef && <p style={{
                 // fontStyle: 'italic'
@@ -121,26 +94,25 @@ else return (
               }}>{errorDef}</p>}
 
               <Form onSubmit={handleSubmit}>
-                <FormGroup id='email'>
-                  <Form.Label>Email</Form.Label>
-                  <Form.Control type='email' ref={emailRef} required />
-                </FormGroup>
-
-                <FormGroup id='password'>
+                <Form.Group className="mb-2" controlId="formGroupEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" ref={emailRef} />
+                </Form.Group>
+                <Form.Group className="mb-2" controlId="formGroupPassword">
                   <Form.Label>Password</Form.Label>
-                  <Form.Control type='password' ref={passwordRef} required />
-                </FormGroup>
-                <Button disabled={loading} className=' w-100 mt-3 btn btn-primary' type='submit'>Log In</Button>
+                  <Form.Control type="password" ref={passwordRef}placeholder="Password" />
+                </Form.Group>
+                <Button disabled={loading} className=' w-100 mt-1 btn btn-primary' type='submit'>Log In</Button>
               </Form>
               {isDark &&
-              <button style={{
-                color: 'var(--text-var)',
-              }} className="btn w-100 mt-2" onClick={signInWithGoogle}> <Google/>  Sign In With Google</button>
+                <button style={{
+                  color: 'var(--text-var)',
+                }} className="btn w-100 mt-2" onClick={signInWithGoogle}> <Google />  Sign In With Google</button>
               }
               {!isDark &&
-              <button  className="btn w-100 mt-2" onClick={signInWithGoogle}> <Google/>  Sign In With Google</button>
+                <button className="btn w-100 mt-2" onClick={signInWithGoogle}> <Google />  Sign In With Google</button>
               }
-              
+
               <div className='w-100 text-center mt-3'>
                 <Link to='/forgot-password' style={{
                   color: '#ff5e5b',

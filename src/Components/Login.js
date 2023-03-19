@@ -8,12 +8,9 @@ import '../assets/css/chatApp.css'
 import { Google } from 'react-bootstrap-icons'
 import Loader from './Loader'
 
-var dark = false;
 export default function Login() {
   const history = useNavigate()
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark = true;
-  const [isDark, setIsDark] = useState(dark);
-
+  const [isDark, setIsDark] = React.useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handleChange = (event) => setIsDark(event.matches ? true : false);
@@ -32,13 +29,15 @@ export default function Login() {
   const [errorDef, setErrorDef] = useState('')
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
+  const [cancel, setCancel] = useState(null)
 
   async function handleSubmit(e) {
     e.preventDefault()
     try {
       setError('')
       setLoading(true)
-      await login(emailRef.current.value, passwordRef.current.value)
+      const cancel = await login(emailRef.current.value, passwordRef.current.value)
+      setCancel(cancel)
       navigate('/')
     } catch(e) {
       setError('Failed to log in')
@@ -46,6 +45,29 @@ export default function Login() {
     }
     setLoading(false)
   }
+  
+  useEffect(() => {
+    setError('')
+    setErrorDef('')
+    return () => {
+      if (cancel) {
+        cancel()
+      }
+    }
+  }, [cancel])
+
+  React.useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setError('')
+      setErrorDef('')
+    }, 3000)
+  
+    return () => {
+      clearTimeout(timeoutId)
+    }
+  }, [error, errorDef])
+  
+  
   const signInWithGoogle = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider);

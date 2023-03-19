@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Card, Button, Form, FormGroup, Alert, Container } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
 import { Link, useNavigate } from 'react-router-dom'
@@ -23,6 +23,7 @@ export default function Signup () {
     }
     try {
       setError('')
+      setErrorDef('')
       setLoading(true)
       const name = nameRef.current.value
       const user = await signup(emailRef.current.value, passwordRef.current.value)
@@ -37,6 +38,16 @@ export default function Signup () {
     }
     setLoading(false)
   }
+  React.useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setError('')
+      setErrorDef('')
+    }, 3000)
+  
+    return () => {
+      clearTimeout(timeoutId)
+    }
+  }, [error, errorDef])
 
   if(loading) return (<Loader />)
   else return (

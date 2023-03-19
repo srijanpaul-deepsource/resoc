@@ -6,15 +6,20 @@ import { auth } from "../firebase";
 import { Alert } from "react-bootstrap";
 
 
-var dark = false;
+
 export default function Profile() {
   const history = useNavigate();
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark = true;
-  const [isDark, setIsDark] = React.useState(dark);
+  const [isDark, setIsDark] = React.useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (event) => setIsDark(event.matches ? true : false);
 
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    event.matches ? setIsDark(true) : setIsDark(false);
-  });
+    mediaQuery.addEventListener('change', handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    }
+  }, []);
   const name =auth.currentUser.displayName? auth.currentUser.displayName : auth.currentUser.email.slice(0, auth.currentUser.email.indexOf('@'));
   const [error, setError] = useState("");
   const [errorDef, setErrorDef] = useState("");

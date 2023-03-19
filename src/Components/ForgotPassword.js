@@ -3,16 +3,7 @@ import { Form, Button, Card, Alert, Container } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
 import { Link } from 'react-router-dom'
 import Loader from './Loader'
-
-
-var dark = false;
 export default function ForgotPassword() {
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark = true;
-  const [isDark, setIsDark] = React.useState(dark);
-
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    event.matches ? setIsDark(true) : setIsDark(false);
-  });
   const emailRef = useRef()
   const { resetPassword } = useAuth()
   const [error, setError] = useState('')
@@ -37,6 +28,17 @@ export default function ForgotPassword() {
 
     setLoading(false)
   }
+  React.useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setError('')
+      setErrorDef('')
+    }, 3000)
+  
+    return () => {
+      clearTimeout(timeoutId)
+    }
+  }, [error, errorDef])
+
   if(loading) return (<Loader />
   )
   else

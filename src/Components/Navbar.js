@@ -27,19 +27,18 @@ export default function Header(props) {
       }
     }
   }
-  var dark = false;
-
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    dark = true;
-  }
-
   currentUser ? (buttonText = username) : (buttonText = "Login");
-  const [isDark, setIsDark] = React.useState(dark);
+  const [isDark, setIsDark] = React.useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (event) => setIsDark(event.matches ? true : false);
 
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    event.matches ? setIsDark(true) : setIsDark(false);
-  });
+    mediaQuery.addEventListener('change', handleChange);
 
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    }
+  }, []);
 
   if (isDark) {
     return (<>

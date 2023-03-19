@@ -6,25 +6,27 @@ import { auth } from '../firebase';
 import profile from '../assets/img/profile-page.svg';
 import Loader from './Loader';
 
-var dark = false;
-export default function UpdateProfile () {
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark = true;
-  const [isDark, setIsDark] = React.useState(dark);
 
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    event.matches ? setIsDark(true) : setIsDark(false);
-  });
-  const [name, setName ] = useState(
-    auth.currentUser.displayName? auth.currentUser.displayName.slice(
-      0, auth.currentUser.displayName.indexOf(" ")) : auth.currentUser.email.slice(
-        0, auth.currentUser.email.indexOf("@")
-      )
-    );
+export default function UpdateProfile () {
+  const [isDark, setIsDark] = React.useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (event) => setIsDark(event.matches ? true : false);
+
+    mediaQuery.addEventListener('change', handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    }
+  }, []);
+
+  const name =auth.currentUser.displayName? auth.currentUser.displayName : auth.currentUser.email.slice(0, auth.currentUser.email.indexOf('@'));
   const emailRef = useRef()
   const passwordRef = useRef()
   const passwordConfirmRef = useRef()
   const { currentUser, updatePassword, updateEmail } = useAuth()
   const [error, setError] = useState('')
+  const [errorDef, setErrorDef] = useState('')
   const [loading, setLoading] = useState(false)
   const history = useNavigate()
 
@@ -49,19 +51,34 @@ export default function UpdateProfile () {
       .then(() => {
         history('/profile')
       })
-      .catch(() => {
+      .catch((e) => {
         setError('Failed to update account')
+        setErrorDef(e.message)
       })
       .finally(() => {
         setLoading(false)
       })
+
   }
+  React.useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setError('')
+      setErrorDef('')
+    }, 3000)
+  
+    return () => {
+      clearTimeout(timeoutId)
+    }
+  }, [error, errorDef])
   if(loading) return <Loader />
   else
   return (
     <>
      <section className="pt-4 px-4 px-sm-1 cdin">
         {error && <Alert variant='danger'>{error}</Alert>}
+        {errorDef && <p style={{
+                fontStyle: 'italic'
+              }}>{errorDef}</p>}
       {/* <div className="container "> */}
         <div className="d-sm-flex align-items-center justify-content-between mainc">
           <div className="img-home">

@@ -12,16 +12,21 @@ import { doc } from 'firebase/firestore';
 const auth = firebase.auth();
 const firestore = firebase.firestore();
 
-var dark = false;
+
 function Chat() {
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) dark = true;
+  const [isDark, setIsDark] = React.useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (event) => setIsDark(event.matches ? true : false);
+
+    mediaQuery.addEventListener('change', handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    }
+  }, []);
+  
   const [limit, setLimit] = useState(25);
-  const [isDark, setIsDark] = React.useState(dark);
-
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    event.matches ? setIsDark(true) : setIsDark(false);
-  });
-
   return (<>
     <section className="py-4 px-4 px-sm-1 cdin">
       {/* <div className="container "> */}

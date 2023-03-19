@@ -15,18 +15,34 @@ const auth = firebase.auth();
 const collection_used ="Todos-prod"
 
 export default function Todo() {
-  var dark = false;
-  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    dark = true;
-  }
+  
   const firestore = firebase.firestore();
   const [donetodos, setDonetodos] = useState(0);
   const [todos, setTodos] = useState([])
   const [input, setInput] = useState('')
-  const [isDark, setIsDark] = React.useState(dark);
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-    event.matches ? setIsDark(true) : setIsDark(false);
-  });
+  const [isDark, setIsDark] = React.useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (event) => setIsDark(event.matches ? true : false);
+
+    mediaQuery.addEventListener('change', handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    }
+  }, []);
+  
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handleChange = (event) => setIsDark(event.matches ? true : false);
+
+    mediaQuery.addEventListener('change', handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    }
+  }, []);
   useEffect(() => {
     firestore.collection(collection_used).doc(auth.currentUser.uid).collection('Todos').orderBy('timestamp', 'desc').onSnapshot(snapshot => {
       setTodos(snapshot.docs.map(doc => ({ id: doc.id, todo: doc.data().todo, done: doc.data().done, key: doc.data().id })))

@@ -48,7 +48,7 @@ export default function ForgotPassword() {
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card
             style={{
-              borderRadius: '1rem',
+              borderRadius: '0.5rem',
               borderColor: 'var(--text-var)',
               borderWidth: '1px',
               borderStyle: 'dashed',

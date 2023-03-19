@@ -55,7 +55,7 @@ export default function Signup () {
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card style={{
-            borderRadius: '1rem',
+            borderRadius: '0.5rem',
             borderColor: 'var(--text-var)',
             borderWidth: '1px',
             borderStyle: 'dashed',

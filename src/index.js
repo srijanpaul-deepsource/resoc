@@ -5,12 +5,12 @@ import React, { lazy, Suspense } from 'react'
 import { AuthProvider, useAuth } from './contexts/AuthContext'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
 import './assets/css/style.css'
-import PageNotFound from './Components/PageNotFound'
 import Header from './Components/Navbar'
 import Footer from './Components/Footer'
 import Loader from './Components/Loader'
-import Login from './Components/Login'
-import Signup from './Components/Signup'
+// import PageNotFound from './Components/PageNotFound'
+// import Login from './Components/Login'
+// import Signup from './Components/Signup'
 import  App  from './App'
 const UnderConstruction = lazy(() => import('./Components/UnderConstruction'))
 const Disclaimer = lazy(() => import('./Components/Disclaimer'))
@@ -23,7 +23,9 @@ const Todo = lazy(() => import('./Components/Todo'))
 const AboutUs = lazy(() => import('./Components/AboutUs'))
 const Notes = lazy(() => import('./notes/Notes'))
 const PreviewNotes = lazy(() => import('./notes/PreviewNotes'))
-
+const Signup = lazy(() => import('./Components/Signup'))
+const Login = lazy(() => import('./Components/Login'))
+const PageNotFound = lazy(() => import('./Components/PageNotFound'))
 
 ReactDOM.render(
   <React.StrictMode>
@@ -73,9 +75,9 @@ ReactDOM.render(
               path='/login'
               element={
                 <IsLoggedIn redirectTo='/profile'>
-                  {/* <Suspense fallback={<Loader />}> */}
+                  <Suspense fallback={<Loader />}>
                     <Login />
-                  {/* </Suspense> */}
+                  </Suspense>
                 </IsLoggedIn>
               }
             />
@@ -94,9 +96,9 @@ ReactDOM.render(
               path='/signup'
               element={
                 <IsLoggedIn redirectTo='/profile'>
-                  {/* <Suspense fallback={<Loader />}> */}
+                  <Suspense fallback={<Loader />}>
                     <Signup />
-                  {/* </Suspense> */}
+                  </Suspense>
                 </IsLoggedIn>
               }
             />
@@ -120,7 +122,11 @@ ReactDOM.render(
                 </RequireAuth>
               }
             />
-            <Route path="*" element={<PageNotFound />} />
+            <Route path="*" element={
+              <Suspense fallback={<Loader />}>
+            <PageNotFound />
+            </Suspense>
+            } />
           </Routes>
           <Footer />
         </AuthProvider>

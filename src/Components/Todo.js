@@ -14,6 +14,12 @@ const auth = firebase.auth();
 const collection_used ="Todos-prod"
 
 export default function Todo() {
+  React.useEffect(() => {
+		document.title = 'RESOC | Taskboard'
+		return () => {
+			document.title = 'RESOC | NOTES-SIT'
+		}
+	}, []);
   
   const firestore = firebase.firestore();
   const [donetodos, setDonetodos] = useState(0);

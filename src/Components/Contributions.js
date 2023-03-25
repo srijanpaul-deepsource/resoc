@@ -6,12 +6,18 @@ import {Link} from "react-router-dom";
 import { CloudUploadFill } from 'react-bootstrap-icons';
 import 'firebase/compat/firestore'
 import firebase from 'firebase/compat/app';
-
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-const storage = getStorage();
+
 const firestore = firebase.firestore();
+const storage = getStorage();
 
 export default function Contributions() {
+	React.useEffect(() => {
+		document.title = 'RESOC | Contributions'
+		return () => {
+			document.title = 'RESOC | NOTES-SIT'
+		}
+	}, []);
 	const name =auth.currentUser.displayName? auth.currentUser.displayName : auth.currentUser.email.slice(0, auth.currentUser.email.indexOf('@'));
 	const email = auth.currentUser.email;
 	const [isDark, setIsDark] = React.useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
@@ -129,7 +135,7 @@ export default function Contributions() {
 
 	return (
 		<>
-			<section className="pt-4 px-4 px-sm-0">
+			<section className="py-4 px-4 px-sm-0">
 				{/* <div className="container "> */}
 				<div className="d-sm-flex align-items-center justify-content-between mainc">
 					<div className="img-home">

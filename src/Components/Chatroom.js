@@ -13,6 +13,13 @@ const firestore = firebase.firestore();
 
 
 function Chat() {
+  React.useEffect(() => {
+		document.title = 'RESOC | Community'
+		return () => {
+			document.title = 'RESOC | NOTES-SIT'
+		}
+	}, []);
+
   const [isDark, setIsDark] = React.useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
   React.useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');

@@ -1,9 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react'
 import { Card, Button, Form, Alert, Container } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
-import { Link, 
-  // useNavigate
- } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import firebase from 'firebase/compat/app'
 import { auth } from '../firebase'
 import '../assets/css/chatApp.css'
@@ -11,6 +9,12 @@ import { Google } from 'react-bootstrap-icons'
 import Loader from './Loader'
 
 export default function Login() {
+  React.useEffect(() => {
+		document.title = 'RESOC | Login'
+		return () => {
+			document.title = 'RESOC | NOTES-SIT'
+		}
+	}, []);
   const [isDark, setIsDark] = React.useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
   useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');

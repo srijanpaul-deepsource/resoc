@@ -4,6 +4,12 @@ import { useAuth } from '../contexts/AuthContext'
 import { Link } from 'react-router-dom'
 import Loader from './Loader'
 export default function ForgotPassword() {
+  React.useEffect(() => {
+    document.title = 'RESOC | Forgot Password'
+    return () => {
+      document.title = 'RESOC | NOTES-SIT'
+    }
+  }, []);
   const emailRef = useRef()
   const { resetPassword } = useAuth()
   const [error, setError] = useState('')

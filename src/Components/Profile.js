@@ -4,10 +4,28 @@ import { useNavigate } from "react-router-dom";
 import profile from "../assets/img/profile-page.svg";
 import { auth } from "../firebase";
 import { Alert } from "react-bootstrap";
-
+import { getAnalytics, logEvent } from "firebase/analytics";
+const analytics = getAnalytics();
 
 
 export default function Profile() {
+  const name =auth.currentUser.displayName? auth.currentUser.displayName : auth.currentUser.email.slice(0, auth.currentUser.email.indexOf('@'));
+  React.useEffect(() => {
+		document.title = `RESOC | ${name}`
+		try{
+			logEvent(analytics, 'page_view', {
+				page_title: 'Profile',
+				page_location: window.location.href,
+				page_path: window.location.pathname
+			})
+		}
+		catch(err){
+			console.log(err)
+		}
+		return () => {
+			document.title = 'RESOC | NOTES-SIT'
+		}
+	}, [name]);
   const history = useNavigate();
   const [isDark, setIsDark] = React.useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
   React.useEffect(() => {
@@ -20,7 +38,6 @@ export default function Profile() {
       mediaQuery.removeEventListener('change', handleChange);
     }
   }, []);
-  const name =auth.currentUser.displayName? auth.currentUser.displayName : auth.currentUser.email.slice(0, auth.currentUser.email.indexOf('@'));
   const [error, setError] = useState("");
   const [errorDef, setErrorDef] = useState("");
   const { logout } = useAuth();

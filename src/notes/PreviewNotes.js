@@ -5,7 +5,7 @@ import Loader from '../Components/Loader';
 import { Link } from 'react-router-dom';
 import data from './data.json'
 
-function PreviewNotes(props) {
+function PreviewNotes() {	
 	const location = useLocation();
 	const params = new URLSearchParams(location.search);
 	const id = params.get("id");
@@ -15,6 +15,12 @@ function PreviewNotes(props) {
 	const [contributors, setContributors] = React.useState([])
 	const [links, setLinks] = React.useState([])
 	const [loading, setLoading] = React.useState(true)
+	React.useEffect(() => {
+		document.title = `RESOC | ${name}`
+		return () => {
+			document.title = 'RESOC | NOTES-SIT'
+		}
+	}, [name]);
 
 
 	React.useEffect(() => {

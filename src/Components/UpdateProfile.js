@@ -10,12 +10,14 @@ import Loader from './Loader';
 export default function UpdateProfile () {
   const [isDark, setIsDark] = React.useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
   React.useEffect(() => {
+    document.title = 'RESOC | Update Profile'
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handleChange = (event) => setIsDark(event.matches ? true : false);
 
     mediaQuery.addEventListener('change', handleChange);
 
     return () => {
+      document.title = 'RESOC | NOTES-SIT'
       mediaQuery.removeEventListener('change', handleChange);
     }
   }, []);

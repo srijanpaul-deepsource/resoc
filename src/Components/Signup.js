@@ -1,13 +1,16 @@
 import React, { useRef, useState } from 'react'
 import { Card, Button, Form, Alert, Container } from 'react-bootstrap'
 import { useAuth } from '../contexts/AuthContext'
-import { Link, 
-  // useNavigate
- } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import Loader from './Loader'
 
-
 export default function Signup() {
+  React.useEffect(() => {
+		document.title = 'RESOC | Sign Up'
+		return () => {
+			document.title = 'RESOC | NOTES-SIT'
+		}
+	}, []);
   const nameRef = useRef()
   const emailRef = useRef()
   const passwordRef = useRef()

@@ -1,9 +1,14 @@
 import React from 'react'
 import planet from '../assets/img/undiscoveredplanet.png'
 export default function UnderConstruction () {
+	React.useEffect(() => {
+		document.title = 'RESOC | 503'
+		return () => {
+			document.title = 'RESOC | NOTES-SIT'
+		}
+	}, []);
   return (
     <>
-		
       <section className=" py-5 cdin px-4 px-sm-3">
 				<div className="container">
 					<div className="d-sm-flex align-items-center justify-content-between mainc">

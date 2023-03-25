@@ -3,10 +3,16 @@ import astronaut from '../assets/img/astronauthelmet.svg'
 import anubhab from '../assets/img/anubhab.jpeg'
 import { CupHot } from 'react-bootstrap-icons'
 import { Link } from 'react-router-dom'
+
 export default function AboutUs() {
+	React.useEffect(() => {
+		document.title = 'RESOC | About Us'
+		return () => {
+			document.title = 'RESOC | NOTES-SIT'
+		}
+	}, []);
 	return (
 		<>
-
 			<section className=" pt-4 px-4 px-sm-0">
 				{/* <div className="container "> */}
 				<div className="d-sm-flex align-items-center justify-content-between mainc">

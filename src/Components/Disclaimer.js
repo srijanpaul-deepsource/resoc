@@ -1,7 +1,14 @@
 import React from 'react'
 import blueplanet from '../assets/img/blueplanet.png'
 import { Link } from 'react-router-dom'
+
 export default function Disclaimer () {
+	React.useEffect(() => {
+		document.title = 'RESOC | Community Guidelines'
+		return () => {
+			document.title = 'RESOC | NOTES-SIT'
+		}
+	}, []);
   return (
     <>
       <section className="p-1">

@@ -7,21 +7,6 @@
     flex-direction: column;
 }
 
-/* .main::-webkit-scrollbar {
-    width: 0.25rem;
-}
-
-.main::-webkit-scrollbar-track {
-    display: none;
-    background: --var(--text-var);
-}
-
-.main::-webkit-scrollbar-thumb {
-    display: none;
-    background: #f7f7f7;
-    border-radius: 2rem;
-} */
-
 .form {
     /* height: 10vh; */
     position: relative;

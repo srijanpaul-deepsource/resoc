@@ -76,17 +76,17 @@ function PreviewNotes() {
 									{description}
 								</p>
 								<p className='text-var'>
-									 <a target='_blank' rel="noreferrer"
-										href="https://drive.google.com/file/d/1tDEfpGmiLjuT_QCfl42skYxPelJ3AMVS/view?usp=sharing" className=' ms-1 text-var'>CSE</a>
+									<a target='_blank' rel="noreferrer"
+										href="https://drive.google.com/file/d/1tDEfpGmiLjuT_QCfl42skYxPelJ3AMVS/view?usp=sharing" className=' text-var'>CSE</a>
 									<span className='mx-2'>|</span>
 									<a target='_blank' rel="noreferrer"
-										href="https://drive.google.com/file/d/1tDEfpGmiLjuT_QCfl42skYxPelJ3AMVS/view?usp=sharing" className=' text-var'>ECE</a>
+										href="https://drive.google.com/file/d/1fE9qyvjlzPeW8PP7Kg_z8ySjkzxEtzQ9/view?usp=sharing" className=' text-var'>ECE</a>
 									<span className='mx-2'>|</span>
 									<a target='_blank' rel="noreferrer"
-										href="https://drive.google.com/file/d/1tDEfpGmiLjuT_QCfl42skYxPelJ3AMVS/view?usp=sharing" className=' text-var'>EEE</a>
+										href="https://drive.google.com/file/d/1NHSTTkBaaDVOeoW9CkvCefDvcnbSVHju/view?usp=sharing" className=' text-var'>EEE</a>
 									<span className='mx-2'>|</span>
 									<a target='_blank' rel="noreferrer"
-										href="https://drive.google.com/file/d/1tDEfpGmiLjuT_QCfl42skYxPelJ3AMVS/view?usp=sharing" className=' text-var'>EIE</a>
+										href="https://drive.google.com/file/d/1bcWrFey-AJjkuj--SD2OR7cynqpjAmgr/view?usp=sharing" className=' text-var'>EIE</a>
 								</p>
 							</div>
 							<img className="img-fluid w-50 d-none d-sm-block" src={ufo} alt="in office" />

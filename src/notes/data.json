@@ -187,6 +187,77 @@
 	},
 	{
 		"id": 5,
+		"name": "Engineering Chemistry",
+		"shortName": "Chemistry",
+		"description": "",
+		"links": [
+			[
+				"Notes MOD1-2",
+				"/under-construction"
+			],
+			[
+				"Notes - Full",
+				"/under-construction"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"Engineering Chemistry",
+			"Engineering Chemistry- End Sem",
+			"Engineering Chemistry- Mid Sem",
+			"Chemistry",
+			"EC"
+		]
+	},
+	{
+		"id": 6,
+		"name": "C Programming",
+		"shortName": "C",
+		"description": "",
+		"links": [
+			[
+				"Notes",
+				"/under-construction"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"C Programming",
+			"C Programming- End Sem",
+			"C Programming- Mid Sem",
+			"C",
+			"C- End Sem",
+			"C- Mid Sem"
+		]
+	},
+	{
+		"id": 7,
 		"name": "Basic Electrical Engineering",
 		"shortName": "BEE",
 		"description": "",
@@ -221,7 +292,7 @@
 		]
 	},
 	{
-		"id": 6,
+		"id": 8,
 		"name": "Data Structures & Algorithms",
 		"shortName": "DSA",
 		"description": "",
@@ -265,7 +336,7 @@
 		]
 	},
 	{
-		"id": 7,
+		"id": 9,
 		"name": "Engg. Mathematics II",
 		"shortName": "Maths II",
 		"description": "",
@@ -306,7 +377,7 @@
 		]
 	},
 	{
-		"id": 8,
+		"id": 10,
 		"name": "Engineering Physics",
 		"shortName": "Physics",
 		"description": "",
@@ -338,6 +409,403 @@
 			"Engineering Physics",
 			"Phy",
 			"Physics"
+		]
+	},
+	{
+		"id": 11,
+		"name": "Basic of Mechanical Engineering",
+		"shortName": "BME",
+		"description": "",
+		"links": [
+			[
+				"Notes MOD 1-2",
+				"https://drive.google.com/file/d/1v0FM3T6wRXPTQAgrwS-Gj99uGEchQSo4/view?usp=sharing"
+			],
+			[
+				"Notes MOD 3-5",
+				"https://drive.google.com/file/d/14se7o8A2xAPnmRKsqZ-UrM9GEOulXEGq/view?usp=sharing"
+			],
+			[
+				"Notes - SIT",
+				"https://drive.google.com/file/d/1_mHBTONySpwGvZw5gqruUz7jsx0wccAP/view?usp=sharing"
+			],
+			[
+				"Yunus Cengel, Michael Boles-Thermodynamics_ An Engineering Approach-McGraw-Hill Education (2014)",
+				"https://drive.google.com/file/d/1WpM7mvp7CKIxpmsykiwWMuXHqUfms6LK/view?usp=share_link"
+			],
+			[
+				"Steam Tables",
+				"https://drive.google.com/file/d/1rmgOmGRCq0XakcU-N1JM_Q-bQtoLwIER/view?usp=sharing"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			],
+			[
+				"Silicon Institute of Technology, Bhubaneswar",
+				"https://www.silicon.ac.in/"
+			]
+		],
+		"tags": [
+			"Basic of Mechanical Engineering",
+			"BME",
+			"Mechanical Engineering"
+		]
+	},
+	{
+		"id": 12,
+		"name": "Digital Electronics",
+		"shortName": "DEC",
+		"description": "",
+		"links": [
+			[
+				"Notes - Lecture Notes",
+				"https://drive.google.com/file/d/1nGWLCwRfiT2iczxt6NDmwexCY4vXEAwG/view?usp=sharing"
+			],
+			[
+				"Digital_Design_M_Mano_Fifth_Edition",
+				"https://drive.google.com/file/d/1mp2_dpQJo8dIP19FkVGpWgqQ4mE3BoGK/view?usp=sharing"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			],
+			[
+				"Silicon Institute of Technology, Bhubaneswar",
+				"https://www.silicon.ac.in/"
+			]
+		],
+		"tags": [
+			"Digital Electronics",
+			"DEC",
+			"Digital Electronics and Computer Organization",
+			"DECO"
+		]
+	},
+	{
+		"id": 13,
+		"name": "Discrete Mathematics",
+		"shortName": "DM",
+		"description": "",
+		"links": [
+			[
+				"Notes",
+				"https://drive.google.com/file/d/1813iQ4MmSyop08Fxw_ayOGjJFm2sT6VO/view?usp=sharing"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"Discrete Mathematics",
+			"DM"
+		]
+	},
+	{
+		"id": 14,
+		"name": "Engineering Economics",
+		"shortName": "Economics",
+		"description": "",
+		"links": [
+			[
+				"Notes MOD 1-2",
+				"https://drive.google.com/file/d/14iH-yXuK1CaVnYv1HXNPhiTq7cQNcKDG/view?usp=sharing"
+			],
+			[
+				"Notes",
+				"https://drive.google.com/file/d/1rCwPYuiufUYxDRZxtZgP8-j5e2_Pth_G/view?usp=sharing"
+			],
+			[
+				"CI Tables",
+				"https://drive.google.com/file/d/1jUiJCerhMJRUFH9yGZGF1Guh_J_DrNDV/view?usp=sharing"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"Engineering Economics",
+			"Economics"
+		]
+	},
+	{
+		"id": 15,
+		"name": "Engineering Mathematics III",
+		"shortName": "Maths 3",
+		"description": "",
+		"links": [
+			[
+				"Notes",
+				"https://drive.google.com/file/d/13Ur6XLWtV0wxo-CoL9e9c63s-aaY6Vly/view?usp=share_link"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"Engineering Mathematics III",
+			"Maths 3"
+		]
+	},
+	{
+		"id": 16,
+		"name": "Object-Oriented Programming using JAVA",
+		"shortName": "OOP",
+		"description": "",
+		"links": [
+			[
+				"Notes MOD 1-2",
+				"https://drive.google.com/file/d/1L0qB1WlPnc6kbyBHbCvadeudo6Nn_FxS/view?usp=share_link"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			],
+			[
+				"Silicon Institute of Technology, Bhubaneswar",
+				"https://www.silicon.ac.in/"
+			]
+		],
+		"tags": [
+			"Object-Oriented Programming using JAVA",
+			"OOP",
+			"JAVA",
+			"Java",
+			"OUJ"
+		]
+	},
+	{
+		"id": 17,
+		"name": "Fundamentals of Management",
+		"shortName": "FOM",
+		"description": "",
+		"links": [
+			[
+				"Notes",
+				"https://drive.google.com/file/d/1Tow1MEt61KrsxfrbWNLnCg7X10RG3cOF/view?usp=sharing"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			],
+			[
+				"Silicon Institute of Technology, Bhubaneswar",
+				"https://www.silicon.ac.in/"
+			]
+		],
+		"tags": [
+			"Fundamentals of Management",
+			"FOM",
+			"Management"
+		]
+	},
+	{
+		"id": 18,
+		"name": "Computer Organization and Architecture",
+		"shortName": "COA",
+		"description": "",
+		"links": [
+			[
+				"Notes",
+				"https://drive.google.com/file/d/10YumalIlPlJbfjzHj5cI88BCYmzRIoYr/view?usp=sharing"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"Computer Organization and Architecture",
+			"COA",
+			"Computer Architecture"
+		]
+	},
+	{
+		"id": 19,
+		"name": "Database Management System",
+		"shortName": "DBMS",
+		"description": "",
+		"links": [
+			[
+				"Notes",
+				"https://drive.google.com/file/d/1AnS0abz5yLu--gSQ9dMUaSCYXY4jq2Eb/view?usp=sharing"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			],
+			[
+				"Silicon Institute of Technology, Bhubaneswar",
+				"https://www.silicon.ac.in/"
+			]
+		],
+		"tags": [
+			"Database Management System",
+			"DBMS",
+			"Database"
+		]
+	},
+	{
+		"id": 20,
+		"name": "Design and Analysis of Algorithms",
+		"shortName": "DAA",
+		"description": "",
+		"links": [
+			[
+				"Notes",
+				"https://drive.google.com/file/d/1HYpgvmB8les2xYdaq_Gz--zCxnGlH6QR/view?usp=sharing"
+			],
+			[
+				"Introduction_to_algorithms-3rd Edition.pdf",
+				"https://drive.google.com/file/d/1CdnUR3QhSfF2CUL8v5EasKPTjXLhJit5/view?usp=sharing"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			],
+			[
+				"Silicon Institute of Technology, Bhubaneswar",
+				"https://www.silicon.ac.in/"
+			]
+		],
+		"tags": [
+			"Design and Analysis of Algorithms",
+			"DAA",
+			"Algorithms"
+		]
+	},
+	{
+		"id": 21,
+		"name": "Engineering Mathematics IV",
+		"shortName": "Maths 4",
+		"description": "",
+		"links": [
+			[
+				"Notes MOD 1-2",
+				"https://drive.google.com/file/d/1zHf52imfsvilMXGwZ1hXSWbecQHAPoQw/view?usp=sharing"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"Engineering Mathematics IV",
+			"Maths 4",
+			"Maths"
 		]
 	}
 ]

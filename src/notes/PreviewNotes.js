@@ -75,7 +75,7 @@ function PreviewNotes() {
 								<p className="">
 									{description}
 								</p>
-								<p className='text-var'>
+								<p className='text-var ms-1'>
 									<a target='_blank' rel="noreferrer"
 										href="https://drive.google.com/file/d/1tDEfpGmiLjuT_QCfl42skYxPelJ3AMVS/view?usp=sharing" className=' text-var'>CSE</a>
 									<span className='mx-2'>|</span>

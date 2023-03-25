@@ -37,12 +37,22 @@ export default function Notes() {
 						<div className="img-home">
 							<h1 className="heading">NOTES<span></span></h1>
 							<p className="lead my-4">
-								Get started here.
-								<br />
+								The only notes that you you would ever need. <br />
 							</p>
-							<a target='_blank'
-								rel="noreferrer"
-								href='https://drive.google.com/file/d/1tDEfpGmiLjuT_QCfl42skYxPelJ3AMVS/view?usp=sharing' className=' text-var'>	B.Tech - Syllabus</a>
+							B.Tech Syllabus
+							<p className='text-var'>
+									 <a target='_blank' rel="noreferrer"
+										href="https://drive.google.com/file/d/1tDEfpGmiLjuT_QCfl42skYxPelJ3AMVS/view?usp=sharing" className=' text-var'>CSE</a>
+									<span className='mx-2'>|</span>
+									<a target='_blank' rel="noreferrer"
+										href="https://drive.google.com/file/d/1tDEfpGmiLjuT_QCfl42skYxPelJ3AMVS/view?usp=sharing" className=' text-var'>ECE</a>
+									<span className='mx-2'>|</span>
+									<a target='_blank' rel="noreferrer"
+										href="https://drive.google.com/file/d/1tDEfpGmiLjuT_QCfl42skYxPelJ3AMVS/view?usp=sharing" className=' text-var'>EEE</a>
+									<span className='mx-2'>|</span>
+									<a target='_blank' rel="noreferrer"
+										href="https://drive.google.com/file/d/1tDEfpGmiLjuT_QCfl42skYxPelJ3AMVS/view?usp=sharing" className=' text-var'>EIE</a>
+								</p>
 						</div>
 						<img className="img-fluid w-50 d-none d-sm-block" src={programming} alt="in office" />
 					</div>

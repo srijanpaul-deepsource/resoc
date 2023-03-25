@@ -35,7 +35,7 @@ ReactDOM.render(
           <Header />
           <Routes>
             <Route path='/' element={<App />} />
-            <Route path='/aboutus' element={<Suspense fallback={<Loader />}><AboutUs /></Suspense>} />
+            <Route path='/team' element={<Suspense fallback={<Loader />}><AboutUs /></Suspense>} />
             <Route path='/notes' element={<Suspense fallback={<Loader />}><Notes /></Suspense>} />
             <Route path='/visitloader' element={<Loader />} />
             <Route path = '/previewnotes' element={<Suspense fallback={<Loader />}><PreviewNotes /></Suspense>} />

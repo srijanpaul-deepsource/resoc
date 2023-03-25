@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import 'firebase/compat/firestore'
 import firebase from 'firebase/compat/app';
 import { v4 as uuidv4 } from 'uuid';
@@ -36,26 +36,13 @@ export default function Todo() {
       mediaQuery.removeEventListener('change', handleChange);
     }
   }, []);
-  
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    const handleChange = (event) => setIsDark(event.matches ? true : false);
-
-    mediaQuery.addEventListener('change', handleChange);
-
-    return () => {
-      mediaQuery.removeEventListener('change', handleChange);
-    }
-  }, []);
-  useEffect(() => {
+  React.useEffect(() => {
     firestore.collection(collection_used).doc(auth.currentUser.uid).collection('Todos').orderBy('timestamp', 'desc').onSnapshot(snapshot => {
       setTodos(snapshot.docs.map(doc => ({ id: doc.id, todo: doc.data().todo, done: doc.data().done, key: doc.data().id })))
 
       if(snapshot.docs.length > 0) {
         setDonetodos(snapshot.docs.filter(doc => doc.data().done === true).length)
       }
-
     })
   }, [firestore])
 

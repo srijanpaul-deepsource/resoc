@@ -80,7 +80,7 @@ export default function Header() {
               
             </Nav>
             <Nav>
-               <Link to="/aboutus" className="nav-link">About Us</Link>
+               <Link to="/team" className="nav-link">Team</Link>
                {currentUser && <Link to="/profile" className="nav-link">{buttonText}</Link>}
               {!currentUser && <Link to="/login" className="nav-link">{buttonText}</Link>}
             </Nav>
@@ -116,7 +116,7 @@ export default function Header() {
               {!currentUser && <Link to="/login" className="nav-link">Contributions</Link>}
             </Nav>
             <Nav>
-            <Link to="/aboutus" className="nav-link">About Us</Link>
+            <Link to="/team" className="nav-link">Team</Link>
             {currentUser && <Link to="/profile" className="nav-link">{buttonText}</Link>}
             {!currentUser && <Link to="/login" className="nav-link">{buttonText}</Link>}
             </Nav>

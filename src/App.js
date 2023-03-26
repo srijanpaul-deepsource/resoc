@@ -1,6 +1,6 @@
 import React from 'react'
 import moon from './assets/img/moonlight.svg'
-import './assets/css/dashboard.css'
+import './assets/css/App.css'
 import { Link } from 'react-router-dom'
 import { CupHot } from 'react-bootstrap-icons'
 

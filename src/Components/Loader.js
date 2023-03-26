@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import '../assets/css/style.css'
 import { Link } from 'react-router-dom'
 const loaderImg = require('../assets/img/earth.png')
 

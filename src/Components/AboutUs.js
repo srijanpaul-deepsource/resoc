@@ -1,6 +1,5 @@
 import React from 'react'
 import astronaut from '../assets/img/astronauthelmet.svg'
-import anubhab from '../assets/img/anubhab.jpeg'
 import { CupHot } from 'react-bootstrap-icons'
 import { Link } from 'react-router-dom'
 
@@ -35,7 +34,7 @@ export default function AboutUs() {
 						padding: "0"
 					}}>
 						<li>
-							<img src={anubhab} style={{
+							<img src='https://avatars.githubusercontent.com/u/69160388?v=4' style={{
 								width: "50px",
 								height: "50px",
 								borderRadius: "50%",

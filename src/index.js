@@ -4,13 +4,9 @@ import 'react-bootstrap'
 import React, { lazy, Suspense } from 'react'
 import { AuthProvider, useAuth } from './contexts/AuthContext'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
-import './assets/css/style.css'
 import Header from './Components/Navbar'
 import Footer from './Components/Footer'
 import Loader from './Components/Loader'
-// import PageNotFound from './Components/PageNotFound'
-// import Login from './Components/Login'
-// import Signup from './Components/Signup'
 import  App  from './App'
 const UnderConstruction = lazy(() => import('./Components/UnderConstruction'))
 const Disclaimer = lazy(() => import('./Components/Disclaimer'))

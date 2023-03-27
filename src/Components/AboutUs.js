@@ -61,19 +61,12 @@ export default function AboutUs() {
 					}}>
 						<li>
 							<a href="https://anubhavp.dev/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Anubhab Patnaik</a>
-
 						</li>
 						<li>
-							Srijan Paul
+							<a href="https://www.linkedin.com/in/smruti-dash-1210/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Smruti Dash</a>
 						</li>
 						<li>
-							Swayam Vikash Pattanaik
-						</li>
-						<li>
-							Abinash Parida
-						</li>
-						<li>
-							<a href="https://github.com/smrutid12/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Smruti Dash</a>
+						<a href="https://www.linkedin.com/in/abhinav-singh-11b748213" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Abhinav Singh</a>
 						</li>
 					</ul>
 				</div>

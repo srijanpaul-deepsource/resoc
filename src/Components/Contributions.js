@@ -219,6 +219,12 @@ export default function Contributions() {
 						}}><li>
 								<a href="https://linkedin.com/in/sunil-kumar-panda/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Sunil Soyabean Panda</a>
 							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/ananya-satpathy-98529a122" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Ananya Satapathy</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/abhinav-singh-11b748213" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Abhinav Signh</a>
+							</li>
 						</ul>
 					</div>
 				</div>

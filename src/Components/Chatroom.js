@@ -119,6 +119,29 @@ function ChatRoom(props) {
   </>)
 }
 
+function linkify(text) {
+  var urlRegex = /(https?:\/\/[^\s]+)/g;
+  return text.replace(urlRegex, function (url) {
+    return '<a class="text-var" href="' + url + '" target="_blank">' + url + '</a>';
+  })
+}
+// function LinkPreview(text) {
+  // var urlRegex = /(https?:\/\/[^\s]+)/g;
+  // var link = text.match(urlRegex);
+//   var link = React.useState(extractURL(text));  
+//   link = link[0][0];
+//   fetch(`https://api.linkpreview.net/?key=process.env.LINK_PREVIEW_API&q=${link}`)
+//     .then(response => response.json())
+//     .then(data => {
+//       console.log(data);
+//       return ('<div className="link-preview">' + '<img src={data.image} alt={data.title} />' + '<div>' + '<h3>${data.title}</h3>' + '<p>${data.description}</p>' + '</div>' + '</div>')
+//     })        
+//     .catch(err => {
+//       console.log(err);
+//     }
+//   );
+// }
+
 
 function ChatMessage(props) {
   const { text, uid, photoURL, displayName } = props.message;
@@ -140,7 +163,13 @@ function ChatMessage(props) {
         <p className='para' key="{props.key}"
           style={{
             fontSize: '0.8rem',
-          }}>{text}</p>
+          }}>
+            {text.includes("https://") || text.includes("http://") ? 
+            <>
+            {/* <span dangerouslySetInnerHTML={{ __html:  LinkPreview(text) }}></span> */}
+            <span dangerouslySetInnerHTML={{ __html: linkify(text) }}></span></>
+            : text}
+        </p>
       </div>
     </div>
   </>)

@@ -125,24 +125,6 @@ function linkify(text) {
     return '<a class="text-var" href="' + url + '" target="_blank">' + url + '</a>';
   })
 }
-// function LinkPreview(text) {
-  // var urlRegex = /(https?:\/\/[^\s]+)/g;
-  // var link = text.match(urlRegex);
-//   var link = React.useState(extractURL(text));  
-//   link = link[0][0];
-//   fetch(`https://api.linkpreview.net/?key=process.env.LINK_PREVIEW_API&q=${link}`)
-//     .then(response => response.json())
-//     .then(data => {
-//       console.log(data);
-//       return ('<div className="link-preview">' + '<img src={data.image} alt={data.title} />' + '<div>' + '<h3>${data.title}</h3>' + '<p>${data.description}</p>' + '</div>' + '</div>')
-//     })        
-//     .catch(err => {
-//       console.log(err);
-//     }
-//   );
-// }
-
-
 function ChatMessage(props) {
   const { text, uid, photoURL, displayName } = props.message;
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
@@ -166,7 +148,6 @@ function ChatMessage(props) {
           }}>
             {text.includes("https://") || text.includes("http://") ? 
             <>
-            {/* <span dangerouslySetInnerHTML={{ __html:  LinkPreview(text) }}></span> */}
             <span dangerouslySetInnerHTML={{ __html: linkify(text) }}></span></>
             : text}
         </p>

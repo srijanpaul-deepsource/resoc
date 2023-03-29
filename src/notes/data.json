@@ -1054,36 +1054,6 @@
 				"https://drive.google.com/file/d/1YOW7NAR2X-M65OjsZn5ShMxmYuZ7thlt/view?usp=share_link"
 			],
 			[
-				"Important Questions",
-				"/under-construction"
-			],
-			[
-				"Previous Year Papers",
-				"/under-construction"
-			]
-		],
-		"contributors": [
-			[
-				"Ananya Satpathy",
-				"https://www.linkedin.com/in/ananya-satpathy-98529a122/"
-			]
-		],
-		"tags": [
-			"Measurement and instrumentation",
-			"MI"
-		]
-	},
-	{
-		"id": 28,
-		"name": "Micro Processors",
-		"shortName": "MPMC",
-		"description": "",
-		"links": [
-			[
-				"Notes (Complete)",
-				"https://drive.google.com/file/d/1AYNqPg-Eu_LL0-iS8VhbylKrFeyKeFdP/view?usp=share_link"
-			],
-			[
 				"Lab Record - 1",
 				"https://drive.google.com/file/d/19wuCbmq5jBhI2-auDAuTeGZ8ERhTvcHt/view?usp=share_link"
 			],
@@ -1139,12 +1109,12 @@
 			]
 		],
 		"tags": [
-			"Microprocessors",
-			"MPMC"
+			"Measurement and instrumentation",
+			"MI"
 		]
 	},
 	{
-		"id": 29,
+		"id": 28,
 		"name": "Micro Processors",
 		"shortName": "MPMC",
 		"description": "",

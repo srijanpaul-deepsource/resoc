@@ -34,6 +34,7 @@ export default function Contributions() {
 			mediaQuery.removeEventListener('change', handleChange);
 		}
 	}, []);
+	const [downloadURL, setDownloadURL] = React.useState(null);
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
@@ -95,7 +96,6 @@ export default function Contributions() {
 				setErrdef('');
 				setStatus('Upload is ' + progress + '% done');
 				// Upload completed successfully, now we can get the download URL
-				console.log('Lisitn in contributions');
 			const { uid } = auth.currentUser;
 			firestore
       .collection("Contributions")
@@ -107,6 +107,7 @@ export default function Contributions() {
 				filename : file.name,
       });
 				getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+					setDownloadURL(downloadURL);
 					console.log('File available at', downloadURL);
 				});
 			},
@@ -203,6 +204,12 @@ export default function Contributions() {
 									</div>
 								</div>
 						</Form>
+						<p>
+							{downloadURL? 
+							<span> Here is the <b><a href={downloadURL} target='_blank' rel='noreferrer noopener' className='text-var'> download link.</a></b>
+							</span>
+							: null}
+						</p>
 						<p>
 							Please upload your file (less than 100 MB) in a pdf format or a zip file of pdfs <b>only</b>.
 						<br />

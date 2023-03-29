@@ -543,7 +543,11 @@
 				"https://drive.google.com/file/d/14iH-yXuK1CaVnYv1HXNPhiTq7cQNcKDG/view?usp=sharing"
 			],
 			[
-				"Notes",
+				"Notes Alternate (Complete)",
+				"https://drive.google.com/file/d/12_n20kdNTIbecVcFxXLDt_IQwQrP1hO4/view?usp=share_link"
+			],
+			[
+				"Notes Alternate ",
 				"https://drive.google.com/file/d/1rCwPYuiufUYxDRZxtZgP8-j5e2_Pth_G/view?usp=sharing"
 			],
 			[
@@ -806,6 +810,237 @@
 			"Engineering Mathematics IV",
 			"Maths 4",
 			"Maths"
+		]
+	},
+	{
+		"id": 22,
+		"name": "Circuit Theory",
+		"shortName": "CT",
+		"description": "",
+		"links": [
+			[
+				"Notes",
+				"https://drive.google.com/file/d/1URxkktnm-jgxHB_nZ_nGCp9kDetz_fw8/view?usp=share_link"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"Circuit Theory",
+			"CT",
+			"CircuitTheory"
+		]
+	},
+	{
+		"id": 23,
+		"name": "Maths -III Complex Numbers",
+		"shortName": "Maths-3(ECE)",
+		"description": "",
+		"links": [
+			[
+				"Notes",
+				"https://drive.google.com/file/d/1zOX8tNPoNA0bvsHRSRHn7hZt9SF8TNQk/view?usp=share_link"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"Electronic Devices",
+			"ELD",
+			"ElectronicDevices"
+		]
+	},
+	{
+		"id": 24,
+		"name": "Electronic Devices",
+		"shortName": "EDL",
+		"description": "",
+		"links": [
+			[
+				"Notes HandWritten",
+				"https://drive.google.com/file/d/1u_1xvwW7AhN9U55BkBJoN-1ff7ifqNV3/view?usp=share_link"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"Maths 3",
+			"Maths-III",
+			"Complex Numbers"
+		]
+	},
+	{
+		"id": 25,
+		"name": "Analog Electronics Circuits",
+		"shortName": "AEC",
+		"description": "",
+		"links": [
+			[
+				"Notes Module 1 & 3(half)",
+				"https://drive.google.com/file/d/1lxwfvloeV72PNnSqPLzLZCogcLq4LPK_/view?usp=share_link"
+			],
+			[
+				"Notes Module 2",
+				"https://drive.google.com/file/d/1sebPx7qM3lL5M1KAb1RqPjVfMug0vajD/view?usp=share_link"
+			],
+			[
+				"Notes Module 5",
+				"https://drive.google.com/file/d/17SOXkAGtSeJBjSouXQgWcoHUUz6k03R6/view?usp=share_link"
+			],
+			[
+				"Notes Remaining and Extras",
+				"https://drive.google.com/file/d/1N2gzEXolFFKjGx0ngEeRSrH87sdaQ369/view?usp=share_link"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"Analog Electronics Circuit",
+			"AEC",
+			"Analog Circuits"
+		]
+	},
+	{
+		"id": 26,
+		"name": "Engineering Mathematics IV (ECE)",
+		"shortName": "Maths 4",
+		"description": "",
+		"links": [
+			[
+				"Notes (Complete)",
+				"https://drive.google.com/file/d/1kWBSEO4_egkmi8lWWHpM2T4fT4cWaErW/view?usp=share_link"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"Engineering Mathematics IV",
+			"Maths - 4",
+			"Maths - 4 ECE"
+		]
+	},
+	{
+		"id": 27,
+		"name": "Measurement And Instrumentation",
+		"shortName": "MI",
+		"description": "",
+		"links": [
+			[
+				"Notes (Complete)",
+				"https://drive.google.com/file/d/1iWQ9FFBlQr2SBHviDD92cHILUCUU606Z/view?usp=share_link"
+			],
+			[
+				"Notes Alternate (Complete)",
+				"https://drive.google.com/file/d/1YOW7NAR2X-M65OjsZn5ShMxmYuZ7thlt/view?usp=share_link"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"Measurement and instrumentation",
+			"MI"
+		]
+	},
+	{
+		"id": 28,
+		"name": "Micro Processors",
+		"shortName": "MPMC",
+		"description": "",
+		"links": [
+			[
+				"Notes (Complete)",
+				"https://drive.google.com/file/d/1AYNqPg-Eu_LL0-iS8VhbylKrFeyKeFdP/view?usp=share_link"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Anubhab",
+				"https://anubhavp.dev/"
+			]
+		],
+		"tags": [
+			"Microprocessors",
+			"MPMC"
 		]
 	}
 ]

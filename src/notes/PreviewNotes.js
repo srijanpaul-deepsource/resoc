@@ -75,7 +75,7 @@ function PreviewNotes() {
 								<p className="">
 									{description}
 								</p>
-								<p className='text-var ms-1'>
+								{/* <p className='text-var ms-1'>
 									<a target='_blank' rel="noreferrer"
 										href="https://drive.google.com/file/d/1tDEfpGmiLjuT_QCfl42skYxPelJ3AMVS/view?usp=sharing" className=' text-var'>CSE</a>
 									<span className='mx-2'>|</span>
@@ -87,7 +87,7 @@ function PreviewNotes() {
 									<span className='mx-2'>|</span>
 									<a target='_blank' rel="noreferrer"
 										href="https://drive.google.com/file/d/1bcWrFey-AJjkuj--SD2OR7cynqpjAmgr/view?usp=sharing" className=' text-var'>EIE</a>
-								</p>
+								</p> */}
 							</div>
 							<img className="img-fluid w-50 d-none d-sm-block" src={ufo} alt="in office" />
 						</div>

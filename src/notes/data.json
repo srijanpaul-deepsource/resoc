@@ -1,7 +1,7 @@
 [
 	{
 		"id": 0,
-		"name": "Engg. Maths I",
+		"name": "Engineering Maths I",
 		"shortName": "Maths I",
 		"description": "",
 		"links": [
@@ -337,7 +337,7 @@
 	},
 	{
 		"id": 9,
-		"name": "Engg. Mathematics II",
+		"name": "Engineering Mathematics II",
 		"shortName": "Maths II",
 		"description": "",
 		"links": [
@@ -1153,7 +1153,7 @@
 	},
 	{
 		"id": 29,
-		"name": "Electrical Machines-1",
+		"name": "Electrical Machines I",
 		"shortName": "EM",
 		"description": "",
 		"links": [
@@ -1252,7 +1252,97 @@
 	},
 	{
 		"id": 30,
-		"name": "Electrical Machines-2",
+		"name": "Control Systems & Engineering",
+		"shortName": "CSE",
+		"description": "",
+		"links": [
+			[
+				"Notes (Complete)",
+				"/under-construction"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Jauhar Ahemad",
+				"https://www.linkedin.com/in/jauharahmad75/"
+			]
+		],
+		"tags": [
+			"Control Systems",
+			"CSE"
+		]
+	},
+	{
+		"id": 31,
+		"name": "Circuit Theory",
+		"shortName": "CT",
+		"description": "",
+		"links": [
+			[
+				"Notes (Complete)",
+				"/under-construction"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Jauhar Ahemad",
+				"https://www.linkedin.com/in/jauharahmad75/"
+			]
+		],
+		"tags": [
+			"Circuit Theory",
+			"CT"
+		]
+	},
+	{
+		"id": 32,
+		"name": "Electromagnetic Theory",
+		"shortName": "EMT",
+		"description": "",
+		"links": [
+			[
+				"Notes (Complete)",
+				"/under-construction"
+			],
+			[
+				"Important Questions",
+				"/under-construction"
+			],
+			[
+				"Previous Year Papers",
+				"/under-construction"
+			]
+		],
+		"contributors": [
+			[
+				"Jauhar Ahemad",
+				"https://www.linkedin.com/in/jauharahmad75/"
+			]
+		],
+		"tags": [
+			"Electromagnetic Theory",
+			"EMT"
+		]
+	},
+	{
+		"id": 33,
+		"name": "Electrical Machines II",
 		"shortName": "EM-II",
 		"description": "",
 		"links": [
@@ -1293,7 +1383,7 @@
 		]
 	},
 	{
-		"id": 31,
+		"id": 34,
 		"name": "Introdcution to Thermodynamics",
 		"shortName": "Thermo",
 		"description": "",
@@ -1331,7 +1421,7 @@
 		]
 	},
 	{
-		"id": 32,
+		"id": 35,
 		"name": "Introduction to Semi-Conductor",
 		"shortName": "Semiconductor",
 		"description": "",
@@ -1361,7 +1451,7 @@
 		]
 	},
 	{
-		"id": 33,
+		"id": 36,
 		"name": "Signal System",
 		"shortName": "SNP",
 		"description": "",
@@ -1386,8 +1476,8 @@
 			]
 		],
 		"tags": [
-			"Renewable Energy System",
-			"RES"
+			"Signal System",
+			"SNP"
 		]
 	}
 ]

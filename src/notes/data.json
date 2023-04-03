@@ -1150,5 +1150,151 @@
       ["Jauhar Ahemad", "https://www.linkedin.com/in/jauharahmad75/"]
     ],
     "tags": ["Signal System", "SNP"]
+  },
+  {
+    "id": 37,
+    "name": "Operating Systems",
+    "shortName": "OS",
+    "description": "",
+    "links": [
+      [
+        "Notes",
+        "https://drive.google.com/file/d/1s1rwrjOEPf8wt1_XazzE-NsoIQQMnuyH/view?usp=share_link"
+      ],
+      [
+        "Important Algorithms",
+        "https://drive.google.com/file/d/1zF6wYsQK1f0474DhUvB0Mk3OsEp6ZVKS/view?usp=share_link"
+      ],
+      ["Lab Experiment", "/under-construction"],
+      [
+        "Important Questions",
+        "https://docs.google.com/document/d/1E6oDZxGqEzKlzvj6O6YKTSZ811DR7mGe/edit?usp=share_link&ouid=104433455372147288977&rtpof=true&sd=true"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1Jnvyd7rW3RsN6U87jrRi-LnAAgQjQ2Xu/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Operating Systems", "OS"]
+  },
+  {
+    "id": 38,
+    "name": "Computer Networks",
+    "shortName": "CN",
+    "description": "",
+    "links": [
+      [
+        "Notes",
+        "https://drive.google.com/file/d/18bc_qI7HEWkyBzY7MJqpBc3fWqsIWG7v/view?usp=share_link"
+      ],
+      [
+        "Lab Experiment-1",
+        "https://drive.google.com/file/d/1vn747SlNVwFpgsM15U4CrWZgwLgWer8L/view?usp=share_link"
+      ],
+      [
+        "Lab Experiment-2",
+        "https://drive.google.com/file/d/18ms8vkrjH15_K5KuNOj3ZKe7ysyGFZQz/view?usp=share_link"
+      ],
+      [
+        "Lab Experiment-5",
+        "https://drive.google.com/file/d/1q0FBXPAJ6SRIuJCjS5gHc43QOor8Ct6J/view?usp=share_link"
+      ],
+      [
+        "Lab Experiment-6",
+        "https://drive.google.com/file/d/1H-mjpZArmAHN-rFRWJNEZhMKTU0gKNFV/view?usp=share_link"
+      ],
+      [
+        "Lab Experiment-7",
+        "https://drive.google.com/file/d/1e3qEj5JVjSYpzKjB_2qVXUCgLgEBIfNN/view?usp=share_link"
+      ],
+      [
+        "Important Questions",
+        "https://drive.google.com/file/d/1zwlEOz7piBg3Wrq9yLrBiYUhEXpOaecd/view?usp=share_link"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1UL8A5DHjwrdeyi6g0iASV-Bftz7hIrf-/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Computer Networks", "CN"]
+  },
+  {
+    "id": 39,
+    "name": "Biology for Engineers",
+    "shortName": "BIOLOGY",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1tSdVhKAfAypx5c5wQS-bNfQ_mqQylkXY/view?usp=share_link"
+      ],
+      [
+        "Important Questions",
+        "https://drive.google.com/file/d/1Ukt14ymJAqKk8iGYIyjxGYb6HLF_O6Jm/view?usp=share_link"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/12B7mgXTDDY7x37x3Mh_hOWFP_VPD5u1S/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Biology for Engineers", "BIO"]
+  },
+  {
+    "id": 40,
+    "name": "Data Mining & Data Warehousing",
+    "shortName": "DMDW",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1Ny4b8MZWcJ9smrtyta6H2-WQUsTtRjKq/view?usp=share_link"
+      ],
+      [
+        "Important Questions",
+        "https://drive.google.com/file/d/198f2z40JJiuTFwAD9hO7CgiAqlwGa7rr/view?usp=share_link"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1CJNJuWpsKFnye2EkZTU10w-vZx4H_EGe/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Data Mining & Data Warehousing", "DMDW"]
+  }
+  ,
+  {
+    "id": 41,
+    "name": "Statistical Inference",
+    "shortName": "STATS",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1Fq_YToqcYqtJZi_3sMbTJ3smUaFBq7JK/view?usp=share_link"
+      ],
+      [
+        "Tables",
+        "https://drive.google.com/file/d/1JxyXikuY4V3O0i-5yfEh3nLaO1eSJm1Y/view?usp=share_link"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1xKTotS2ZKkK3TxJi-ViIk3rU1Yc4kb8X/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Statistical Inference", "SI"]
   }
 ]

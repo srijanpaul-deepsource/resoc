@@ -1043,7 +1043,14 @@
     "shortName": "EMT",
     "description": "",
     "links": [
-      ["Notes (Complete)", "/under-construction"],
+      [
+        "Notes (Complete)",
+        "https://drive.google.com/file/d/1ixan5fwFlmpFlg7xEaJBRFPAnick3KVD/view?usp=share_link"
+      ],
+      [
+        "Notes (Alternate)",
+        "https://drive.google.com/file/d/1V5iBSei_5g5I3X_sAEGt3y5dBsGMSGPz/view?usp=share_link"
+      ],
       ["Important Questions", "/under-construction"],
       ["Previous Year Papers", "/under-construction"]
     ],

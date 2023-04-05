@@ -29,10 +29,10 @@ export default function App() {
 					<p>
 						We have a nifty <Link to="/taskboard" className='text-var'>
 							task section</Link> for you to manage your work.  No more forgetting deadlines and drowning in assignments.
-						Pop over to the <Link to="/community" className='text-var' >community chat page</Link> and give us a holler. We're always happy to help out and connect with like-minded folks. You might even make a new study buddy or two! We're looking for active contributions and you're always welcome to <Link to='/contributions' className='text-var'>contribute</Link> to RESOC :)
+						Pop over to the <Link to="/community" className='text-var' >community chat page</Link> and give us a holler. We're always happy to help out and connect with like-minded folks. You might even make a new study buddy or two! We're looking for active contributions and you're always welcome to <Link to='/contributions' className='text-var'>contribute</Link> to RESOC :) We've got a <Link to='/team' className='text-var'>team</Link> of talented content creators who are always looking for new ideas and suggestions. If you've got something to say, we're all ears!
 					</p>
 					<p>
-						Oh, and if you really dig what we're doing here at RESOC, we'd be over the moon if you'd consider sponsoring us. Just head over to the <Link to="/team" className='text-var'>team section</Link> and donate to our talented content creators. Trust us, it really helps keep the site running and lets us add all sorts of fun new features!
+						Oh, and if you really dig what we're doing here at RESOC, we'd be over the moon if you'd consider sponsoring us. Trust us, it really helps keep the site running and lets us add all sorts of fun new features!
 					</p>
 				<div>
 						<a href='https://github.com/sponsors/fuzzymfx' className='text-var' 

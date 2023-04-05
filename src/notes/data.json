@@ -13,17 +13,31 @@
         "Notes- End Sem",
         "https://drive.google.com/file/d/1SJoTOviij3hJ-_kqmtQkWXCPiZXTUxZo/view?usp=sharing"
       ],
-      ["Important Questions", "/under-construction"],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
       [
         "Previous Year Papers",
         "https://drive.google.com/file/d/1oXeD2zeLtA-9V4WH9UQiKE3mKZtRjrLf/view?usp=share_link"
       ]
     ],
     "contributors": [
-      ["Anubhab", "https://anubhavp.dev/"],
-      ["Smruti", "https://linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ],
+      [
+        "Smruti",
+        "https://linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Maths", "Engineering Maths", "Maths I", "Maths 1"]
+    "tags": [
+      "Maths",
+      "Engineering Maths",
+      "Maths I",
+      "Maths 1"
+    ]
   },
   {
     "id": 1,
@@ -48,7 +62,12 @@
         "https://drive.google.com/file/d/1J9QUrj5UcGD8t781LTTuyKSd771Wwe9z/view?usp=sharing"
       ]
     ],
-    "contributors": [["Anubhab", "https://anubhavp.dev/"]],
+    "contributors": [
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ]
+    ],
     "tags": [
       "Constitution",
       "Constitution of India",
@@ -71,13 +90,21 @@
         "Notes",
         "https://drive.google.com/file/d/1_TCRzu7Ay8l79_ZEB0yDMlsfOnfxd7RO/view?usp=sharing"
       ],
-      ["Important Questions", "/under-construction"],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
       [
         "Previous Year Papers",
         "https://drive.google.com/file/d/1z1-sMNRlgjnFQegV8x54hCM73CRFJqS-/view?usp=sharing"
       ]
     ],
-    "contributors": [["Anubhab", "https://anubhavp.dev/"]],
+    "contributors": [
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ]
+    ],
     "tags": [
       "Basic Electronics",
       "Electronics",
@@ -96,13 +123,21 @@
         "Notes",
         "https://drive.google.com/file/d/1dr0t1RH0MSSwWdPm0q4SzWWqSriBa5mU/view?usp=sharing"
       ],
-      ["Important Questions", "/under-construction"],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
       [
         "Previous Year Papers",
         "https://drive.google.com/file/d/1HKHtQFFH5_NkldSt8sOKy-0YfzpUvDJM/view?usp=share_link"
       ]
     ],
-    "contributors": [["Anubhab", "https://anubhavp.dev/"]],
+    "contributors": [
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ]
+    ],
     "tags": [
       "Communicative & Technical English",
       "Communicative & Technical English- End Sem",
@@ -131,8 +166,14 @@
       ]
     ],
     "contributors": [
-      ["Amit Kumar Sahoo", "https://notes-sit.live/"],
-      ["Anshuman Das", ""]
+      [
+        "Amit Kumar Sahoo",
+        "https://notes-sit.live/"
+      ],
+      [
+        "Anshuman Das",
+        ""
+      ]
     ],
     "tags": [
       "Engineering Chemistry",
@@ -161,7 +202,12 @@
         "https://drive.google.com/file/d/1C22QLKD6zPmkJioEgPFmXVNN7pQKiP9u/view?usp=sharing"
       ]
     ],
-    "contributors": [["Anshuman Das", ""]],
+    "contributors": [
+      [
+        "Anshuman Das",
+        ""
+      ]
+    ],
     "tags": [
       "C Programming",
       "C Programming- End Sem",
@@ -185,13 +231,21 @@
         "Notes - Full",
         "https://docs.google.com/presentation/d/1L1Z2YZDCRSAp5lwrlhS26lpMR41KKKAa/edit?usp=sharing&ouid=115613730661041204627&rtpof=true&sd=true"
       ],
-      ["Important Questions", "/under-construction"],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
       [
         "Previous Year Papers",
         "https://drive.google.com/file/d/1RsgizqBmqkS-uXaiq1y1CnpYVSKoscaO/view?usp=sharing"
       ]
     ],
-    "contributors": [["Anubhab", "https://anubhavp.dev/"]],
+    "contributors": [
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ]
+    ],
     "tags": [
       "Environmental Science & Engineering",
       "Environmental Science & Engineering- End Sem",
@@ -216,11 +270,26 @@
         "Notes - Full",
         "https://drive.google.com/file/d/1Fq94L-fo7_AxErLCibSNOEdPg9DOE4p8/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
-    "contributors": [["Anubhab", "https://anubhavp.dev/"]],
-    "tags": ["Basic Electrical", "BE", "Basic Electrical Engineering"]
+    "contributors": [
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ]
+    ],
+    "tags": [
+      "Basic Electrical",
+      "BE",
+      "Basic Electrical Engineering"
+    ]
   },
   {
     "id": 8,
@@ -240,11 +309,20 @@
         "Codes",
         "https://drive.google.com/file/d/1YPwmC-fy2uNaQN90CMByziQsYvOW9ZI4/view?usp=sharing"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Anubhab", "https://anubhavp.dev/"],
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ],
       [
         "Silicon Institute of Technology, Bhubaneswar",
         "https://www.silicon.ac.in/"
@@ -271,11 +349,20 @@
         "Notes - CSE Dept.",
         "https://drive.google.com/file/d/1EoXWzLhtVSJKDibGgT9u87-DMtjlq2Df/view?usp=sharing"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Anubhab", "https://anubhavp.dev/"],
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ],
       [
         "Silicon Institute of Technology, Bhubaneswar",
         "https://www.silicon.ac.in/"
@@ -307,10 +394,22 @@
         "Important Questions 3",
         "https://drive.google.com/file/d/10vPV0Ct6t1PnqW1mPulZn3iIX23c1eat/view?usp=sharing"
       ],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
-    "contributors": [["Anubhab", "https://anubhavp.dev/"]],
-    "tags": ["Engineering Physics", "Phy", "Physics"]
+    "contributors": [
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ]
+    ],
+    "tags": [
+      "Engineering Physics",
+      "Phy",
+      "Physics"
+    ]
   },
   {
     "id": 11,
@@ -338,17 +437,30 @@
         "Steam Tables",
         "https://drive.google.com/file/d/1rmgOmGRCq0XakcU-N1JM_Q-bQtoLwIER/view?usp=sharing"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Anubhab", "https://anubhavp.dev/"],
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ],
       [
         "Silicon Institute of Technology, Bhubaneswar",
         "https://www.silicon.ac.in/"
       ]
     ],
-    "tags": ["Basic of Mechanical Engineering", "BME", "Mechanical Engineering"]
+    "tags": [
+      "Basic of Mechanical Engineering",
+      "BME",
+      "Mechanical Engineering"
+    ]
   },
   {
     "id": 12,
@@ -372,11 +484,20 @@
         "Lab Record Experiment - (6-10)",
         "https://drive.google.com/file/d/1VYJptxrvuP-Z26-c0rW7wf4e8t-1tfQi/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Anubhab", "https://anubhavp.dev/"],
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ],
       [
         "Silicon Institute of Technology, Bhubaneswar",
         "https://www.silicon.ac.in/"
@@ -403,11 +524,25 @@
         "Notes",
         "https://drive.google.com/file/d/1813iQ4MmSyop08Fxw_ayOGjJFm2sT6VO/view?usp=sharing"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
-    "contributors": [["Anubhab", "https://anubhavp.dev/"]],
-    "tags": ["Discrete Mathematics", "DM"]
+    "contributors": [
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ]
+    ],
+    "tags": [
+      "Discrete Mathematics",
+      "DM"
+    ]
   },
   {
     "id": 14,
@@ -431,11 +566,25 @@
         "CI Tables",
         "https://drive.google.com/file/d/1jUiJCerhMJRUFH9yGZGF1Guh_J_DrNDV/view?usp=sharing"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
-    "contributors": [["Anubhab", "https://anubhavp.dev/"]],
-    "tags": ["Engineering Economics", "Economics"]
+    "contributors": [
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ]
+    ],
+    "tags": [
+      "Engineering Economics",
+      "Economics"
+    ]
   },
   {
     "id": 15,
@@ -447,11 +596,25 @@
         "Notes",
         "https://drive.google.com/file/d/13Ur6XLWtV0wxo-CoL9e9c63s-aaY6Vly/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
-    "contributors": [["Anubhab", "https://anubhavp.dev/"]],
-    "tags": ["Engineering Mathematics III", "Maths 3"]
+    "contributors": [
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ]
+    ],
+    "tags": [
+      "Engineering Mathematics III",
+      "Maths 3"
+    ]
   },
   {
     "id": 16,
@@ -467,16 +630,28 @@
         "lab Record Complete",
         "https://drive.google.com/file/d/1m9xP50e_RUGW13qnQPfNM62RpH-N8cXx/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Anubhab", "https://anubhavp.dev/"],
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ],
       [
         "Silicon Institute of Technology, Bhubaneswar",
         "https://www.silicon.ac.in/"
       ],
-      ["Ananya", "https://www.linkedin.com/in/ananya-satpathy-98529a122/"]
+      [
+        "Ananya",
+        "https://www.linkedin.com/in/ananya-satpathy-98529a122/"
+      ]
     ],
     "tags": [
       "Object-Oriented Programming using JAVA",
@@ -496,17 +671,30 @@
         "Notes",
         "https://drive.google.com/file/d/1Tow1MEt61KrsxfrbWNLnCg7X10RG3cOF/view?usp=sharing"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Anubhab", "https://anubhavp.dev/"],
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ],
       [
         "Silicon Institute of Technology, Bhubaneswar",
         "https://www.silicon.ac.in/"
       ]
     ],
-    "tags": ["Fundamentals of Management", "FOM", "Management"]
+    "tags": [
+      "Fundamentals of Management",
+      "FOM",
+      "Management"
+    ]
   },
   {
     "id": 18,
@@ -518,10 +706,21 @@
         "Notes",
         "https://drive.google.com/file/d/10YumalIlPlJbfjzHj5cI88BCYmzRIoYr/view?usp=sharing"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
-    "contributors": [["Anubhab", "https://anubhavp.dev/"]],
+    "contributors": [
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ]
+    ],
     "tags": [
       "Computer Organization and Architecture",
       "COA",
@@ -538,17 +737,30 @@
         "Notes",
         "https://drive.google.com/file/d/1AnS0abz5yLu--gSQ9dMUaSCYXY4jq2Eb/view?usp=sharing"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Anubhab", "https://anubhavp.dev/"],
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ],
       [
         "Silicon Institute of Technology, Bhubaneswar",
         "https://www.silicon.ac.in/"
       ]
     ],
-    "tags": ["Database Management System", "DBMS", "Database"]
+    "tags": [
+      "Database Management System",
+      "DBMS",
+      "Database"
+    ]
   },
   {
     "id": 20,
@@ -564,17 +776,30 @@
         "Introduction_to_algorithms-3rd Edition.pdf",
         "https://drive.google.com/file/d/1CdnUR3QhSfF2CUL8v5EasKPTjXLhJit5/view?usp=sharing"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Anubhab", "https://anubhavp.dev/"],
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ],
       [
         "Silicon Institute of Technology, Bhubaneswar",
         "https://www.silicon.ac.in/"
       ]
     ],
-    "tags": ["Design and Analysis of Algorithms", "DAA", "Algorithms"]
+    "tags": [
+      "Design and Analysis of Algorithms",
+      "DAA",
+      "Algorithms"
+    ]
   },
   {
     "id": 21,
@@ -586,17 +811,30 @@
         "Notes MOD 1-2",
         "https://drive.google.com/file/d/1zHf52imfsvilMXGwZ1hXSWbecQHAPoQw/view?usp=sharing"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Anubhab", "https://anubhavp.dev/"],
+      [
+        "Anubhab",
+        "https://anubhavp.dev/"
+      ],
       [
         "Ananya Satpathy",
         "https://www.linkedin.com/in/ananya-satpathy-98529a122/"
       ]
     ],
-    "tags": ["Engineering Mathematics IV", "Maths 4", "Maths"]
+    "tags": [
+      "Engineering Mathematics IV",
+      "Maths 4",
+      "Maths"
+    ]
   },
   {
     "id": 22,
@@ -644,8 +882,14 @@
         "Lab Exp 10",
         "https://drive.google.com/file/d/1hWF20HeHH4gXZdUUBDo3sCV-n_l6nMjU/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
       [
@@ -653,7 +897,11 @@
         "https://www.linkedin.com/in/ananya-satpathy-98529a122/"
       ]
     ],
-    "tags": ["Circuit Theory", "CT", "CircuitTheory"]
+    "tags": [
+      "Circuit Theory",
+      "CT",
+      "CircuitTheory"
+    ]
   },
   {
     "id": 23,
@@ -665,8 +913,14 @@
         "Notes",
         "https://drive.google.com/file/d/1zOX8tNPoNA0bvsHRSRHn7hZt9SF8TNQk/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
       [
@@ -674,7 +928,11 @@
         "https://www.linkedin.com/in/ananya-satpathy-98529a122/"
       ]
     ],
-    "tags": ["Electronic Devices", "ELD", "ElectronicDevices"]
+    "tags": [
+      "Electronic Devices",
+      "ELD",
+      "ElectronicDevices"
+    ]
   },
   {
     "id": 24,
@@ -686,8 +944,14 @@
         "Notes HandWritten",
         "https://drive.google.com/file/d/1u_1xvwW7AhN9U55BkBJoN-1ff7ifqNV3/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
       [
@@ -695,7 +959,11 @@
         "https://www.linkedin.com/in/ananya-satpathy-98529a122/"
       ]
     ],
-    "tags": ["Maths 3", "Maths-III", "Complex Numbers"]
+    "tags": [
+      "Maths 3",
+      "Maths-III",
+      "Complex Numbers"
+    ]
   },
   {
     "id": 25,
@@ -719,8 +987,14 @@
         "Notes Remaining and Extras",
         "https://drive.google.com/file/d/1N2gzEXolFFKjGx0ngEeRSrH87sdaQ369/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
       [
@@ -728,7 +1002,11 @@
         "https://www.linkedin.com/in/ananya-satpathy-98529a122/"
       ]
     ],
-    "tags": ["Analog Electronics Circuit", "AEC", "Analog Circuits"]
+    "tags": [
+      "Analog Electronics Circuit",
+      "AEC",
+      "Analog Circuits"
+    ]
   },
   {
     "id": 26,
@@ -740,8 +1018,14 @@
         "Notes (Complete)",
         "https://drive.google.com/file/d/1kWBSEO4_egkmi8lWWHpM2T4fT4cWaErW/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
       [
@@ -749,7 +1033,11 @@
         "https://www.linkedin.com/in/ananya-satpathy-98529a122/"
       ]
     ],
-    "tags": ["Engineering Mathematics IV", "Maths - 4", "Maths - 4 ECE"]
+    "tags": [
+      "Engineering Mathematics IV",
+      "Maths 4",
+      "Maths 4 ECE"
+    ]
   },
   {
     "id": 27,
@@ -805,8 +1093,14 @@
         "Lab Record - 10",
         "https://drive.google.com/file/d/1WXbD3oRI-lfhP_fGLXkTB5Kr0cRXYMmA/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
       [
@@ -814,7 +1108,10 @@
         "https://www.linkedin.com/in/ananya-satpathy-98529a122/"
       ]
     ],
-    "tags": ["Measurement and instrumentation", "MI"]
+    "tags": [
+      "Measurement and instrumentation",
+      "MI"
+    ]
   },
   {
     "id": 28,
@@ -830,17 +1127,29 @@
         "Lab Record Complete",
         "https://drive.google.com/file/d/10hyxiQyCVwmRDfWHAV7OWvjBCjBOaJES/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
       [
         "Ananya Satpathy",
         "https://www.linkedin.com/in/ananya-satpathy-98529a122/"
       ],
-      ["Aditya Sahu", "https://www.linkedin.com/in/adityasahu2000/"]
+      [
+        "Aditya Sahu",
+        "https://www.linkedin.com/in/adityasahu2000/"
+      ]
     ],
-    "tags": ["Microprocessors", "MPMC"]
+    "tags": [
+      "Microprocessors",
+      "MPMC"
+    ]
   },
   {
     "id": 29,
@@ -916,14 +1225,30 @@
         "Lab Experiment - 15",
         "https://drive.google.com/file/d/1QlOTdklcRFK1rAL5ea6DSssjEkbH5-4y/view?usp=sharing"
       ],
-      ["Lab Experiment - 16", ""],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Lab Experiment - 16",
+        ""
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Jauhar Ahemad", "https://www.linkedin.com/in/jauharahmad75/"]
+      [
+        "Jauhar Ahemad",
+        "https://www.linkedin.com/in/jauharahmad75/"
+      ]
     ],
-    "tags": ["Electrical Machines", "EM1", "Machines"]
+    "tags": [
+      "Electrical Machines",
+      "EM1",
+      "Machines"
+    ]
   },
   {
     "id": 30,
@@ -975,13 +1300,25 @@
         "Lab Experiment - 10",
         "https://drive.google.com/file/d/15Xw0Gnp7Ta2QPEgOlUut4jWlLuOFp-N8/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Jauhar Ahemad", "https://www.linkedin.com/in/jauharahmad75/"]
+      [
+        "Jauhar Ahemad",
+        "https://www.linkedin.com/in/jauharahmad75/"
+      ]
     ],
-    "tags": ["Control Systems", "CSE"]
+    "tags": [
+      "Control Systems",
+      "CSE"
+    ]
   },
   {
     "id": 31,
@@ -1029,13 +1366,25 @@
         "Lab Exp 10",
         "https://drive.google.com/file/d/1hWF20HeHH4gXZdUUBDo3sCV-n_l6nMjU/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Jauhar Ahemad", "https://www.linkedin.com/in/jauharahmad75/"]
+      [
+        "Jauhar Ahemad",
+        "https://www.linkedin.com/in/jauharahmad75/"
+      ]
     ],
-    "tags": ["CS", "Circuits & Signals"]
+    "tags": [
+      "CS",
+      "Circuits & Signals"
+    ]
   },
   {
     "id": 32,
@@ -1051,13 +1400,25 @@
         "Notes (Alternate)",
         "https://drive.google.com/file/d/1V5iBSei_5g5I3X_sAEGt3y5dBsGMSGPz/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Jauhar Ahemad", "https://www.linkedin.com/in/jauharahmad75/"]
+      [
+        "Jauhar Ahemad",
+        "https://www.linkedin.com/in/jauharahmad75/"
+      ]
     ],
-    "tags": ["Electromagnetic Theory", "EMT"]
+    "tags": [
+      "Electromagnetic Theory",
+      "EMT"
+    ]
   },
   {
     "id": 33,
@@ -1081,13 +1442,25 @@
         "Lab Experiment-3",
         "https://drive.google.com/file/d/1T239KsdlJ7yuZxWLYWFLl0HEuSpAfOm3/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Jauhar Ahemad", "https://www.linkedin.com/in/jauharahmad75/"]
+      [
+        "Jauhar Ahemad",
+        "https://www.linkedin.com/in/jauharahmad75/"
+      ]
     ],
-    "tags": ["Electrical Machines", "EM II"]
+    "tags": [
+      "Electrical Machines",
+      "EM II"
+    ]
   },
   {
     "id": 34,
@@ -1107,13 +1480,25 @@
         "Notes Part-2",
         "https://drive.google.com/file/d/1tgf0x3h6DrFpu2TUdT3Ar3RRgj51dcu8/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Jauhar Ahemad", "https://www.linkedin.com/in/jauharahmad75/"]
+      [
+        "Jauhar Ahemad",
+        "https://www.linkedin.com/in/jauharahmad75/"
+      ]
     ],
-    "tags": ["Introduction to Thermodynamics", "Thermodynamics"]
+    "tags": [
+      "Introduction to Thermodynamics",
+      "Thermodynamics"
+    ]
   },
   {
     "id": 35,
@@ -1125,13 +1510,25 @@
         "Notes (Complete)",
         "https://drive.google.com/file/d/1-zYfZ3susXmU7ie1rYVsVEW1h-VdbCJ0/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Jauhar Ahemad", "https://www.linkedin.com/in/jauharahmad75/"]
+      [
+        "Jauhar Ahemad",
+        "https://www.linkedin.com/in/jauharahmad75/"
+      ]
     ],
-    "tags": ["Introduction to Semiconductor", "Semiconductor"]
+    "tags": [
+      "Introduction to Semiconductor",
+      "Semiconductor"
+    ]
   },
   {
     "id": 36,
@@ -1143,13 +1540,25 @@
         "Notes",
         "https://drive.google.com/file/d/1L9DAPJgUM50KNp5vuosOZoMpE1aC9vbi/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Jauhar Ahemad", "https://www.linkedin.com/in/jauharahmad75/"]
+      [
+        "Jauhar Ahemad",
+        "https://www.linkedin.com/in/jauharahmad75/"
+      ]
     ],
-    "tags": ["Signal System", "SNP"]
+    "tags": [
+      "Signal System",
+      "SNP"
+    ]
   },
   {
     "id": 37,
@@ -1165,7 +1574,10 @@
         "Important Algorithms",
         "https://drive.google.com/file/d/1zF6wYsQK1f0474DhUvB0Mk3OsEp6ZVKS/view?usp=share_link"
       ],
-      ["Lab Experiment", "/under-construction"],
+      [
+        "Lab Experiment",
+        "/under-construction"
+      ],
       [
         "Important Questions",
         "https://docs.google.com/document/d/1E6oDZxGqEzKlzvj6O6YKTSZ811DR7mGe/edit?usp=share_link&ouid=104433455372147288977&rtpof=true&sd=true"
@@ -1176,9 +1588,15 @@
       ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Operating Systems", "OS"]
+    "tags": [
+      "Operating Systems",
+      "OS"
+    ]
   },
   {
     "id": 38,
@@ -1220,9 +1638,15 @@
       ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Computer Networks", "CN"]
+    "tags": [
+      "Computer Networks",
+      "CN"
+    ]
   },
   {
     "id": 39,
@@ -1244,9 +1668,15 @@
       ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Biology for Engineers", "BIO"]
+    "tags": [
+      "Biology for Engineers",
+      "BIO"
+    ]
   },
   {
     "id": 40,
@@ -1268,11 +1698,16 @@
       ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Data Mining & Data Warehousing", "DMDW"]
-  }
-  ,
+    "tags": [
+      "Data Mining & Data Warehousing",
+      "DMDW"
+    ]
+  },
   {
     "id": 41,
     "name": "Statistical Inference",
@@ -1293,11 +1728,16 @@
       ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Statistical Inference", "SI"]
-  }
-  ,
+    "tags": [
+      "Statistical Inference",
+      "SI"
+    ]
+  },
   {
     "id": 42,
     "name": "Cloud Computing",
@@ -1318,8 +1758,14 @@
       ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Cloud Computing", "CC"]
+    "tags": [
+      "Cloud Computing",
+      "CC"
+    ]
   }
 ]

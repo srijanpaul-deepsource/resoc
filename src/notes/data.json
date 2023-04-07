@@ -1398,4 +1398,29 @@
     ],
     "tags": ["Formal Languages & Automata Theory", "FLAT"]
   }
+  ,
+  {
+    "id": 42,
+    "name": "Cloud Computing",
+    "shortName": "CC",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/14OH0ZB2U7727PoREnHqgqwrzeVJMxhAW/view?usp=share_link"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1_XVHBw5dagNJ3u8W8lfGQ62ZrnR8VcHp/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Cloud Computing", "CC"]
+  }
 ]

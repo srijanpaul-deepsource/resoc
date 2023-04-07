@@ -1271,8 +1271,7 @@
       ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
     ],
     "tags": ["Data Mining & Data Warehousing", "DMDW"]
-  }
-  ,
+  },
   {
     "id": 41,
     "name": "Statistical Inference",
@@ -1296,8 +1295,7 @@
       ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
     ],
     "tags": ["Statistical Inference", "SI"]
-  }
-  ,
+  },
   {
     "id": 42,
     "name": "Cloud Computing",
@@ -1308,10 +1306,7 @@
         "Notes(Complete)",
         "https://drive.google.com/file/d/14OH0ZB2U7727PoREnHqgqwrzeVJMxhAW/view?usp=share_link"
       ],
-      [
-        "Important Questions",
-        "/under-construction"
-      ],
+      ["Important Questions", "/under-construction"],
       [
         "Previous Year Papers",
         "https://drive.google.com/file/d/1_XVHBw5dagNJ3u8W8lfGQ62ZrnR8VcHp/view?usp=share_link"
@@ -1321,5 +1316,86 @@
       ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
     ],
     "tags": ["Cloud Computing", "CC"]
+  },
+  {
+    "id": 43,
+    "name": "Professional Ethics & Values",
+    "shortName": "PEV",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1uPYYkABheNXatPYMp7q4UKYH76yG6rGx/view?usp=share_link"
+      ],
+      ["Important Questions", "/under-construction"],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1cinn5v-Bl902U3s3_HjsZfgiTVm2jJA5/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Professional Ethics & Values", "PEV"]
+  },
+  {
+    "id": 44,
+    "name": "Advanced Java Programming",
+    "shortName": "AJP",
+    "description": "",
+    "links": [
+      ["Notes(Complete)", "/under-construction"],
+      ["Important Questions", "/under-construction"],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1uOusFuSPHf7Skw5yg5o5VcgNO9IQqOdr/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Advanced Java Programming", "AJP"]
+  },
+  {
+    "id": 45,
+    "name": "Mobile Computing",
+    "shortName": "MC",
+    "description": "",
+    "links": [
+      ["Notes(Complete)", "/under-construction"],
+      ["Important Questions", "/under-construction"],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/18bP16H8F1cM0fK-UvF-QaVry_cE6_LA-/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Mobile Computing", "MC"]
+  },
+  {
+    "id": 46,
+    "name": "Formal Languages & Automata Theory",
+    "shortName": "FLAT",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1tFqDdlRwPmIj0xyufQCkEFA-scD3uS1P/view?usp=share_link"
+      ],
+      [
+        "Important Theorems",
+        "https://drive.google.com/file/d/1LzrFJCjDnTJEyV8PH2F4Pjlhj8geBMWu/view?usp=share_link"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1xfu_oaeJQCu0taOMTOiSYDgMFLpYDj-b/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Formal Languages & Automata Theory", "FLAT"]
   }
 ]

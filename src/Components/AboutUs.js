@@ -27,7 +27,7 @@ export default function AboutUs() {
 			</section>
 
 			<div className=" px-3 p-sm-5 ">
-				<h1 className='p-2'> Dev Team</h1>
+				<h1 className='p-2'>Core Team</h1>
 				<div className="lead mt-3 p-1">
 					<ul style={{
 						listStyleType: "none",
@@ -51,23 +51,18 @@ export default function AboutUs() {
 							}} alt="avatar" className="avatar p-2" />
 							<a href="https://github.com/smrutid12/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Smruti Dash</a>
 						</li>
-					</ul>
-				</div>
-				<h1 className='mt-3 ps-2'> CORE TEAM</h1>
-				<div className='mt-3'>
-					<ul style={{
-						listStyleType: "none",
-						paddingLeft: "20px"
-					}}>
 						<li>
-							<a href="https://anubhavp.dev/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Anubhab Patnaik</a>
+							<img src="https://media.licdn.com/dms/image/D4D03AQEuccga9paQ3g/profile-displayphoto-shrink_800_800/0/1680114099477?e=1686182400&v=beta&t=mVa27I8n4dYqeseb29807LBlkVk9aRumiEDKWqB1kR4" style={{
+								width: "50px",
+								height: "50px",
+								borderRadius: "50%",
+								margin: "0 10px"
+							}} alt="avatar" className="avatar p-2" />
+							<a href="
+							https://www.linkedin.com/in/abhinav-singh-11b748213"
+								target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Abhinav Singh</a>
 						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/smruti-dash-1210/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Smruti Dash</a>
-						</li>
-						<li>
-						<a href="https://www.linkedin.com/in/abhinav-singh-11b748213" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Abhinav Singh</a>
-						</li>
+
 					</ul>
 				</div>
 			</div>

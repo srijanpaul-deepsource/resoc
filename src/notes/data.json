@@ -1748,10 +1748,7 @@
         "Notes(Complete)",
         "https://drive.google.com/file/d/14OH0ZB2U7727PoREnHqgqwrzeVJMxhAW/view?usp=share_link"
       ],
-      [
-        "Important Questions",
-        "/under-construction"
-      ],
+      ["Important Questions", "/under-construction"],
       [
         "Previous Year Papers",
         "https://drive.google.com/file/d/1_XVHBw5dagNJ3u8W8lfGQ62ZrnR8VcHp/view?usp=share_link"
@@ -1770,6 +1767,203 @@
   },
   {
     "id": 43,
+    "name": "Professional Ethics & Values",
+    "shortName": "PEV",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1uPYYkABheNXatPYMp7q4UKYH76yG6rGx/view?usp=share_link"
+      ],
+      ["Important Questions", "/under-construction"],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1cinn5v-Bl902U3s3_HjsZfgiTVm2jJA5/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Professional Ethics & Values", "PEV"]
+  },
+  {
+    "id": 44,
+    "name": "Advanced Java Programming",
+    "shortName": "AJP",
+    "description": "",
+    "links": [
+      ["Notes(Complete)", "/under-construction"],
+      ["Important Questions", "/under-construction"],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1uOusFuSPHf7Skw5yg5o5VcgNO9IQqOdr/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Advanced Java Programming", "AJP"]
+  },
+  {
+    "id": 45,
+    "name": "Mobile Computing",
+    "shortName": "MC",
+    "description": "",
+    "links": [
+      ["Notes(Complete)", "/under-construction"],
+      ["Important Questions", "/under-construction"],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/18bP16H8F1cM0fK-UvF-QaVry_cE6_LA-/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Mobile Computing", "MC"]
+  },
+  {
+    "id": 46,
+    "name": "Formal Languages & Automata Theory",
+    "shortName": "FLAT",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1tFqDdlRwPmIj0xyufQCkEFA-scD3uS1P/view?usp=share_link"
+      ],
+      [
+        "Important Theorems",
+        "https://drive.google.com/file/d/1LzrFJCjDnTJEyV8PH2F4Pjlhj8geBMWu/view?usp=share_link"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1xfu_oaeJQCu0taOMTOiSYDgMFLpYDj-b/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Formal Languages & Automata Theory", "FLAT"]
+  },
+  {
+    "id": 47,
+    "name": "System Programming",
+    "shortName": "SP",
+    "description": "",
+    "links": [
+      ["Notes(Complete)", "/under-construction"],
+      ["Important Questions", "/under-construction"],
+      ["Previous Year Papers", "/under-construction"]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["System Programming", "SP"]
+  },
+  {
+    "id": 48,
+    "name": "Software Engineering",
+    "shortName": "SE",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1gnCcjyUY3W7dmS67Ir7stPWwad2KKgjv/view?usp=share_link"
+      ],
+      [
+        "Important Questions(1)",
+        "https://docs.google.com/document/d/1eKWACMumG58i5L8Xfe4akUgGe42iUpCD/edit?usp=share_link&ouid=104433455372147288977&rtpof=true&sd=true"
+      ],
+      [
+        "Important Questions(2)",
+        "https://docs.google.com/document/d/1Q6PyGvQShfrp1TGTIhSmrBX6_UH1hW9B/edit?usp=share_link&ouid=104433455372147288977&rtpof=true&sd=true"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1iOTU19XBT_k3hPZV_NVfqz1l-UQs36l3/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Software Engineering", "SE"]
+  },
+  {
+    "id": 49,
+    "name": "Machine Learning",
+    "shortName": "ML",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/10NqbV90qtQv_0EdIK2b-mhG-iHIbkoSx/view?usp=share_link"
+      ],
+      ["Important Questions", "/under-construction"],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1nQY8LiC_M9_Cr6XmOqFqX8jmSqBp6l7a/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Machine Learning", "ML"]
+  },
+  {
+    "id": 50,
+    "name": "Artificial Intelligence",
+    "shortName": "AI",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1VCZGJtw5qco-4ro6kbRBSyfW0ifVx0KD/view?usp=share_link"
+      ],
+      ["Important Questions", "/under-construction"],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1xfu_oaeJQCu0taOMTOiSYDgMFLpYDj-b/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Artificial Intelligence", "AI"]
+  },
+  {
+    "id": 51,
+    "name": "Natural Language Processing",
+    "shortName": "NLP",
+    "description": "",
+    "links": [
+      ["Notes(Complete)", "/under-construction"],
+      ["Important Questions", "/under-construction"],
+      ["Previous Year Papers", "/under-construction"]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Natural Language Processing", "NLP"]
+  },
+  {
+    "id": 52,
+    "name": "Wireless Sensor Networks",
+    "shortName": "WSN",
+    "description": "",
+    "links": [
+      ["Notes(Complete)", "/under-construction"],
+      ["Important Questions", "/under-construction"],
+      ["Previous Year Papers", "/under-construction"]
+    ],
+    "contributors": [
+      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+    ],
+    "tags": ["Wireless Sensor Networks", "WSN"]
+  }
+  ,
+  {
+    "id": 53,
     "name": "Interview Preparation",
     "shortName": "Interview Prep",
     "description": "",

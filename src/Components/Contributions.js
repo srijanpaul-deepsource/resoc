@@ -205,10 +205,11 @@ export default function Contributions() {
 								</div>
 						</Form>
 						<p>
+							
 							{downloadURL? 
 							<span> Here is the <b><a href={downloadURL} target='_blank' rel='noreferrer noopener' className='text-var'> download link.</a></b>
 							</span>
-							: null}
+							: <span>You'll get your file link for you to share with friends here.</span>}
 						</p>
 						<p>
 							Please upload your file (less than 100 MB) in a pdf format or a zip file of pdfs <b>only</b>.

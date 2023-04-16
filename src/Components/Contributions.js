@@ -236,6 +236,9 @@ export default function Contributions() {
 							<li>
 								<a href="https://www.linkedin.com/in/jauharahmad75/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Jauhar Ahemad</a>
 							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/d-raj-sekhar-44a12a1b4/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">David</a>
+							</li>
 						</ul>
 					</div>
 				</div>

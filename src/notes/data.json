@@ -1808,7 +1808,10 @@
         "Notes(Complete)",
         "https://drive.google.com/file/d/14OH0ZB2U7727PoREnHqgqwrzeVJMxhAW/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
       [
         "Previous Year Papers",
         "https://drive.google.com/file/d/1_XVHBw5dagNJ3u8W8lfGQ62ZrnR8VcHp/view?usp=share_link"
@@ -1840,7 +1843,7 @@
         "https://drive.google.com/drive/folders/12yLlub4Cd1az0aOVzKOgv-ekSjVRglT4?usp=share_link"
       ],
       [
-        "Important Questions", 
+        "Important Questions",
         "/under-construction"
       ],
       [
@@ -1849,7 +1852,10 @@
       ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"],
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ],
       [
         "David Raj Sekhar(LinkedIn)",
         "https://www.linkedin.com/in/d-raj-sekhar-44a12a1b4/"
@@ -1859,7 +1865,10 @@
         "https://www.instagram.com/david_rajsekhar/"
       ]
     ],
-    "tags": ["Professional Ethics & Values", "PEV"]
+    "tags": [
+      "Professional Ethics & Values",
+      "PEV"
+    ]
   },
   {
     "id": 44,
@@ -1867,17 +1876,29 @@
     "shortName": "AJP",
     "description": "",
     "links": [
-      ["Notes(Complete)", "/under-construction"],
-      ["Important Questions", "/under-construction"],
+      [
+        "Notes(Complete)",
+        "/under-construction"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
       [
         "Previous Year Papers",
         "https://drive.google.com/file/d/1uOusFuSPHf7Skw5yg5o5VcgNO9IQqOdr/view?usp=share_link"
       ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Advanced Java Programming", "AJP"]
+    "tags": [
+      "Advanced Java Programming",
+      "AJP"
+    ]
   },
   {
     "id": 45,
@@ -1885,17 +1906,29 @@
     "shortName": "MC",
     "description": "",
     "links": [
-      ["Notes(Complete)", "/under-construction"],
-      ["Important Questions", "/under-construction"],
+      [
+        "Notes(Complete)",
+        "/under-construction"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
       [
         "Previous Year Papers",
         "https://drive.google.com/file/d/18bP16H8F1cM0fK-UvF-QaVry_cE6_LA-/view?usp=share_link"
       ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Mobile Computing", "MC"]
+    "tags": [
+      "Mobile Computing",
+      "MC"
+    ]
   },
   {
     "id": 46,
@@ -1917,9 +1950,15 @@
       ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Formal Languages & Automata Theory", "FLAT"]
+    "tags": [
+      "Formal Languages & Automata Theory",
+      "FLAT"
+    ]
   },
   {
     "id": 47,
@@ -1927,14 +1966,29 @@
     "shortName": "SP",
     "description": "",
     "links": [
-      ["Notes(Complete)", "/under-construction"],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Notes(Complete)",
+        "/under-construction"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["System Programming", "SP"]
+    "tags": [
+      "System Programming",
+      "SP"
+    ]
   },
   {
     "id": 48,
@@ -1960,9 +2014,15 @@
       ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Software Engineering", "SE"]
+    "tags": [
+      "Software Engineering",
+      "SE"
+    ]
   },
   {
     "id": 49,
@@ -1974,16 +2034,25 @@
         "Notes(Complete)",
         "https://drive.google.com/file/d/10NqbV90qtQv_0EdIK2b-mhG-iHIbkoSx/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
       [
         "Previous Year Papers",
         "https://drive.google.com/file/d/1nQY8LiC_M9_Cr6XmOqFqX8jmSqBp6l7a/view?usp=share_link"
       ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Machine Learning", "ML"]
+    "tags": [
+      "Machine Learning",
+      "ML"
+    ]
   },
   {
     "id": 50,
@@ -1995,16 +2064,25 @@
         "Notes(Complete)",
         "https://drive.google.com/file/d/1VCZGJtw5qco-4ro6kbRBSyfW0ifVx0KD/view?usp=share_link"
       ],
-      ["Important Questions", "/under-construction"],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
       [
         "Previous Year Papers",
         "https://drive.google.com/file/d/1xfu_oaeJQCu0taOMTOiSYDgMFLpYDj-b/view?usp=share_link"
       ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Artificial Intelligence", "AI"]
+    "tags": [
+      "Artificial Intelligence",
+      "AI"
+    ]
   },
   {
     "id": 51,
@@ -2012,14 +2090,29 @@
     "shortName": "NLP",
     "description": "",
     "links": [
-      ["Notes(Complete)", "/under-construction"],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Notes(Complete)",
+        "/under-construction"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Natural Language Processing", "NLP"]
+    "tags": [
+      "Natural Language Processing",
+      "NLP"
+    ]
   },
   {
     "id": 52,
@@ -2027,16 +2120,31 @@
     "shortName": "WSN",
     "description": "",
     "links": [
-      ["Notes(Complete)", "/under-construction"],
-      ["Important Questions", "/under-construction"],
-      ["Previous Year Papers", "/under-construction"]
+      [
+        "Notes(Complete)",
+        "/under-construction"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
     ],
     "contributors": [
-      ["Smruti Dash", "https://www.linkedin.com/in/smruti-dash-1210/"]
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
     ],
-    "tags": ["Wireless Sensor Networks", "WSN"]
-  }
-  ,{
+    "tags": [
+      "Wireless Sensor Networks",
+      "WSN"
+    ]
+  },
+  {
     "id": 53,
     "name": "Engineering Mathematics IV(EIE)",
     "shortName": "Maths 4",
@@ -2056,10 +2164,6 @@
       ]
     ],
     "contributors": [
-      [
-        "Anubhab",
-        "https://anubhavp.dev/"
-      ],
       [
         "David Raj Sekhar(LinkedIn)",
         "https://www.linkedin.com/in/d-raj-sekhar-44a12a1b4/"
@@ -2096,10 +2200,6 @@
     ],
     "contributors": [
       [
-        "Anubhab",
-        "https://anubhavp.dev/"
-      ],
-      [
         "David Raj Sekhar(LinkedIn)",
         "https://www.linkedin.com/in/d-raj-sekhar-44a12a1b4/"
       ],
@@ -2111,8 +2211,7 @@
     "tags": [
       "VLSI"
     ]
-  }
-  ,
+  },
   {
     "id": 55,
     "name": "Internet of Things",
@@ -2170,10 +2269,6 @@
     ],
     "contributors": [
       [
-        "Anubhab",
-        "https://anubhavp.dev/"
-      ],
-      [
         "David Raj Sekhar(LinkedIn)",
         "https://www.linkedin.com/in/d-raj-sekhar-44a12a1b4/"
       ],
@@ -2211,10 +2306,6 @@
     ],
     "contributors": [
       [
-        "Anubhab",
-        "https://anubhavp.dev/"
-      ],
-      [
         "David Raj Sekhar(LinkedIn)",
         "https://www.linkedin.com/in/d-raj-sekhar-44a12a1b4/"
       ],
@@ -2228,8 +2319,7 @@
       "Communication System",
       "Trans"
     ]
-  }
-  ,
+  },
   {
     "id": 57,
     "name": "Instrumentation Device and System",
@@ -2278,10 +2368,6 @@
       ]
     ],
     "contributors": [
-      [
-        "Anubhab",
-        "https://anubhavp.dev/"
-      ],
       [
         "David Raj Sekhar(LinkedIn)",
         "https://www.linkedin.com/in/d-raj-sekhar-44a12a1b4/"
@@ -2346,10 +2432,6 @@
     ],
     "contributors": [
       [
-        "Anubhab",
-        "https://anubhavp.dev/"
-      ],
-      [
         "David Raj Sekhar(LinkedIn)",
         "https://www.linkedin.com/in/d-raj-sekhar-44a12a1b4/"
       ],
@@ -2385,10 +2467,6 @@
     ],
     "contributors": [
       [
-        "Anubhab",
-        "https://anubhavp.dev/"
-      ],
-      [
         "David Raj Sekhar(LinkedIn)",
         "https://www.linkedin.com/in/d-raj-sekhar-44a12a1b4/"
       ],
@@ -2423,10 +2501,6 @@
       ]
     ],
     "contributors": [
-      [
-        "Anubhab",
-        "https://anubhavp.dev/"
-      ],
       [
         "David Raj Sekhar(LinkedIn)",
         "https://www.linkedin.com/in/d-raj-sekhar-44a12a1b4/"

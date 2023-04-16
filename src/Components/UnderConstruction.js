@@ -2,9 +2,9 @@ import React from 'react'
 import planet from '../assets/img/undiscoveredplanet.png'
 export default function UnderConstruction () {
 	React.useEffect(() => {
-		document.title = 'RESOC | 503'
+		document.title = '503 | RESOC'
 		return () => {
-			document.title = 'RESOC | NOTES-SIT'
+			document.title = 'NOTES-SIT | RESOC'
 		}
 	}, []);
   return (

@@ -14,9 +14,9 @@ const firestore = firebase.firestore();
 
 function Chat() {
   React.useEffect(() => {
-		document.title = 'RESOC | Community'
+		document.title = 'Community | RESOC'
 		return () => {
-			document.title = 'RESOC | NOTES-SIT'
+			document.title = 'NOTES-SIT | RESOC'
 		}
 	}, []);
 

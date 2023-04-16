@@ -16,9 +16,9 @@ function PreviewNotes() {
 	const [links, setLinks] = React.useState([])
 	const [loading, setLoading] = React.useState(true)
 	React.useEffect(() => {
-		document.title = `RESOC | ${name}`
+		document.title = `${name} | RESOC`
 		return () => {
-			document.title = 'RESOC | NOTES-SIT'
+			document.title = 'NOTES-SIT | RESOC'
 		}
 	}, [name]);
 

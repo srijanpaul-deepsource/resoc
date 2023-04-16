@@ -13,9 +13,9 @@ const storage = getStorage();
 
 export default function Contributions() {
 	React.useEffect(() => {
-		document.title = 'RESOC | Contributions'
+		document.title = 'Contributions | RESOC'
 		return () => {
-			document.title = 'RESOC | NOTES-SIT'
+			document.title = 'NOTES-SIT | RESOC'
 		}
 	}, []);
 	const name =auth.currentUser.displayName? auth.currentUser.displayName : auth.currentUser.email.slice(0, auth.currentUser.email.indexOf('@'));

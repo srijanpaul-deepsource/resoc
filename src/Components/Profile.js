@@ -11,7 +11,7 @@ const analytics = getAnalytics();
 export default function Profile() {
   const name =auth.currentUser.displayName? auth.currentUser.displayName : auth.currentUser.email.slice(0, auth.currentUser.email.indexOf('@'));
   React.useEffect(() => {
-		document.title = `RESOC | ${name}`
+		document.title = `${name} | RESOC`
 		try{
 			logEvent(analytics, 'page_view', {
 				page_title: 'Profile',
@@ -23,7 +23,7 @@ export default function Profile() {
 			console.log(err)
 		}
 		return () => {
-			document.title = 'RESOC | NOTES-SIT'
+			document.title = 'NOTES-SIT | RESOC'
 		}
 	}, [name]);
   const history = useNavigate();

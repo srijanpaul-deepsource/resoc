@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 
 export default function AboutUs() {
 	React.useEffect(() => {
-		document.title = 'RESOC | About Us'
+		document.title = 'About Us | RESOC'
 		return () => {
-			document.title = 'RESOC | NOTES-SIT'
+			document.title = 'NOTES-SIT | RESOC'
 		}
 	}, []);
 	return (

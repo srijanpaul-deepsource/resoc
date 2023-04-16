@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 import Loader from './Loader'
 export default function ForgotPassword() {
   React.useEffect(() => {
-    document.title = 'RESOC | Forgot Password'
+    document.title = 'Forgot Password | RESOC'
     return () => {
-      document.title = 'RESOC | NOTES-SIT'
+      document.title = 'NOTES-SIT | RESOC'
     }
   }, []);
   const emailRef = useRef()

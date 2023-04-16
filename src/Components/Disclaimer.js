@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 
 export default function Disclaimer () {
 	React.useEffect(() => {
-		document.title = 'RESOC | Community Guidelines'
+		document.title = 'Community Guidelines | RESOC'
 		return () => {
-			document.title = 'RESOC | NOTES-SIT'
+			document.title = 'NOTES-SIT | RESOC'
 		}
 	}, []);
   return (

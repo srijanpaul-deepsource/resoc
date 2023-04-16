@@ -15,9 +15,9 @@ const collection_used ="Todos-prod"
 
 export default function Todo() {
   React.useEffect(() => {
-		document.title = 'RESOC | Taskboard'
+		document.title = 'Taskboard | RESOC'
 		return () => {
-			document.title = 'RESOC | NOTES-SIT'
+			document.title = 'NOTES-SIT | RESOC'
 		}
 	}, []);
   

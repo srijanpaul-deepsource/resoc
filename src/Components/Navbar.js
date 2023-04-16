@@ -67,8 +67,8 @@ export default function Header() {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
-              navbarScroll
+              // style={{ maxHeight: '100px' }}
+              // navbarScroll
             >
               <Link to="/notes" className="nav-link">Notes</Link>
               {currentUser && <Link to="/taskboard" className="nav-link">Tasks</Link>}
@@ -104,8 +104,8 @@ export default function Header() {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
-              navbarScroll
+              // style={{ maxHeight: '100px' }}
+              // navbarScroll
             >
               <Link to="/notes" className="nav-link">Notes</Link>
               {currentUser && <Link to="/taskboard" className="nav-link">Tasks</Link>}

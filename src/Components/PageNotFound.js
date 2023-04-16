@@ -2,9 +2,9 @@ import React from 'react'
 import moon from '../assets/img/earth.png'
 export default function PageNotFound () {
 	React.useEffect(() => {
-		document.title = 'RESOC | 404'
+		document.title = '404 | RESOC'
 		return () => {
-			document.title = 'RESOC | NOTES-SIT'
+			document.title = 'NOTES-SIT | RESOC'
 		}
 	}, []);
   return (

@@ -1,7 +1,7 @@
 [
   {
     "year": true,
-    "id": 101,
+    "id": 0,
     "name": "1st Year",
     "shortName": "",
     "description": "",
@@ -10,7 +10,7 @@
     "tags": []
   },
   {
-    "id": 0,
+    "id": 1,
     "name": "Engineering Maths I",
     "shortName": "Maths I",
     "description": "",
@@ -50,7 +50,7 @@
     ]
   },
   {
-    "id": 1,
+    "id": 2,
     "name": "Constitution of India",
     "shortName": "CI",
     "description": "",
@@ -87,7 +87,7 @@
     ]
   },
   {
-    "id": 2,
+    "id": 3,
     "name": "Basic Electronics Engineering",
     "shortName": "BE",
     "description": "",
@@ -124,7 +124,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "Communicative & Technical English",
     "shortName": "English",
     "description": "",
@@ -157,7 +157,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 5,
     "name": "Engineering Chemistry",
     "shortName": "Chemistry",
     "description": "",
@@ -194,7 +194,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 6,
     "name": "C Programming",
     "shortName": "C",
     "description": "",
@@ -228,7 +228,7 @@
     ]
   },
   {
-    "id": 6,
+    "id": 7,
     "name": "Environmental Science & Engineering",
     "shortName": "ENVS",
     "description": "",
@@ -267,7 +267,7 @@
     ]
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "Basic Electrical Engineering",
     "shortName": "BEE",
     "description": "",
@@ -302,7 +302,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "Data Structures & Algorithms",
     "shortName": "DSA",
     "description": "",
@@ -346,7 +346,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "Engineering Mathematics II",
     "shortName": "Maths II",
     "description": "",
@@ -387,7 +387,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Engineering Physics",
     "shortName": "Physics",
     "description": "",
@@ -422,7 +422,17 @@
     ]
   },
   {
-    "id": 11,
+    "year": true,
+    "id": 12,
+    "name": "CSE",
+    "shortName": "",
+    "description": "",
+    "links": [],
+    "contributors": [],
+    "tags": []
+  },
+  {
+    "id": 13,
     "name": "Basic of Mechanical Engineering",
     "shortName": "BME",
     "description": "",
@@ -473,7 +483,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 14,
     "name": "Digital Electronics",
     "shortName": "DEC",
     "description": "",
@@ -525,7 +535,7 @@
     ]
   },
   {
-    "id": 13,
+    "id": 15,
     "name": "Discrete Mathematics",
     "shortName": "DM",
     "description": "",
@@ -555,7 +565,7 @@
     ]
   },
   {
-    "id": 14,
+    "id": 16,
     "name": "Engineering Economics",
     "shortName": "Economics",
     "description": "",
@@ -597,7 +607,7 @@
     ]
   },
   {
-    "id": 15,
+    "id": 17,
     "name": "Engineering Mathematics III",
     "shortName": "Maths 3",
     "description": "",
@@ -627,7 +637,7 @@
     ]
   },
   {
-    "id": 16,
+    "id": 18,
     "name": "Object-Oriented Programming using JAVA",
     "shortName": "OOP",
     "description": "",
@@ -672,7 +682,7 @@
     ]
   },
   {
-    "id": 17,
+    "id": 19,
     "name": "Fundamentals of Management",
     "shortName": "FOM",
     "description": "",
@@ -719,7 +729,7 @@
     ]
   },
   {
-    "id": 18,
+    "id": 20,
     "name": "Computer Organization and Architecture",
     "shortName": "COA",
     "description": "",
@@ -750,7 +760,7 @@
     ]
   },
   {
-    "id": 19,
+    "id": 21,
     "name": "Database Management System",
     "shortName": "DBMS",
     "description": "",
@@ -817,7 +827,7 @@
     ]
   },
   {
-    "id": 20,
+    "id": 22,
     "name": "Design and Analysis of Algorithms",
     "shortName": "DAA",
     "description": "",
@@ -856,7 +866,7 @@
     ]
   },
   {
-    "id": 21,
+    "id": 23,
     "name": "Engineering Mathematics IV",
     "shortName": "Maths 4",
     "description": "",
@@ -891,7 +901,7 @@
     ]
   },
   {
-    "id": 22,
+    "id": 24,
     "name": "Circuit Theory",
     "shortName": "CT",
     "description": "",
@@ -958,7 +968,7 @@
     ]
   },
   {
-    "id": 23,
+    "id": 25,
     "name": "Maths -III Complex Numbers",
     "shortName": "Maths-3(ECE)",
     "description": "",

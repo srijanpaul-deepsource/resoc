@@ -231,7 +231,7 @@ export default function Contributions() {
 								<a href="https://www.linkedin.com/in/ananya-satpathy-98529a122" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Ananya Satapathy</a>
 							</li>
 							<li>
-								<a href="https://www.linkedin.com/in/abhinav-singh-11b748213" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Abhinav Signh</a>
+								<a href="https://www.linkedin.com/in/abhinav-singh-11b748213" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Abhinav Singh</a>
 							</li>
 							<li>
 								<a href="https://www.linkedin.com/in/jauharahmad75/" target="_blank" className='text-var' style={{ textDecoration: 'none' }} rel="noreferrer">Jauhar Ahemad</a>

@@ -901,6 +901,530 @@
     ]
   },
   {
+    "id": 37,
+    "name": "Operating Systems",
+    "shortName": "OS",
+    "description": "",
+    "links": [
+      [
+        "Notes",
+        "https://drive.google.com/file/d/1s1rwrjOEPf8wt1_XazzE-NsoIQQMnuyH/view?usp=share_link"
+      ],
+      [
+        "Important Algorithms",
+        "https://drive.google.com/file/d/1zF6wYsQK1f0474DhUvB0Mk3OsEp6ZVKS/view?usp=share_link"
+      ],
+      [
+        "Lab Experiment",
+        "/under-construction"
+      ],
+      [
+        "Important Questions",
+        "https://docs.google.com/document/d/1E6oDZxGqEzKlzvj6O6YKTSZ811DR7mGe/edit?usp=share_link&ouid=104433455372147288977&rtpof=true&sd=true"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1Jnvyd7rW3RsN6U87jrRi-LnAAgQjQ2Xu/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Operating Systems",
+      "OS"
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Computer Networks",
+    "shortName": "CN",
+    "description": "",
+    "links": [
+      [
+        "Notes",
+        "https://drive.google.com/file/d/18bc_qI7HEWkyBzY7MJqpBc3fWqsIWG7v/view?usp=share_link"
+      ],
+      [
+        "Lab Experiment-1",
+        "https://drive.google.com/file/d/1vn747SlNVwFpgsM15U4CrWZgwLgWer8L/view?usp=share_link"
+      ],
+      [
+        "Lab Experiment-2",
+        "https://drive.google.com/file/d/18ms8vkrjH15_K5KuNOj3ZKe7ysyGFZQz/view?usp=share_link"
+      ],
+      [
+        "Lab Experiment-5",
+        "https://drive.google.com/file/d/1q0FBXPAJ6SRIuJCjS5gHc43QOor8Ct6J/view?usp=share_link"
+      ],
+      [
+        "Lab Experiment-6",
+        "https://drive.google.com/file/d/1H-mjpZArmAHN-rFRWJNEZhMKTU0gKNFV/view?usp=share_link"
+      ],
+      [
+        "Lab Experiment-7",
+        "https://drive.google.com/file/d/1e3qEj5JVjSYpzKjB_2qVXUCgLgEBIfNN/view?usp=share_link"
+      ],
+      [
+        "Important Questions",
+        "https://drive.google.com/file/d/1zwlEOz7piBg3Wrq9yLrBiYUhEXpOaecd/view?usp=share_link"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1UL8A5DHjwrdeyi6g0iASV-Bftz7hIrf-/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Computer Networks",
+      "CN"
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Biology for Engineers",
+    "shortName": "BIOLOGY",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1tSdVhKAfAypx5c5wQS-bNfQ_mqQylkXY/view?usp=share_link"
+      ],
+      [
+        "Important Questions",
+        "https://drive.google.com/file/d/1Ukt14ymJAqKk8iGYIyjxGYb6HLF_O6Jm/view?usp=share_link"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/12B7mgXTDDY7x37x3Mh_hOWFP_VPD5u1S/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Biology for Engineers",
+      "BIO"
+    ]
+  },
+  {
+    "id": 40,
+    "name": "Data Mining & Data Warehousing",
+    "shortName": "DMDW",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1Ny4b8MZWcJ9smrtyta6H2-WQUsTtRjKq/view?usp=share_link"
+      ],
+      [
+        "Important Questions",
+        "https://drive.google.com/file/d/198f2z40JJiuTFwAD9hO7CgiAqlwGa7rr/view?usp=share_link"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1CJNJuWpsKFnye2EkZTU10w-vZx4H_EGe/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Data Mining & Data Warehousing",
+      "DMDW"
+    ]
+  },
+  {
+    "id": 41,
+    "name": "Statistical Inference",
+    "shortName": "STATS",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1Fq_YToqcYqtJZi_3sMbTJ3smUaFBq7JK/view?usp=share_link"
+      ],
+      [
+        "Tables",
+        "https://drive.google.com/file/d/1JxyXikuY4V3O0i-5yfEh3nLaO1eSJm1Y/view?usp=share_link"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1xKTotS2ZKkK3TxJi-ViIk3rU1Yc4kb8X/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Statistical Inference",
+      "SI"
+    ]
+  },
+  {
+    "id": 42,
+    "name": "Cloud Computing",
+    "shortName": "CC",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/14OH0ZB2U7727PoREnHqgqwrzeVJMxhAW/view?usp=share_link"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1_XVHBw5dagNJ3u8W8lfGQ62ZrnR8VcHp/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Cloud Computing",
+      "CC"
+    ]
+  },
+  {
+    "id": 43,
+    "name": "Professional Ethics & Values",
+    "shortName": "PEV",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1uPYYkABheNXatPYMp7q4UKYH76yG6rGx/view?usp=share_link"
+      ],
+      [
+        "Notes-Alternate (Complete)",
+        "https://drive.google.com/drive/folders/12yLlub4Cd1az0aOVzKOgv-ekSjVRglT4?usp=share_link"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1cinn5v-Bl902U3s3_HjsZfgiTVm2jJA5/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ],
+      [
+        "David Raj Sekhar(LinkedIn)",
+        "https://www.linkedin.com/in/d-raj-sekhar-44a12a1b4/"
+      ],
+      [
+        "David Raj Sekhar(Instagram)",
+        "https://www.instagram.com/david_rajsekhar/"
+      ]
+    ],
+    "tags": [
+      "Professional Ethics & Values",
+      "PEV"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Advanced Java Programming",
+    "shortName": "AJP",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "/under-construction"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1uOusFuSPHf7Skw5yg5o5VcgNO9IQqOdr/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Advanced Java Programming",
+      "AJP"
+    ]
+  },
+  {
+    "id": 45,
+    "name": "Mobile Computing",
+    "shortName": "MC",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "/under-construction"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/18bP16H8F1cM0fK-UvF-QaVry_cE6_LA-/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Mobile Computing",
+      "MC"
+    ]
+  },
+  {
+    "id": 46,
+    "name": "Formal Languages & Automata Theory",
+    "shortName": "FLAT",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1tFqDdlRwPmIj0xyufQCkEFA-scD3uS1P/view?usp=share_link"
+      ],
+      [
+        "Important Theorems",
+        "https://drive.google.com/file/d/1LzrFJCjDnTJEyV8PH2F4Pjlhj8geBMWu/view?usp=share_link"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1xfu_oaeJQCu0taOMTOiSYDgMFLpYDj-b/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Formal Languages & Automata Theory",
+      "FLAT"
+    ]
+  },
+  {
+    "id": 47,
+    "name": "System Programming",
+    "shortName": "SP",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "/under-construction"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "System Programming",
+      "SP"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Software Engineering",
+    "shortName": "SE",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1gnCcjyUY3W7dmS67Ir7stPWwad2KKgjv/view?usp=share_link"
+      ],
+      [
+        "Important Questions(1)",
+        "https://docs.google.com/document/d/1eKWACMumG58i5L8Xfe4akUgGe42iUpCD/edit?usp=share_link&ouid=104433455372147288977&rtpof=true&sd=true"
+      ],
+      [
+        "Important Questions(2)",
+        "https://docs.google.com/document/d/1Q6PyGvQShfrp1TGTIhSmrBX6_UH1hW9B/edit?usp=share_link&ouid=104433455372147288977&rtpof=true&sd=true"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1iOTU19XBT_k3hPZV_NVfqz1l-UQs36l3/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Software Engineering",
+      "SE"
+    ]
+  },
+  {
+    "id": 49,
+    "name": "Machine Learning",
+    "shortName": "ML",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/10NqbV90qtQv_0EdIK2b-mhG-iHIbkoSx/view?usp=share_link"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1nQY8LiC_M9_Cr6XmOqFqX8jmSqBp6l7a/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Machine Learning",
+      "ML"
+    ]
+  },
+  {
+    "id": 50,
+    "name": "Artificial Intelligence",
+    "shortName": "AI",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "https://drive.google.com/file/d/1VCZGJtw5qco-4ro6kbRBSyfW0ifVx0KD/view?usp=share_link"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "https://drive.google.com/file/d/1xfu_oaeJQCu0taOMTOiSYDgMFLpYDj-b/view?usp=share_link"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Artificial Intelligence",
+      "AI"
+    ]
+  },
+  {
+    "id": 51,
+    "name": "Natural Language Processing",
+    "shortName": "NLP",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "/under-construction"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Natural Language Processing",
+      "NLP"
+    ]
+  },
+  {
+    "id": 52,
+    "name": "Wireless Sensor Networks",
+    "shortName": "WSN",
+    "description": "",
+    "links": [
+      [
+        "Notes(Complete)",
+        "/under-construction"
+      ],
+      [
+        "Important Questions",
+        "/under-construction"
+      ],
+      [
+        "Previous Year Papers",
+        "/under-construction"
+      ]
+    ],
+    "contributors": [
+      [
+        "Smruti Dash",
+        "https://www.linkedin.com/in/smruti-dash-1210/"
+      ]
+    ],
+    "tags": [
+      "Wireless Sensor Networks",
+      "WSN"
+    ]
+  },
+  {
     "year": true,
     "id": 1022,  
     "name": "ECE",
@@ -2606,550 +3130,6 @@
       "Design and Analysis of Algorithms",
       "DAA",
       "Algorithms"
-    ]
-  },
-  {
-    "year": true,
-    "id": 102,  
-    "name": "3rd Year",
-    "shortName": "",
-    "description": "",
-    "links": [],
-    "contributors": [],
-    "tags": []
-  },
-  {
-    "year": true,
-    "id": 1021,  
-    "name": "CSE",
-    "shortName": "",
-    "description": "",
-    "links": [],
-    "contributors": [],
-    "tags": []
-  },
-  {
-    "id": 37,
-    "name": "Operating Systems",
-    "shortName": "OS",
-    "description": "",
-    "links": [
-      [
-        "Notes",
-        "https://drive.google.com/file/d/1s1rwrjOEPf8wt1_XazzE-NsoIQQMnuyH/view?usp=share_link"
-      ],
-      [
-        "Important Algorithms",
-        "https://drive.google.com/file/d/1zF6wYsQK1f0474DhUvB0Mk3OsEp6ZVKS/view?usp=share_link"
-      ],
-      [
-        "Lab Experiment",
-        "/under-construction"
-      ],
-      [
-        "Important Questions",
-        "https://docs.google.com/document/d/1E6oDZxGqEzKlzvj6O6YKTSZ811DR7mGe/edit?usp=share_link&ouid=104433455372147288977&rtpof=true&sd=true"
-      ],
-      [
-        "Previous Year Papers",
-        "https://drive.google.com/file/d/1Jnvyd7rW3RsN6U87jrRi-LnAAgQjQ2Xu/view?usp=share_link"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Operating Systems",
-      "OS"
-    ]
-  },
-  {
-    "id": 38,
-    "name": "Computer Networks",
-    "shortName": "CN",
-    "description": "",
-    "links": [
-      [
-        "Notes",
-        "https://drive.google.com/file/d/18bc_qI7HEWkyBzY7MJqpBc3fWqsIWG7v/view?usp=share_link"
-      ],
-      [
-        "Lab Experiment-1",
-        "https://drive.google.com/file/d/1vn747SlNVwFpgsM15U4CrWZgwLgWer8L/view?usp=share_link"
-      ],
-      [
-        "Lab Experiment-2",
-        "https://drive.google.com/file/d/18ms8vkrjH15_K5KuNOj3ZKe7ysyGFZQz/view?usp=share_link"
-      ],
-      [
-        "Lab Experiment-5",
-        "https://drive.google.com/file/d/1q0FBXPAJ6SRIuJCjS5gHc43QOor8Ct6J/view?usp=share_link"
-      ],
-      [
-        "Lab Experiment-6",
-        "https://drive.google.com/file/d/1H-mjpZArmAHN-rFRWJNEZhMKTU0gKNFV/view?usp=share_link"
-      ],
-      [
-        "Lab Experiment-7",
-        "https://drive.google.com/file/d/1e3qEj5JVjSYpzKjB_2qVXUCgLgEBIfNN/view?usp=share_link"
-      ],
-      [
-        "Important Questions",
-        "https://drive.google.com/file/d/1zwlEOz7piBg3Wrq9yLrBiYUhEXpOaecd/view?usp=share_link"
-      ],
-      [
-        "Previous Year Papers",
-        "https://drive.google.com/file/d/1UL8A5DHjwrdeyi6g0iASV-Bftz7hIrf-/view?usp=share_link"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Computer Networks",
-      "CN"
-    ]
-  },
-  {
-    "id": 39,
-    "name": "Biology for Engineers",
-    "shortName": "BIOLOGY",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "https://drive.google.com/file/d/1tSdVhKAfAypx5c5wQS-bNfQ_mqQylkXY/view?usp=share_link"
-      ],
-      [
-        "Important Questions",
-        "https://drive.google.com/file/d/1Ukt14ymJAqKk8iGYIyjxGYb6HLF_O6Jm/view?usp=share_link"
-      ],
-      [
-        "Previous Year Papers",
-        "https://drive.google.com/file/d/12B7mgXTDDY7x37x3Mh_hOWFP_VPD5u1S/view?usp=share_link"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Biology for Engineers",
-      "BIO"
-    ]
-  },
-  {
-    "id": 40,
-    "name": "Data Mining & Data Warehousing",
-    "shortName": "DMDW",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "https://drive.google.com/file/d/1Ny4b8MZWcJ9smrtyta6H2-WQUsTtRjKq/view?usp=share_link"
-      ],
-      [
-        "Important Questions",
-        "https://drive.google.com/file/d/198f2z40JJiuTFwAD9hO7CgiAqlwGa7rr/view?usp=share_link"
-      ],
-      [
-        "Previous Year Papers",
-        "https://drive.google.com/file/d/1CJNJuWpsKFnye2EkZTU10w-vZx4H_EGe/view?usp=share_link"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Data Mining & Data Warehousing",
-      "DMDW"
-    ]
-  },
-  {
-    "id": 41,
-    "name": "Statistical Inference",
-    "shortName": "STATS",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "https://drive.google.com/file/d/1Fq_YToqcYqtJZi_3sMbTJ3smUaFBq7JK/view?usp=share_link"
-      ],
-      [
-        "Tables",
-        "https://drive.google.com/file/d/1JxyXikuY4V3O0i-5yfEh3nLaO1eSJm1Y/view?usp=share_link"
-      ],
-      [
-        "Previous Year Papers",
-        "https://drive.google.com/file/d/1xKTotS2ZKkK3TxJi-ViIk3rU1Yc4kb8X/view?usp=share_link"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Statistical Inference",
-      "SI"
-    ]
-  },
-  {
-    "id": 42,
-    "name": "Cloud Computing",
-    "shortName": "CC",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "https://drive.google.com/file/d/14OH0ZB2U7727PoREnHqgqwrzeVJMxhAW/view?usp=share_link"
-      ],
-      [
-        "Important Questions",
-        "/under-construction"
-      ],
-      [
-        "Previous Year Papers",
-        "https://drive.google.com/file/d/1_XVHBw5dagNJ3u8W8lfGQ62ZrnR8VcHp/view?usp=share_link"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Cloud Computing",
-      "CC"
-    ]
-  },
-  {
-    "id": 43,
-    "name": "Professional Ethics & Values",
-    "shortName": "PEV",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "https://drive.google.com/file/d/1uPYYkABheNXatPYMp7q4UKYH76yG6rGx/view?usp=share_link"
-      ],
-      [
-        "Notes-Alternate (Complete)",
-        "https://drive.google.com/drive/folders/12yLlub4Cd1az0aOVzKOgv-ekSjVRglT4?usp=share_link"
-      ],
-      [
-        "Important Questions",
-        "/under-construction"
-      ],
-      [
-        "Previous Year Papers",
-        "https://drive.google.com/file/d/1cinn5v-Bl902U3s3_HjsZfgiTVm2jJA5/view?usp=share_link"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ],
-      [
-        "David Raj Sekhar(LinkedIn)",
-        "https://www.linkedin.com/in/d-raj-sekhar-44a12a1b4/"
-      ],
-      [
-        "David Raj Sekhar(Instagram)",
-        "https://www.instagram.com/david_rajsekhar/"
-      ]
-    ],
-    "tags": [
-      "Professional Ethics & Values",
-      "PEV"
-    ]
-  },
-  {
-    "id": 44,
-    "name": "Advanced Java Programming",
-    "shortName": "AJP",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "/under-construction"
-      ],
-      [
-        "Important Questions",
-        "/under-construction"
-      ],
-      [
-        "Previous Year Papers",
-        "https://drive.google.com/file/d/1uOusFuSPHf7Skw5yg5o5VcgNO9IQqOdr/view?usp=share_link"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Advanced Java Programming",
-      "AJP"
-    ]
-  },
-  {
-    "id": 45,
-    "name": "Mobile Computing",
-    "shortName": "MC",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "/under-construction"
-      ],
-      [
-        "Important Questions",
-        "/under-construction"
-      ],
-      [
-        "Previous Year Papers",
-        "https://drive.google.com/file/d/18bP16H8F1cM0fK-UvF-QaVry_cE6_LA-/view?usp=share_link"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Mobile Computing",
-      "MC"
-    ]
-  },
-  {
-    "id": 46,
-    "name": "Formal Languages & Automata Theory",
-    "shortName": "FLAT",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "https://drive.google.com/file/d/1tFqDdlRwPmIj0xyufQCkEFA-scD3uS1P/view?usp=share_link"
-      ],
-      [
-        "Important Theorems",
-        "https://drive.google.com/file/d/1LzrFJCjDnTJEyV8PH2F4Pjlhj8geBMWu/view?usp=share_link"
-      ],
-      [
-        "Previous Year Papers",
-        "https://drive.google.com/file/d/1xfu_oaeJQCu0taOMTOiSYDgMFLpYDj-b/view?usp=share_link"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Formal Languages & Automata Theory",
-      "FLAT"
-    ]
-  },
-  {
-    "id": 47,
-    "name": "System Programming",
-    "shortName": "SP",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "/under-construction"
-      ],
-      [
-        "Important Questions",
-        "/under-construction"
-      ],
-      [
-        "Previous Year Papers",
-        "/under-construction"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "System Programming",
-      "SP"
-    ]
-  },
-  {
-    "id": 48,
-    "name": "Software Engineering",
-    "shortName": "SE",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "https://drive.google.com/file/d/1gnCcjyUY3W7dmS67Ir7stPWwad2KKgjv/view?usp=share_link"
-      ],
-      [
-        "Important Questions(1)",
-        "https://docs.google.com/document/d/1eKWACMumG58i5L8Xfe4akUgGe42iUpCD/edit?usp=share_link&ouid=104433455372147288977&rtpof=true&sd=true"
-      ],
-      [
-        "Important Questions(2)",
-        "https://docs.google.com/document/d/1Q6PyGvQShfrp1TGTIhSmrBX6_UH1hW9B/edit?usp=share_link&ouid=104433455372147288977&rtpof=true&sd=true"
-      ],
-      [
-        "Previous Year Papers",
-        "https://drive.google.com/file/d/1iOTU19XBT_k3hPZV_NVfqz1l-UQs36l3/view?usp=share_link"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Software Engineering",
-      "SE"
-    ]
-  },
-  {
-    "id": 49,
-    "name": "Machine Learning",
-    "shortName": "ML",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "https://drive.google.com/file/d/10NqbV90qtQv_0EdIK2b-mhG-iHIbkoSx/view?usp=share_link"
-      ],
-      [
-        "Important Questions",
-        "/under-construction"
-      ],
-      [
-        "Previous Year Papers",
-        "https://drive.google.com/file/d/1nQY8LiC_M9_Cr6XmOqFqX8jmSqBp6l7a/view?usp=share_link"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Machine Learning",
-      "ML"
-    ]
-  },
-  {
-    "id": 50,
-    "name": "Artificial Intelligence",
-    "shortName": "AI",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "https://drive.google.com/file/d/1VCZGJtw5qco-4ro6kbRBSyfW0ifVx0KD/view?usp=share_link"
-      ],
-      [
-        "Important Questions",
-        "/under-construction"
-      ],
-      [
-        "Previous Year Papers",
-        "https://drive.google.com/file/d/1xfu_oaeJQCu0taOMTOiSYDgMFLpYDj-b/view?usp=share_link"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Artificial Intelligence",
-      "AI"
-    ]
-  },
-  {
-    "id": 51,
-    "name": "Natural Language Processing",
-    "shortName": "NLP",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "/under-construction"
-      ],
-      [
-        "Important Questions",
-        "/under-construction"
-      ],
-      [
-        "Previous Year Papers",
-        "/under-construction"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Natural Language Processing",
-      "NLP"
-    ]
-  },
-  {
-    "id": 52,
-    "name": "Wireless Sensor Networks",
-    "shortName": "WSN",
-    "description": "",
-    "links": [
-      [
-        "Notes(Complete)",
-        "/under-construction"
-      ],
-      [
-        "Important Questions",
-        "/under-construction"
-      ],
-      [
-        "Previous Year Papers",
-        "/under-construction"
-      ]
-    ],
-    "contributors": [
-      [
-        "Smruti Dash",
-        "https://www.linkedin.com/in/smruti-dash-1210/"
-      ]
-    ],
-    "tags": [
-      "Wireless Sensor Networks",
-      "WSN"
     ]
   },
   {

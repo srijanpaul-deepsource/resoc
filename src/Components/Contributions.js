@@ -191,11 +191,11 @@ export default function Contributions() {
 						<Form onSubmit={handleSubmit}>
 							<Form.Group className="mb-2" controlId="formGroupName">
 								<Form.Label>Name</Form.Label>
-								<Form.Control type="text" value={name} disabled={true} />
+								<Form.Control type="text" value={name} disabled />
 							</Form.Group>
 							<Form.Group className="mb-2" controlId="formGroupEmail">
 								<Form.Label>Email address</Form.Label>
-								<Form.Control type="email" value={email} disabled={true} />
+								<Form.Control type="email" value={email} disabled />
 							</Form.Group>
 							<div className="mb-3">
 								<div className="input-group">

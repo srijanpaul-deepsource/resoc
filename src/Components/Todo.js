@@ -89,7 +89,7 @@ export default function Todo() {
     </section>
     <div className='px-2 px-sm-5'>
       <div className="py-2 px-2">
-        {todos.length >=0 && 
+        { 
         <p>Pending: <b>
            {(todos.length - donetodos)>=0?
             (todos.length - donetodos) : 0}

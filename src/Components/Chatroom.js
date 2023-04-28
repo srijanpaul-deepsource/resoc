@@ -135,7 +135,7 @@ function ChatRoom(props) {
 function ChatMessage(props) {
   const { text, uid, photoURL, displayName } = props.message;
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
-  return (<>
+  return (
     <div style={{
       textAlign: messageClass === 'sent' ? 'right' : 'left',
     }} className={`message ${messageClass} px-sm-2`}>
@@ -161,14 +161,14 @@ function ChatMessage(props) {
                   return <a key={word}
                   className="text-var" href={word} target="_blank" rel='noreferrer'>{word} </a>
                 }
-                else return word + " ";
+                else return `${word} `;
               })}
             </span>
             : text}
         </p>
       </div>
     </div>
-  </>)
+  )
 }
 
 export default Chat;

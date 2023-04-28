@@ -101,8 +101,8 @@ export default function Contributions() {
 					.doc(uid)
 					.collection("submits")
 					.add({
-						name: name,
-						email: email,
+						name,
+						email, 
 						filename: file.name,
 					});
 				getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
@@ -112,8 +112,8 @@ export default function Contributions() {
 				emailjs.send(
 					process.env.REACT_APP_EMAIL_JS_SERVICE_ID
 					, process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID, {
-					name: name,
-					email: email,
+					name,
+					email,
 					receiver: process.env.REACT_APP_EMAIL_ADMIN,
 					filename: file.name,
 					downloadURL: downloadLink,

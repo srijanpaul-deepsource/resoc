@@ -8,10 +8,6 @@ import 'firebase/compat/firestore'
 import firebase from 'firebase/compat/app';
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import emailjs from '@emailjs/browser';
-
-const firestore = firebase.firestore();
-const storage = getStorage();
-
 export default function Contributions() {
 	React.useEffect(() => {
 		document.title = 'Contributions | RESOC'
@@ -19,13 +15,16 @@ export default function Contributions() {
 			document.title = 'NOTES-SIT | RESOC'
 		}
 	}, []);
+
+	let progress = 0;
+	const firestore = firebase.firestore();
+	const storage = getStorage();
 	const name = auth.currentUser.displayName ? auth.currentUser.displayName : auth.currentUser.email.slice(0, auth.currentUser.email.indexOf('@'));
 	const email = auth.currentUser.email;
 	const [isDark, setIsDark] = React.useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
 	const [selectedFile, setSelectedFile] = React.useState(null);
 	const [errdef, setErrdef] = React.useState('')
 	const [status, setStatus] = React.useState('')
-	var progress = 0;
 
 	React.useEffect(() => {
 		const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -35,7 +34,7 @@ export default function Contributions() {
 			mediaQuery.removeEventListener('change', handleChange);
 		}
 	}, []);
-	const [downloadURL, setDownloadURL] = React.useState(null);
+	const [downloadLink, setDownloadLink] = React.useState("");
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
@@ -51,7 +50,7 @@ export default function Contributions() {
 			contentType: file.type
 		};
 		// Upload file and metadata to the object 'images/mountains.jpg'
-		const storageRef = ref(storage, 'uploads/' + file.name);
+		const storageRef = ref(storage, `uploads/${file.name}`);
 		const uploadTask = uploadBytesResumable(storageRef, file, metadata);
 
 		uploadTask.on('state_changed',
@@ -59,18 +58,18 @@ export default function Contributions() {
 				// Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
 				progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
 				progress = progress.toFixed(2);
-				console.log('Upload is ' + progress + '% done');
+				console.log(`Upload is  ${progress} + % done`);
 				switch (snapshot.state) {
 					case 'paused':
 						console.log('Upload is paused');
 						setStatus('Upload is paused');
 						break;
 					case 'running':
-						setStatus('Upload is running ' + progress + ' % done');
+						setStatus(`Upload is running and ${progress} + % done`);
 						console.log('Upload is running');
 						break;
 					default:
-						setStatus('Upload is ' + progress + '% done');
+						setStatus(`Upload is ${progress} + % done`);
 				}
 			},
 			(error) => {
@@ -94,7 +93,7 @@ export default function Contributions() {
 			},
 			() => {
 				setErrdef('');
-				setStatus('Upload is ' + progress + '% done');
+				setStatus(`Upload is ${progress} % done`);
 				// Upload completed successfully, now we can get the download URL
 				const { uid } = auth.currentUser;
 				firestore
@@ -102,22 +101,22 @@ export default function Contributions() {
 					.doc(uid)
 					.collection("submits")
 					.add({
-						name: name,
-						email: email,
+						name,
+						email, 
 						filename: file.name,
 					});
 				getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-					setDownloadURL(downloadURL);
+					setDownloadLink(downloadURL);
 					console.log('File available at', downloadURL);
 				});
 				emailjs.send(
 					process.env.REACT_APP_EMAIL_JS_SERVICE_ID
 					, process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID, {
-					name: name,
-					email: email,
+					name,
+					email,
 					receiver: process.env.REACT_APP_EMAIL_ADMIN,
 					filename: file.name,
-					downloadURL: downloadURL,
+					downloadURL: downloadLink,
 				}, process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY)
 					.then((result) => {
 						console.log(result.text);
@@ -221,10 +220,10 @@ export default function Contributions() {
 						</Form>
 						<p>
 
-							{downloadURL ?
-								<span> Here is the <b><a href={downloadURL} target='_blank' rel='noreferrer noopener' className='text-var'> download link.</a></b>
+							{downloadLink?
+								<span> Here is the <b><a href={downloadLink} target='_blank' rel='noreferrer noopener' className='text-var'> download link.</a></b>
 								</span>
-								: <span>You'll get your file link for you to share with friends here.</span>}
+								: <span>You&apos;ll get your file link for you to share with friends here.</span>}
 						</p>
 						<p>
 							Please upload your file (less than 100 MB) in a pdf format or a zip file of pdfs <b>only</b>.

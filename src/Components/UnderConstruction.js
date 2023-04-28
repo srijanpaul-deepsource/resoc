@@ -18,8 +18,8 @@ export default function UnderConstruction () {
 								Under Construction
 							</p>
 							<p>
-							We haven't built this yet :(<br />
-							Let's get back to checking out  <a href='/notes' className='text-var'>notes</a>.
+							We haven&apos;t built this yet :(<br />
+							Let&apos;s get back to checking out  <a href='/notes' className='text-var'>notes</a>.
 							</p>
 						</div>
 						<img className="img-fluid w-50 d-none d-sm-block" src={planet} alt="in office" />

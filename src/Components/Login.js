@@ -35,22 +35,22 @@ export default function Login() {
   const [loading, setLoading] = useState(false)
   // const navigate = useNavigate()
 
-  async function handleSubmit(e) {
-    e.preventDefault()
+  async function handleSubmit(event) {
+    event.preventDefault()
     try {
       setError('')
       setErrorDef('')
       setLoading(true)
       await login(emailRef.current.value, passwordRef.current.value)
       // navigate('/profile')
-    } catch (e) {
+    } catch (err) {
       setError('Failed to log in')
-      if (e.code === 'auth/user-not-found') setErrorDef('No user found with this email')
-      else if (e.code === 'auth/wrong-password') setErrorDef('Wrong password')
-      else if (e.code === 'auth/too-many-requests') setErrorDef('Too many requests. Try again later')
-      else if (e.code === 'auth/invalid-email') setErrorDef('Invalid email')
-      else if (e.code === 'auth/user-disabled') setErrorDef('User disabled')
-      else setErrorDef(e.message)
+      if (err.code === 'auth/user-not-found') setErrorDef('No user found with this email')
+      else if (err.code === 'auth/wrong-password') setErrorDef('Wrong password')
+      else if (err.code === 'auth/too-many-requests') setErrorDef('Too many requests. Try again later')
+      else if (err.code === 'auth/invalid-email') setErrorDef('Invalid email')
+      else if (err.code === 'auth/user-disabled') setErrorDef('User disabled')
+      else setErrorDef(err.message)
 
     }
     setLoading(false)
@@ -71,13 +71,12 @@ export default function Login() {
   const signInWithGoogle = async() => {
     const provider = new firebase.auth.GoogleAuthProvider();
     const user = await auth.signInWithPopup(provider);
-    if(!user.user.photoURL !== 'https://api.dicebear.com/5.x/croodles/svg?seed=' + user.user.displayName.slice(0, user.user.displayName.indexOf(" ")) + '&radius=50')
+    if(!user.user.photoURL !== `https://api.dicebear.com/5.x/croodles/svg?seed=${user.user.displayName.slice(0, user.user.displayName.indexOf(" "))}&radius=50`)
     user.user.updateProfile({ photoURL: `https://api.dicebear.com/5.x/croodles/svg?seed=${auth.currentUser.displayName.slice(0, user.user.displayName.indexOf(" "))}&radius=50` })
   }
 
   if (loading) return (<Loader />)
   else return (
-    <>
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card style={{
@@ -130,6 +129,5 @@ export default function Login() {
           </div>
         </div>
       </Container>
-    </>
   )
 }

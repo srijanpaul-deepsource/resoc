@@ -17,22 +17,19 @@ export default function ForgotPassword() {
   const [message, setMessage] = useState('')
   const [loading, setLoading] = useState(false)
 
-  async function handleSubmit(e) {
-    e.preventDefault()
-
+  async function handleSubmit(event) {
+    event.preventDefault()
     try {
       setMessage('')
       setError('')
       setLoading(true)
       await resetPassword(emailRef.current.value)
       setMessage('Check your inbox for further instructions')
-    } catch (e) {
+    } catch (err) {
       setError('Failed to reset password \n')
-      if(e.code === 'auth/user-not-found') setErrorDef('No user found with this email')
-      // setErrorDef(e.message)
-
+      if (err.code === 'auth/user-not-found') setErrorDef('No user found with this email')
+      setErrorDef(err.message)
     }
-
     setLoading(false)
   }
   React.useEffect(() => {
@@ -40,17 +37,16 @@ export default function ForgotPassword() {
       setError('')
       setErrorDef('')
     }, 3000)
-  
+
     return () => {
       clearTimeout(timeoutId)
     }
   }, [error, errorDef])
 
-  if(loading) return (<Loader />
+  if (loading) return (<Loader />
   )
   else
-  return (
-    <>
+    return (
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card
@@ -73,7 +69,7 @@ export default function ForgotPassword() {
               }}>{errorDef}</p>}
               {message && <Alert variant='success'>{message}</Alert>}
               <Form onSubmit={handleSubmit}>
-              <Form.Group className="mb-2" controlId="formGroupEmail">
+                <Form.Group className="mb-2" controlId="formGroupEmail">
                   <Form.Label>Email address</Form.Label>
                   <Form.Control type="email" ref={emailRef} />
                 </Form.Group>
@@ -94,6 +90,5 @@ export default function ForgotPassword() {
           </div>
         </div>
       </Container>
-    </>
-  )
+    )
 }

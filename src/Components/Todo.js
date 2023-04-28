@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react'
+import React, {useState} from 'react'
 import 'firebase/compat/firestore'
 import firebase from 'firebase/compat/app';
 import { v4 as uuidv4 } from 'uuid';
@@ -25,7 +24,7 @@ export default function Todo() {
   const [donetodos, setDonetodos] = useState(0);
   const [todos, setTodos] = useState([])
   const [input, setInput] = useState('')
-  const [isDark, setIsDark] = React.useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  const [isDark, setIsDark] = useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
   React.useEffect(() => {
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handleChange = (event) => setIsDark(event.matches ? true : false);
@@ -162,7 +161,7 @@ export default function Todo() {
                         color: isDark ? "white" : "black",
                         paddingLeft: "0px",
                       }}
-                      onClick={(e) =>
+                      onClick={() =>
                         firestore
                           .collection(collection_used)
                           .doc(auth.currentUser.uid)
@@ -192,7 +191,7 @@ export default function Todo() {
                       outline: "none",
                       color: isDark ? "white" : "black",
                     }}
-                    onClick={(e) =>
+                    onClick={() =>
                       firestore
                         .collection(collection_used)
                         .doc(auth.currentUser.uid)

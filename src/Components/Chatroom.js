@@ -56,7 +56,14 @@ function Chat() {
         style={{
           color: '#ff5e5b',
         }}
-        onClick={() => auth.signOut()}>SIGN OUT</button>
+        onClick={
+          React.useCallback(
+            () => {
+              auth.signOut();
+            },
+            []
+          )
+        }>SIGN OUT</button>
       <div className=" py-2 d-flex align-items-center justify-content-start mb-2">
         {isDark &&
           <button className="btn btn-dark" onClick={() => setLimit(limit + 25)}>Load More</button>
@@ -104,7 +111,7 @@ function ChatRoom(props) {
     dummy.current.scrollIntoView({ behavior: 'smooth' });
   }
 
-  return (<>
+  return (
     <main className='main p-2 p-sm-4' >
       {messages && messages.map(msg => <ChatMessage key={msg.id} message={msg} />)}
       <span ref={dummy}></span>
@@ -116,19 +123,19 @@ function ChatRoom(props) {
         </Form>
       </div>
     </main>
-  </>)
+  )
 }
 
-function linkify(text) {
-  var urlRegex = /(https?:\/\/[^\s]+)/g;
-  return text.replace(urlRegex, function (url) {
-    return '<a class="text-var" href="' + url + '" target="_blank">' + url + '</a>';
-  })
-}
+// function linkify(text) {
+//   let urlRegex = /(https?:\/\/[^\s]+)/g;
+//   return text.replace(urlRegex, function (url) {
+//     return '<a class="text-var" href="' + url + '" target="_blank">' + url + '</a>';
+//   })
+// }
 function ChatMessage(props) {
   const { text, uid, photoURL, displayName } = props.message;
   const messageClass = uid === auth.currentUser.uid ? 'sent' : 'received';
-  return (<>
+  return (
     <div style={{
       textAlign: messageClass === 'sent' ? 'right' : 'left',
     }} className={`message ${messageClass} px-sm-2`}>
@@ -147,13 +154,21 @@ function ChatMessage(props) {
             fontSize: '0.8rem',
           }}>
             {text.includes("https://") || text.includes("http://") ? 
-            <>
-            <span dangerouslySetInnerHTML={{ __html: linkify(text) }}></span></>
+            <span>
+              {/* //linkify(text) */}
+              {text.split(" ").map((word) => {
+                if (word.includes("https://") || word.includes("http://")) {
+                  return <a key={word}
+                  className="text-var" href={word} target="_blank" rel='noreferrer'>{word} </a>
+                }
+                else return `${word} `;
+              })}
+            </span>
             : text}
         </p>
       </div>
     </div>
-  </>)
+  )
 }
 
 export default Chat;

@@ -1,5 +1,5 @@
-import React, { useState} from "react";
-import { useAuth } from "../contexts/AuthContext";
+import React from "react";
+// import { useAuth } from "../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 import profile from "../assets/img/profile-page.svg";
 import { auth } from "../firebase";
@@ -38,21 +38,23 @@ export default function Profile() {
       mediaQuery.removeEventListener('change', handleChange);
     }
   }, []);
-  const [error, setError] = useState("");
-  const [errorDef, setErrorDef] = useState("");
-  const { logout } = useAuth();
-  const navigate = useNavigate();
-  async function handleLogout() {
-    setError("");
-    try {
-      await logout();
-      navigate("/");
-      window.location.reload();
-    } catch(e) {
-      setError("Failed to log out");
-      setErrorDef(e.message);
-    }
-  }
+  const error = "";
+  const errorDef = "";
+  // const [error, setError] = useState("");
+  // const [errorDef, setErrorDef] = useState("");
+  // const { logout } = useAuth();
+  // const navigate = useNavigate();
+  // async function handleLogout() {
+  //   setError("");
+  //   try {
+  //     await logout();
+  //     navigate("/");
+  //     window.location.reload();
+  //   } catch(e) {
+  //     setError("Failed to log out");
+  //     setErrorDef(e.message);
+  //   }
+  // }
 
   return (
     <>

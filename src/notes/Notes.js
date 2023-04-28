@@ -75,9 +75,9 @@ export default function Notes() {
 						listStyleType: 'none',
 						padding: '0px',
 					}}>
-						{displayData.map((item, index) => {
+						{displayData.map((item) => {
 							return (
-								<li className='my-1' key={index}>
+								<li className='my-1' key={item.id}>
 									{item.year === true ?
 										<>
 											<h2>{item.name}</h2>

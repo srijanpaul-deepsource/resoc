@@ -21,8 +21,8 @@ export default function Signup() {
   const [loading, setLoading] = useState(false)
   // const history = useNavigate()
 
-  async function handleSubmit(e) {
-    e.preventDefault()
+  async function handleSubmit(event) {
+    event.preventDefault()
     if (passwordRef.current.value !== confirmPasswordRef.current.value) {
       return setError('Passwords do not match')
     }
@@ -38,18 +38,19 @@ export default function Signup() {
         photoURL: `https://api.dicebear.com/5.x/croodles/svg?seed=${name}&radius=50`
       })
       // history('/')
-    } catch (e) {
+    } catch (err) {
       setError('Error signing up')
-      if (e.code === 'auth/email-already-in-use') setErrorDef('Email already in use')
-      else if (e.code === 'auth/invalid-email') setErrorDef('Invalid email')
-      else if (e.code === 'auth/operation-not-allowed') setErrorDef('Operation not allowed')
-      else if (e.code === 'auth/weak-password') setErrorDef('Weak password')
-      else if (e.code === 'auth/too-many-requests') setErrorDef('Too many requests. Try again later')
-      else if (e.code === 'auth/user-disabled') setErrorDef('User disabled')
+      if (err.code === 'auth/email-already-in-use') setErrorDef('Email already in use')
+      else if (err.code === 'auth/invalid-email') setErrorDef('Invalid email')
+      else if (err.code === 'auth/operation-not-allowed') setErrorDef('Operation not allowed')
+      else if (err.code === 'auth/weak-password') setErrorDef('Weak password')
+      else if (err.code === 'auth/too-many-requests') setErrorDef('Too many requests. Try again later')
+      else if (err.code === 'auth/user-disabled') setErrorDef('User disabled')
 
-      else setErrorDef(e.message)
+      else setErrorDef(err.message)
     }
     setLoading(false)
+    return null
   }
   React.useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -64,7 +65,7 @@ export default function Signup() {
 
   if (loading) return (<Loader />)
   else return (
-    <>
+    
       <Container className='d-flex align-items-center justify-content-center h-100' style={{ minHeight: '80vh' }}>
         <div className='w-100' style={{ maxWidth: '400px' }}>
           <Card style={{
@@ -109,6 +110,6 @@ export default function Signup() {
           </div>
         </div>
       </Container>
-    </>
+   
   )
 }

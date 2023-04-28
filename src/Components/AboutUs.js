@@ -68,10 +68,10 @@ export default function AboutUs() {
 			</div>
 			<div className="container px-3 px-sm-5">
 				<p>
-					We have an open <Link className='text-var' to='/contributions'>contributions page</Link> for you to contribute to the RESOC community. You'll be added to the list post scrutiny.
+					We have an open <Link className='text-var' to='/contributions'>contributions page</Link> for you to contribute to the RESOC community. You&apos;ll be added to the list post scrutiny.
 				</p>
 				<p>
-					We hope you're having an amazing time on RESOC! Our team has been burning the midnight oil to make your experience on our website as smooth as a baby's butt. We would be incredibly grateful if you could donate to help us cover the costs of keeping this virtual ship afloat. We need to pay for the domain rights, and while we'd love to say that money grows on trees, unfortunately, that's just not the case. You could always buy us a pizza or a coffee, too. We promise we won't say no!
+					We hope you&apos;re having an amazing time on RESOC! Our team has been burning the midnight oil to make your experience on our website as smooth as a baby&apos;s butt. We would be incredibly grateful if you could donate to help us cover the costs of keeping this virtual ship afloat. We need to pay for the domain rights, and while we&apos;d love to say that money grows on trees, unfortunately, that&apos;s just not the case. You could always buy us a pizza or a coffee, too. We promise we won&apos;t say no!
 				</p>
 				<div>
 					<a href='https://github.com/sponsors/fuzzymfx' className='text-var' target='_blank' rel="noreferrer">

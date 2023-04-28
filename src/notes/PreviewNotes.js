@@ -1,8 +1,7 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import ufo from '../assets/img/note-taking.svg'
 import Loader from '../Components/Loader';
-import { Link } from 'react-router-dom';
 import data from './data.json'
 
 function PreviewNotes() {
@@ -10,8 +9,8 @@ function PreviewNotes() {
 	const params = new URLSearchParams(location.search);
 	const id = params.get("id");
 	const displayData = data[id]
-	let name = displayData.shortName;
-	let description = data.description;
+	const name = displayData.shortName;
+	const description = data.description;
 	const [contributors, setContributors] = React.useState([])
 	const [links, setLinks] = React.useState([])
 	const [loading, setLoading] = React.useState(true)
@@ -25,10 +24,10 @@ function PreviewNotes() {
 
 	React.useEffect(() => {
 		setLoading(true)
-		const contributors = []
+		const tempcontributors = []
 		if (displayData?.contributors) {
 			displayData.contributors.forEach(contributor => {
-				contributors.push(<li
+				tempcontributors.push(<li
 					key={contributor[0]}
 				><a
 					target='_blank'
@@ -38,11 +37,11 @@ function PreviewNotes() {
 					} className='text-var'>{contributor[0]}</a></li>)
 			})
 		}
-		setContributors(contributors)
-		const links = []
+		setContributors(tempcontributors)
+		const templinks = []
 		if (displayData?.links) {
 			displayData.links.forEach(link => {
-				links.push(<li
+				templinks.push(<li
 					key={link[0]}
 				><a
 					target='_blank'
@@ -53,7 +52,7 @@ function PreviewNotes() {
 			})
 		}
 
-		setLinks(links)
+		setLinks(templinks)
 	}, [displayData])
 
 	React.useEffect(() => {

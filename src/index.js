@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-d
 import Header from './Components/Navbar'
 import Footer from './Components/Footer'
 import Loader from './Components/Loader'
-import  App  from './App'
+import App from './App'
 const UnderConstruction = lazy(() => import('./Components/UnderConstruction'))
 const Disclaimer = lazy(() => import('./Components/Disclaimer'))
 const Contributions = lazy(() => import('./Components/Contributions'))
@@ -25,109 +25,107 @@ const PageNotFound = lazy(() => import('./Components/PageNotFound'))
 
 ReactDOM.render(
   <React.StrictMode>
-    <>
-      <Router>
-        <AuthProvider>
-          <Header />
-          <Routes>
-            <Route path='/' element={<App />} />
-            <Route path='/team' element={<Suspense fallback={<Loader />}><AboutUs /></Suspense>} />
-            <Route path='/notes' element={<Suspense fallback={<Loader />}><Notes /></Suspense>} />
-            <Route path='/visitloader' element={<Loader />} />
-            <Route path = '/previewnotes' element={<Suspense fallback={<Loader />}><PreviewNotes /></Suspense>} />
-            <Route path = '/under-construction' element={<Suspense fallback={<Loader />}><UnderConstruction /></Suspense>} />
-            <Route path = '/community-guidelines' element={<Suspense fallback={<Loader />}><Disclaimer /></Suspense>} />
-            <Route
-              path='/update-profile'
-              element={
-                <RequireAuth redirectTo='/login'>
-                  <Suspense fallback={<Loader />}>
-                    <UpdateProfile />
-                  </Suspense>
-                </RequireAuth>
-              }
-            />
-            <Route
-              path='/community'
-              element={
-                <RequireAuth redirectTo='/login'>
-                  <Suspense fallback={<Loader />}>
-                    <Chat />
-                  </Suspense>
-                </RequireAuth>
-              }
-            />
-            <Route
-              path='/taskboard'
-              element={
-                <RequireAuth redirectTo='/login'>
-                  <Suspense fallback={<Loader />}>
-                    <Todo />
-                  </Suspense>
-                </RequireAuth>
-              }
-            />
-            <Route
-              path='/login'
-              element={
-                <IsLoggedIn redirectTo='/profile'>
-                  <Suspense fallback={<Loader />}>
-                    <Login />
-                  </Suspense>
-                </IsLoggedIn>
-              }
-            />
-            <Route
-              path='/profile'
-              element={
-                <RequireAuth redirectTo='/login'>
-                  <Suspense fallback={<Loader />}>
-                    <Profile />
-                  </Suspense>
-                </RequireAuth>
-              }
-            />
+    <Router>
+      <AuthProvider>
+        <Header />
+        <Routes>
+          <Route path='/' element={<App />} />
+          <Route path='/team' element={<Suspense fallback={<Loader />}><AboutUs /></Suspense>} />
+          <Route path='/notes' element={<Suspense fallback={<Loader />}><Notes /></Suspense>} />
+          <Route path='/visitloader' element={<Loader />} />
+          <Route path='/previewnotes' element={<Suspense fallback={<Loader />}><PreviewNotes /></Suspense>} />
+          <Route path='/under-construction' element={<Suspense fallback={<Loader />}><UnderConstruction /></Suspense>} />
+          <Route path='/community-guidelines' element={<Suspense fallback={<Loader />}><Disclaimer /></Suspense>} />
+          <Route
+            path='/update-profile'
+            element={
+              <RequireAuth redirectTo='/login'>
+                <Suspense fallback={<Loader />}>
+                  <UpdateProfile />
+                </Suspense>
+              </RequireAuth>
+            }
+          />
+          <Route
+            path='/community'
+            element={
+              <RequireAuth redirectTo='/login'>
+                <Suspense fallback={<Loader />}>
+                  <Chat />
+                </Suspense>
+              </RequireAuth>
+            }
+          />
+          <Route
+            path='/taskboard'
+            element={
+              <RequireAuth redirectTo='/login'>
+                <Suspense fallback={<Loader />}>
+                  <Todo />
+                </Suspense>
+              </RequireAuth>
+            }
+          />
+          <Route
+            path='/login'
+            element={
+              <IsLoggedIn redirectTo='/profile'>
+                <Suspense fallback={<Loader />}>
+                  <Login />
+                </Suspense>
+              </IsLoggedIn>
+            }
+          />
+          <Route
+            path='/profile'
+            element={
+              <RequireAuth redirectTo='/login'>
+                <Suspense fallback={<Loader />}>
+                  <Profile />
+                </Suspense>
+              </RequireAuth>
+            }
+          />
 
-            <Route
-              path='/signup'
-              element={
-                <IsLoggedIn redirectTo='/profile'>
-                  <Suspense fallback={<Loader />}>
-                    <Signup />
-                  </Suspense>
-                </IsLoggedIn>
-              }
-            />
-            <Route
-              path='/forgot-password'
-              element={
-                <IsLoggedIn redirectTo='/update-profile'>
-                  <Suspense fallback={<Loader />}>
-                    <ForgotPassword />
-                  </Suspense>
-                </IsLoggedIn>
-              }
-            />
-            <Route
-              path='/contributions'
-              element={
-                <RequireAuth redirectTo='/login'>
-                  <Suspense fallback={<Loader />}>
-                    <Contributions />
-                  </Suspense>
-                </RequireAuth>
-              }
-            />
-            <Route path="*" element={
-              <Suspense fallback={<Loader />}>
-            <PageNotFound />
+          <Route
+            path='/signup'
+            element={
+              <IsLoggedIn redirectTo='/profile'>
+                <Suspense fallback={<Loader />}>
+                  <Signup />
+                </Suspense>
+              </IsLoggedIn>
+            }
+          />
+          <Route
+            path='/forgot-password'
+            element={
+              <IsLoggedIn redirectTo='/update-profile'>
+                <Suspense fallback={<Loader />}>
+                  <ForgotPassword />
+                </Suspense>
+              </IsLoggedIn>
+            }
+          />
+          <Route
+            path='/contributions'
+            element={
+              <RequireAuth redirectTo='/login'>
+                <Suspense fallback={<Loader />}>
+                  <Contributions />
+                </Suspense>
+              </RequireAuth>
+            }
+          />
+          <Route path="*" element={
+            <Suspense fallback={<Loader />}>
+              <PageNotFound />
             </Suspense>
-            } />
-          </Routes>
-          <Footer />
-        </AuthProvider>
-      </Router>
-    </>
+          } />
+        </Routes>
+        <Footer />
+      </AuthProvider>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );

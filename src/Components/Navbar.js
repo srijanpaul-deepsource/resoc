@@ -14,9 +14,10 @@ export default function Header() {
   const [buttonText, setButtonText] = useState("Login");
 
   React.useEffect(() => {
+    let username = "";
     if(currentUser && currentUser.displayName) {
       if (currentUser.displayName.includes(" ")){
-        var username = currentUser.displayName.slice(0, currentUser.displayName.indexOf(" "));
+        username = currentUser.displayName.slice(0, currentUser.displayName.indexOf(" "));
          if(username.length> 15)
           username = username.slice(0, 15);
       }
@@ -53,7 +54,7 @@ export default function Header() {
   }, []);
 
   if (isDark) {
-    return (<>
+    return (
       <Navbar className='navbar navbar-expand-lg navbar-dark py-4 cdin' expand="lg">
         <Container >
           <Nav >
@@ -87,10 +88,10 @@ export default function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>)
+    )
   }
   else {
-    return (<>
+    return (
       <Navbar className='navbar navbar-expand-lg py-4 cdin' expand="lg">
         <Container >
           <Nav >
@@ -123,6 +124,6 @@ export default function Header() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </>)
+    )
   }
 }

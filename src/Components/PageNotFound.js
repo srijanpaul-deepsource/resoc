@@ -19,7 +19,7 @@ export default function PageNotFound () {
 							</p>
 							<p>
 							Well... how did we get here?<br />
-							Let's get back <a href='/' className='text-var'>on track</a>.
+							Let&apos;s get back <a href='/' className='text-var'>on track</a>.
 							</p>
 						</div>
 						<img className="img-fluid w-50 d-none d-sm-block" src={moon} alt="in office" />

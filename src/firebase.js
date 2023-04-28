@@ -1,5 +1,4 @@
 import firebase from 'firebase/compat/app'
-import 'firebase/storage';  
 import 'firebase/compat/auth'
 import { getStorage } from "firebase/storage";
 import { getAnalytics } from "firebase/analytics";
